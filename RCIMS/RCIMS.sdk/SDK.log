@@ -1,0 +1,6 @@
+12:51:20 INFO  : Registering command handlers for SDK TCF services
+12:51:21 INFO  : Launching XSCT server: xsct.bat -interactive C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\temp_xsdb_launch_script.tcl
+12:51:26 INFO  : XSCT server has started successfully.
+12:51:41 INFO  : Processing command line option -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf.
+12:51:41 INFO  : Successfully done setting XSCT server connection channel  
+12:51:41 INFO  : Successfully done setting SDK workspace  
