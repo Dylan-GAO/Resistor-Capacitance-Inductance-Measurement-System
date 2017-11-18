@@ -53,22 +53,18 @@
 #define DDS_BASEADDR 0x43c00000
 
 void ChangeFreq(u32 Freq){
-	int Delay;
-	DDS_mWriteReg(DDS_BASEADDR, DDS_S00_AXI_SLV_REG3_OFFSET, 0x8000000 + Freq);
-	for (Delay = 0; Delay < 10000000; Delay++);
-	DDS_mWriteReg(DDS_BASEADDR, DDS_S00_AXI_SLV_REG3_OFFSET, Freq);
-	xil_printf("Frequency has been changed to %x.\n\r", Freq);
+
 }
 
 int main()
 {
+	int Delay;
     init_platform();
-    xil_printf("*****RCIMS  Start*****\n\r");
-    xil_printf("Author: Jingbo GAO, Jiyuan BAI\n\r");
-    xil_printf("**********************\n\r");
+    xil_printf("Hello World\n\r");
 
-    ChangeFreq(0x1);
-
+    DDS_mWriteReg(DDS_BASEADDR, DDS_S00_AXI_SLV_REG3_OFFSET, 0x80000001);
+    for (Delay = 0; Delay < 10000000; Delay++);
+    DDS_mWriteReg(DDS_BASEADDR, DDS_S00_AXI_SLV_REG3_OFFSET, 0x1);
     while (1) ;
     cleanup_platform();
     return 0;
