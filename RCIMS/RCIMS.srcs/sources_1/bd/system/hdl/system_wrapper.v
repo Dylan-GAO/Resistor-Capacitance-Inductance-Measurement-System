@@ -79,6 +79,7 @@ module system_wrapper
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire [7:0]m_axis_data_tdata;
+  wire [7:0]m_axis_data_tdata_0;
   wire m_axis_data_tvalid;
 
   system system_i
@@ -103,6 +104,10 @@ module system_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .m_axis_data_tdata(m_axis_data_tdata),
+        .m_axis_data_tdata(m_axis_data_tdata_0),
         .m_axis_data_tvalid(m_axis_data_tvalid));
+
+  ComplementCalibration ComplementCalibration_i
+       (.DDS_DATA_IN(m_axis_data_tdata_0),
+       	.DDS_DATA_OUT(m_axis_data_tdata));
 endmodule

@@ -45,17 +45,23 @@
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
 
-#include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
+#include "DDS.h"
+#include "xil_io.h"
 
+#define DDS_BASEADDR 0x43c00000
 
 int main()
 {
+	int Delay;
     init_platform();
+    xil_printf("Hello World\n\r");
 
-    print("Hello World\n\r");
-
+    DDS_mWriteReg(DDS_BASEADDR, DDS_S00_AXI_SLV_REG3_OFFSET, 0x8000001A);
+    for (Delay = 0; Delay < 10000000; Delay++);
+    DDS_mWriteReg(DDS_BASEADDR, DDS_S00_AXI_SLV_REG3_OFFSET, 0x1A);
+    while (1) ;
     cleanup_platform();
     return 0;
 }
