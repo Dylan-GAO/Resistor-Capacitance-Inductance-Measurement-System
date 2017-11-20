@@ -11,18 +11,18 @@ preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 290 -defaultsOSRD
 preplace inst DDS_0 -pg 1 -lvl 3 -y 310 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 230 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 1 1 420
-preplace netloc DDS_0_DDS_PHASE_DATA 1 2 2 810 230 1230
+preplace netloc DDS_0_DDS_PHASE_DATA 1 2 2 810 230 1240
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 N
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 420
 preplace netloc dds_compiler_0_m_axis_data_tdata 1 3 1 NJ
-preplace netloc DDS_0_DDS_PHASE_READY 1 2 2 820 240 1220
+preplace netloc DDS_0_DDS_PHASE_READY 1 2 2 820 240 1230
 preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 1 2 440 600 790
 preplace netloc processing_system7_0_FIXED_IO 1 1 1 450
 preplace netloc dds_compiler_0_m_axis_data_tvalid 1 3 1 NJ
 preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 450 410 800
 preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 320 430 420 790
 preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N
-levelinfo -pg 1 0 220 620 1020 1250 -top 0 -bot 610
+levelinfo -pg 1 0 220 620 1030 1270 -top 0 -bot 610
 ",
 }
 {
