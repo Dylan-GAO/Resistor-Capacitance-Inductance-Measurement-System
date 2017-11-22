@@ -42,19 +42,18 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z010clg400-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/wt [current_project]
   set_property parent.project_path C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr [current_project]
   set_property ip_repo_paths {
+  C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0
   C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0
   C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0
 } [current_project]

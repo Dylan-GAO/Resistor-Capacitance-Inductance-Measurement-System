@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-//Date        : Sat Nov 18 12:26:27 2017
+//Date        : Wed Nov 22 22:22:33 2017
 //Host        : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -10,7 +10,11 @@
 `timescale 1 ps / 1 ps
 
 module system_wrapper
-   (DDR_addr,
+   (ADC_ADC_reset,
+    ADC_MISO,
+    ADC_MOSI,
+    ADC_SCK,
+    DDR_addr,
     DDR_ba,
     DDR_cas_n,
     DDR_ck_n,
@@ -31,8 +35,15 @@ module system_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    clk_out1,
+    clock_rtl,
     m_axis_data_tdata,
-    m_axis_data_tvalid);
+    m_axis_data_tvalid,
+    reset_rtl);
+  output ADC_ADC_reset;
+  input ADC_MISO;
+  output ADC_MOSI;
+  output ADC_SCK;
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -54,9 +65,16 @@ module system_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  output clk_out1;
+  input clock_rtl;
   output [7:0]m_axis_data_tdata;
   output m_axis_data_tvalid;
+  input reset_rtl;
 
+  wire ADC_ADC_reset;
+  wire ADC_MISO;
+  wire ADC_MOSI;
+  wire ADC_SCK;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -78,12 +96,18 @@ module system_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire clk_out1;
+  wire clock_rtl;
   wire [7:0]m_axis_data_tdata;
-  wire [7:0]m_axis_data_tdata_0;
   wire m_axis_data_tvalid;
+  wire reset_rtl;
 
   system system_i
-       (.DDR_addr(DDR_addr),
+       (.ADC_ADC_reset(ADC_ADC_reset),
+        .ADC_MISO(ADC_MISO),
+        .ADC_MOSI(ADC_MOSI),
+        .ADC_SCK(ADC_SCK),
+        .DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
         .DDR_cas_n(DDR_cas_n),
         .DDR_ck_n(DDR_ck_n),
@@ -104,10 +128,9 @@ module system_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .m_axis_data_tdata(m_axis_data_tdata_0),
-        .m_axis_data_tvalid(m_axis_data_tvalid));
-
-  ComplementCalibration ComplementCalibration_i
-       (.DDS_DATA_IN(m_axis_data_tdata_0),
-       	.DDS_DATA_OUT(m_axis_data_tdata));
+        .clk_out1(clk_out1),
+        .clock_rtl(clock_rtl),
+        .m_axis_data_tdata(m_axis_data_tdata),
+        .m_axis_data_tvalid(m_axis_data_tvalid),
+        .reset_rtl(reset_rtl));
 endmodule

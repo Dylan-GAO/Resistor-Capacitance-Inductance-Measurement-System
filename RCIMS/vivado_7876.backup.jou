@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Nov 18 20:48:32 2017
+# Process ID: 7876
+# Current directory: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1028 C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.xpr
+# Log file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/vivado.log
+# Journal file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf

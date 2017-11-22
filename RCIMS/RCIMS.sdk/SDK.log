@@ -541,3 +541,18 @@ con
 17:05:29 INFO  : Processing command line option -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf.
 17:05:29 INFO  : Successfully done setting SDK workspace  
 17:05:29 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+22:44:33 INFO  : Registering command handlers for SDK TCF services
+22:44:34 INFO  : Launching XSCT server: xsct.bat -interactive C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\temp_xsdb_launch_script.tcl
+22:44:39 INFO  : XSCT server has started successfully.
+22:44:49 INFO  : Successfully done setting XSCT server connection channel  
+22:44:49 INFO  : Processing command line option -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf.
+22:44:49 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+22:44:49 INFO  : Successfully done setting SDK workspace  
+22:44:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1511361818391,  Project:1511002983703
+22:44:50 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf.
+22:44:50 INFO  : Copied contents of C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+22:45:13 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:45:20 INFO  : 
+22:45:21 INFO  : Updating hardware inferred compiler options for DAC.
+22:45:21 INFO  : Clearing existing target manager status.
+22:53:37 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

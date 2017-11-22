@@ -179,6 +179,11 @@
 #define XPAR_PS7_SLCR_0_S_AXI_HIGHADDR 0xF8000FFF
 
 
+/* Definitions for peripheral ADC_0 */
+#define XPAR_ADC_0_S00_AXI_BASEADDR 0x43C10000
+#define XPAR_ADC_0_S00_AXI_HIGHADDR 0x43C1FFFF
+
+
 /******************************************************************/
 
 /* Definitions for driver SCUGIC */
