@@ -1,27 +1,27 @@
-# ���۵���ʾģ�鿪��֮·
-## 11/25 VGA��ʾģ�� + ��дrom
+# 曲折的显示模块开发之路
+## 11/25 VGA显示模块 + 手写rom
 ### sync_module.v
-�������ܣ�����ɨ��ʱ��
-ready_sig: Ϊ1ʱ˵����ɨ�赽����ʾ����
-vsync_sig: �����vga����ͬ���źţ�
-hsync_sig: �����vga����ͬ���źţ�
-column_addr_sig: �����vga_control_module����ָʾ�źţ�
-row_addr_sig: �����vga_control_module����ָʾ�źţ�
+* 基本功能：控制扫描时序。
+* ready_sig: 为1时说明正扫描到可显示区域；
+* vsync_sig: 输出给vga的列同步信号；
+* hsync_sig: 输出给vga的行同步信号；
+* column_addr_sig: 输出给vga_control_module的列指示信号；
+* row_addr_sig: 输出给vga_control_module的行指示信号；
 
 ### vga_control_module.v
-�������ܣ���ȡROM������RGB�����
-red_sig: 5λ��ɫ�ŵ������
-green_sig: 6λ��ɫ�ŵ������
-blue_sig: 5λ��ɫ�ŵ������
+* 基本功能：读取ROM并控制RGB输出。
+* red_sig: 5位红色信道输出；
+* green_sig: 6位绿色信道输出；
+* blue_sig: 5位蓝色信道输出；
 
 ### rom_module.v
-�������ܣ�����������е�ַ�����ÿ�е����ݡ�
-rom_data: ������ÿ��64λ���ݡ�
+* 基本功能：根据输入的行地址，输出每行的数据。
+* rom_data: 本例中每行64位数据。
 
-### ���Ľ�������
-1.ʵ��ROM�洢���ݵ�ip�˻�����Ҫ�ֶ����룻
-2.VGA����ģ����Ҫ���ǲ�ͬ��ɫ���������������ӦΪ��ӦROM�д洢��RGB���ݡ�
-3.�Ľ�ͬ��ģ�飬��VGA�滻��LCD��
-4.�Ľ�VGA����ģ�飬ʹ�������ʾ����ҳ�棻
-5.�Ľ�VGA����ģ�飬ʹ��������ض�λ����ʾ�ֿ⣻
-6.��������ӿڣ����ڸ������ݣ����ض�λ��������֡�
+### 待改进的内容
+1. 实现ROM存储数据的ip核化，不要手动输入；
+2. VGA控制模块需要考虑不同颜色的输出，接收数据应为对应ROM中存储的RGB数据。
+3. 改进同步模块，将VGA替换成LCD；
+4. 改进VGA控制模块，使其可以显示开机页面；
+5. 改进VGA控制模块，使其可以在特定位置显示字库；
+6. 增加输入接口，对于给定数据，在特定位置输出数字。
