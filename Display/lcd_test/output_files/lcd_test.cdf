@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6) Path("D:/Computer_Science/Projects/quartus_projects/lcd_test/output_files/") File("output_file.jic") MfrSpec(OpMask(1) SEC_Device(EPCS16) Child_OpMask(1 1));
+		Device PartName(EP4CE6F17) Path("D:/Computer_Science/Projects/quartus_projects/lcd_test/output_files/") File("lcd_test.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

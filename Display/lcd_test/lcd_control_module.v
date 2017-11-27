@@ -19,33 +19,63 @@ module lcd_control_module
 	output [7:0]green_sig;
 	output [7:0]blue_sig;
 	
-	reg[5:0]m;  // Rom行寻址
-	
+	parameter [23:0]bar_data = 24'h141414;  // 单色显示的颜色
 
-	always @(posedge clk or negedge rstn)
-	if(!rstn)
-		m<=6'd0;
-	else if (ready_sig && row_addr_sig<64)
-		m<=row_addr_sig[5:0];
-	
+	reg[5:0]m;  // Rom行寻址
 	reg[5:0]n;
 	
-
 	always @(posedge clk or negedge rstn)
-	if(!rstn)
-		n<=6'd0;
-	else if (ready_sig && column_addr_sig<64)
-		n<=column_addr_sig[5:0];
+  	if(!rstn)
+  		m<=6'd0;
+  	else if (ready_sig && row_addr_sig<64)
+  		m<=row_addr_sig[5:0];
 
-	assign rom_addr = m;
-	parameter [23:0]bar_data = 24'h141414;
+  	always @(posedge clk or negedge rstn)
+  	if(!rstn)
+  		n<=6'd0;
+  	else if (ready_sig && column_addr_sig<64)
+  		n<=column_addr_sig[5:0];
+  
+  	assign rom_addr = m;
+  
+  	
+   assign red_sig = ready_sig && rom_data[6'd63 - n]  ? bar_data[23:16]:8'd0;
+	assign green_sig = ready_sig && rom_data[6'd63 - n]? bar_data[15:8]:8'd0;
+	assign blue_sig = ready_sig && rom_data[6'd63 - n] ? bar_data[7:0]:8'd0;
 	
- assign red_sig = ready_sig && rom_data[6'd63 - n]  ? bar_data[23:16]:8'd0;
- assign green_sig = ready_sig && rom_data[6'd63 - n]? bar_data[15:8]:8'd0;
- assign blue_sig = ready_sig && rom_data[6'd63 - n] ? bar_data[7:0]:8'd0;
+//---------------------//  
+// 注释掉原来的皮卡丘显示 //
+//---------------------//
+	
+//	reg[5:0]m;  // Rom行寻址
+//	
+//
+//	always @(posedge clk or negedge rstn)
+//	if(!rstn)
+//		m<=6'd0;
+//	else if (ready_sig && row_addr_sig<64)
+//		m<=row_addr_sig[5:0];
+//	
+//	reg[5:0]n;
+//	
+//
+//	always @(posedge clk or negedge rstn)
+//	if(!rstn)
+//		n<=6'd0;
+//	else if (ready_sig && column_addr_sig<64)
+//		n<=column_addr_sig[5:0];
+//
+//	assign rom_addr = m;
+//
+//	
+// assign red_sig = ready_sig && rom_data[6'd63 - n]  ? bar_data[23:16]:8'd0;
+// assign green_sig = ready_sig && rom_data[6'd63 - n]? bar_data[15:8]:8'd0;
+// assign blue_sig = ready_sig && rom_data[6'd63 - n] ? bar_data[7:0]:8'd0;
 
-//  
-// 注释掉原来的正方形显示
+
+//---------------------//  
+// 注释掉原来的正方形显示 //
+//---------------------//
 // 	reg isRectangle;
 //	
 // 	always @(posedge clk or negedge rstn)

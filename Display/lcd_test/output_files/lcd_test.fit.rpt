@@ -1,5 +1,5 @@
 Fitter report for lcd_test
-Mon Nov 27 17:07:44 2017
+Mon Nov 27 22:24:56 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -31,7 +31,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  23. Global & Other Fast Signals
  24. Non-Global High Fan-Out Signals
  25. Fitter RAM Summary
- 26. |top|rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ALTSYNCRAM
+ 26. |top|rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|ALTSYNCRAM
  27. Other Routing Usage Summary
  28. LAB Logic Elements
  29. LAB-wide Signals
@@ -72,17 +72,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Nov 27 17:07:44 2017            ;
+; Fitter Status                      ; Successful - Mon Nov 27 22:24:56 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; lcd_test                                         ;
 ; Top-level Entity Name              ; top                                              ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE6F17C8                                      ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 147 / 6,272 ( 2 % )                              ;
-;     Total combinational functions  ; 145 / 6,272 ( 2 % )                              ;
-;     Dedicated logic registers      ; 36 / 6,272 ( < 1 % )                             ;
-; Total registers                    ; 36                                               ;
+; Total logic elements               ; 130 / 6,272 ( 2 % )                              ;
+;     Total combinational functions  ; 128 / 6,272 ( 2 % )                              ;
+;     Dedicated logic registers      ; 35 / 6,272 ( < 1 % )                             ;
+; Total registers                    ; 35                                               ;
 ; Total pins                         ; 30 / 180 ( 17 % )                                ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 4,096 / 276,480 ( 1 % )                          ;
@@ -159,12 +159,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.25        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
+;     Processor 2            ;  25.0%      ;
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -211,8 +211,8 @@ applicable agreement for further details.
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 318 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 318 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 301 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 301 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -235,7 +235,7 @@ applicable agreement for further details.
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 306     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 289     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 12      ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -251,26 +251,26 @@ The pin-out file can be found in D:/Computer_Science/Projects/quartus_projects/l
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Total logic elements                        ; 147 / 6,272 ( 2 % )      ;
-;     -- Combinational with no register       ; 111                      ;
+; Total logic elements                        ; 130 / 6,272 ( 2 % )      ;
+;     -- Combinational with no register       ; 95                       ;
 ;     -- Register only                        ; 2                        ;
-;     -- Combinational with a register        ; 34                       ;
+;     -- Combinational with a register        ; 33                       ;
 ;                                             ;                          ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 60                       ;
-;     -- 3 input functions                    ; 41                       ;
-;     -- <=2 input functions                  ; 44                       ;
+;     -- 4 input functions                    ; 76                       ;
+;     -- 3 input functions                    ; 9                        ;
+;     -- <=2 input functions                  ; 43                       ;
 ;     -- Register only                        ; 2                        ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 107                      ;
+;     -- normal mode                          ; 90                       ;
 ;     -- arithmetic mode                      ; 38                       ;
 ;                                             ;                          ;
-; Total registers*                            ; 36 / 7,124 ( < 1 % )     ;
-;     -- Dedicated logic registers            ; 36 / 6,272 ( < 1 % )     ;
+; Total registers*                            ; 35 / 7,124 ( < 1 % )     ;
+;     -- Dedicated logic registers            ; 35 / 6,272 ( < 1 % )     ;
 ;     -- I/O registers                        ; 0 / 852 ( 0 % )          ;
 ;                                             ;                          ;
-; Total LABs:  partially or completely used   ; 10 / 392 ( 3 % )         ;
+; Total LABs:  partially or completely used   ; 9 / 392 ( 2 % )          ;
 ; Virtual pins                                ; 0                        ;
 ; I/O pins                                    ; 30 / 180 ( 17 % )        ;
 ;     -- Clock pins                           ; 1 / 3 ( 33 % )           ;
@@ -288,11 +288,11 @@ The pin-out file can be found in D:/Computer_Science/Projects/quartus_projects/l
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )            ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )            ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%             ;
-; Peak interconnect usage (total/H/V)         ; 1% / 1% / 2%             ;
+; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%             ;
 ; Maximum fan-out                             ; 36                       ;
-; Highest non-global fan-out                  ; 36                       ;
-; Total fan-out                               ; 598                      ;
-; Average fan-out                             ; 2.32                     ;
+; Highest non-global fan-out                  ; 35                       ;
+; Total fan-out                               ; 563                      ;
+; Average fan-out                             ; 2.35                     ;
 +---------------------------------------------+--------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -305,25 +305,25 @@ The pin-out file can be found in D:/Computer_Science/Projects/quartus_projects/l
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 147 / 6272 ( 2 % )  ; 0 / 6272 ( 0 % )               ;
-;     -- Combinational with no register       ; 111                 ; 0                              ;
+; Total logic elements                        ; 130 / 6272 ( 2 % )  ; 0 / 6272 ( 0 % )               ;
+;     -- Combinational with no register       ; 95                  ; 0                              ;
 ;     -- Register only                        ; 2                   ; 0                              ;
-;     -- Combinational with a register        ; 34                  ; 0                              ;
+;     -- Combinational with a register        ; 33                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
-;     -- 4 input functions                    ; 60                  ; 0                              ;
-;     -- 3 input functions                    ; 41                  ; 0                              ;
-;     -- <=2 input functions                  ; 44                  ; 0                              ;
+;     -- 4 input functions                    ; 76                  ; 0                              ;
+;     -- 3 input functions                    ; 9                   ; 0                              ;
+;     -- <=2 input functions                  ; 43                  ; 0                              ;
 ;     -- Register only                        ; 2                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 107                 ; 0                              ;
+;     -- normal mode                          ; 90                  ; 0                              ;
 ;     -- arithmetic mode                      ; 38                  ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total registers                             ; 36                  ; 0                              ;
-;     -- Dedicated logic registers            ; 36 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
+; Total registers                             ; 35                  ; 0                              ;
+;     -- Dedicated logic registers            ; 35 / 6272 ( < 1 % ) ; 0 / 6272 ( 0 % )               ;
 ;                                             ;                     ;                                ;
-; Total LABs:  partially or completely used   ; 10 / 392 ( 3 % )    ; 0 / 392 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 9 / 392 ( 2 % )     ; 0 / 392 ( 0 % )                ;
 ;                                             ;                     ;                                ;
 ; Virtual pins                                ; 0                   ; 0                              ;
 ; I/O pins                                    ; 30                  ; 0                              ;
@@ -341,8 +341,8 @@ The pin-out file can be found in D:/Computer_Science/Projects/quartus_projects/l
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 623                 ; 44                             ;
-;     -- Registered Connections               ; 252                 ; 0                              ;
+;     -- Total Connections                    ; 588                 ; 44                             ;
+;     -- Registered Connections               ; 300                 ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
 ;     -- Top                                  ; 0                   ; 37                             ;
@@ -374,8 +374,8 @@ The pin-out file can be found in D:/Computer_Science/Projects/quartus_projects/l
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
-; clk  ; E1    ; 1        ; 0            ; 11           ; 7            ; 4                     ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; rstn ; N13   ; 5        ; 34           ; 2            ; 21           ; 36                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; clk  ; E1    ; 1        ; 0            ; 11           ; 7            ; 3                     ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; rstn ; N13   ; 5        ; 34           ; 2            ; 21           ; 35                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
@@ -770,21 +770,21 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+--------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                 ;
-+-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                        ; Library Name ;
-+-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------+--------------+
-; |top                                      ; 147 (0)     ; 36 (0)                    ; 0 (0)         ; 4096        ; 2    ; 0            ; 0       ; 0         ; 30   ; 0            ; 111 (0)      ; 2 (0)             ; 34 (0)           ; |top                                                                       ; work         ;
-;    |lcd_control_module:inst2|             ; 75 (75)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 63 (63)      ; 2 (2)             ; 10 (10)          ; |top|lcd_control_module:inst2                                              ; work         ;
-;    |pll:inst|                             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:inst                                                              ; work         ;
-;       |altpll:altpll_component|           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:inst|altpll:altpll_component                                      ; work         ;
-;          |pll_altpll:auto_generated|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:inst|altpll:altpll_component|pll_altpll:auto_generated            ; work         ;
-;    |rom_module:inst3|                     ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 4096        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top|rom_module:inst3                                                      ; work         ;
-;       |altsyncram:Ram0_rtl_0|             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|rom_module:inst3|altsyncram:Ram0_rtl_0                                ; work         ;
-;          |altsyncram_e771:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated ; work         ;
-;    |sync_module:inst1|                    ; 81 (81)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 48 (48)      ; 0 (0)             ; 33 (33)          ; |top|sync_module:inst1                                                     ; work         ;
-+-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                    ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                           ; Library Name ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------+--------------+
+; |top                                      ; 130 (0)     ; 35 (0)                    ; 0 (0)         ; 4096        ; 2    ; 0            ; 0       ; 0         ; 30   ; 0            ; 95 (0)       ; 2 (0)             ; 33 (0)           ; |top                                                                          ; work         ;
+;    |lcd_control_module:inst2|             ; 59 (59)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 47 (47)      ; 2 (2)             ; 10 (10)          ; |top|lcd_control_module:inst2                                                 ; work         ;
+;    |pll:inst|                             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:inst                                                                 ; work         ;
+;       |altpll:altpll_component|           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:inst|altpll:altpll_component                                         ; work         ;
+;          |pll_altpll:auto_generated|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:inst|altpll:altpll_component|pll_altpll:auto_generated               ; work         ;
+;    |rom:inst4|                            ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|rom:inst4                                                                ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|rom:inst4|altsyncram:altsyncram_component                                ; work         ;
+;          |altsyncram_d591:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 4096        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated ; work         ;
+;    |sync_module:inst1|                    ; 81 (81)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 48 (48)      ; 0 (0)             ; 33 (33)          ; |top|sync_module:inst1                                                        ; work         ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -861,7 +861,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - lcd_control_module:inst2|n[3] ; 1                 ; 6       ;
 ;      - lcd_control_module:inst2|n[4] ; 1                 ; 6       ;
 ;      - lcd_control_module:inst2|n[5] ; 1                 ; 6       ;
-;      - rom_module:inst3|Ram0~0       ; 1                 ; 6       ;
 ;      - lcd_control_module:inst2|m[0] ; 1                 ; 6       ;
 ;      - lcd_control_module:inst2|m[1] ; 1                 ; 6       ;
 ;      - lcd_control_module:inst2|m[2] ; 1                 ; 6       ;
@@ -878,11 +877,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                        ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; clk                                                                         ; PIN_E1             ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clk                                                                         ; PIN_E1             ; 3       ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; lcd_control_module:inst2|always0~1                                          ; LCCOMB_X26_Y17_N20 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; lcd_control_module:inst2|always1~1                                          ; LCCOMB_X25_Y16_N22 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; clk                                                                         ; PIN_E1             ; 2       ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; lcd_control_module:inst2|always0~1                                          ; LCCOMB_X25_Y18_N20 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; lcd_control_module:inst2|always1~1                                          ; LCCOMB_X26_Y17_N28 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; pll:inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1              ; 36      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; rstn                                                                        ; PIN_N13            ; 36      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; rstn                                                                        ; PIN_N13            ; 35      ; Async. clear ; no     ; --                   ; --               ; --                        ;
 +-----------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -891,318 +890,300 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                                                        ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk                                                                         ; PIN_E1   ; 3       ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
+; clk                                                                         ; PIN_E1   ; 2       ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
 ; pll:inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 36      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
 +-----------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                                                               ;
-+-------------------------------------------------------------------------------------+---------+
-; Name                                                                                ; Fan-Out ;
-+-------------------------------------------------------------------------------------+---------+
-; rstn~input                                                                          ; 36      ;
-; rom_module:inst3|Ram0~0                                                             ; 16      ;
-; lcd_control_module:inst2|n[3]                                                       ; 15      ;
-; lcd_control_module:inst2|n[2]                                                       ; 15      ;
-; lcd_control_module:inst2|n[0]                                                       ; 15      ;
-; lcd_control_module:inst2|n[1]                                                       ; 15      ;
-; sync_module:inst1|count_v[10]~1                                                     ; 11      ;
-; sync_module:inst1|count_v[1]~0                                                      ; 11      ;
-; sync_module:inst1|count_h[0]                                                        ; 9       ;
-; sync_module:inst1|count_v[2]                                                        ; 7       ;
-; sync_module:inst1|count_v[3]                                                        ; 7       ;
-; sync_module:inst1|count_v[4]                                                        ; 7       ;
-; sync_module:inst1|count_v[8]                                                        ; 7       ;
-; sync_module:inst1|Equal0~0                                                          ; 7       ;
-; lcd_control_module:inst2|always0~1                                                  ; 6       ;
-; lcd_control_module:inst2|always1~1                                                  ; 6       ;
-; sync_module:inst1|Equal0~1                                                          ; 6       ;
-; lcd_control_module:inst2|blue_sig[2]                                                ; 6       ;
-; sync_module:inst1|count_v[1]                                                        ; 6       ;
-; sync_module:inst1|count_v[9]                                                        ; 6       ;
-; sync_module:inst1|count_v[10]                                                       ; 6       ;
-; sync_module:inst1|count_h[2]                                                        ; 6       ;
-; sync_module:inst1|count_h[3]                                                        ; 6       ;
-; sync_module:inst1|count_h[9]                                                        ; 6       ;
-; sync_module:inst1|count_v[0]                                                        ; 5       ;
-; sync_module:inst1|count_v[5]                                                        ; 5       ;
-; sync_module:inst1|count_v[6]                                                        ; 5       ;
-; sync_module:inst1|count_v[7]                                                        ; 5       ;
-; sync_module:inst1|count_h[4]                                                        ; 5       ;
-; sync_module:inst1|count_h[10]                                                       ; 4       ;
-; sync_module:inst1|count_h[6]                                                        ; 4       ;
-; sync_module:inst1|count_h[7]                                                        ; 4       ;
-; sync_module:inst1|count_h[8]                                                        ; 4       ;
-; sync_module:inst1|count_h[5]                                                        ; 4       ;
-; sync_module:inst1|count_h[1]                                                        ; 4       ;
-; sync_module:inst1|isReady                                                           ; 4       ;
-; sync_module:inst1|Equal1~0                                                          ; 3       ;
-; lcd_control_module:inst2|m[5]                                                       ; 2       ;
-; lcd_control_module:inst2|m[4]                                                       ; 2       ;
-; lcd_control_module:inst2|m[3]                                                       ; 2       ;
-; lcd_control_module:inst2|m[2]                                                       ; 2       ;
-; lcd_control_module:inst2|m[1]                                                       ; 2       ;
-; lcd_control_module:inst2|m[0]                                                       ; 2       ;
-; sync_module:inst1|Equal1~4                                                          ; 2       ;
-; lcd_control_module:inst2|n[5]                                                       ; 2       ;
-; sync_module:inst1|always2~0                                                         ; 2       ;
-; rom_module:inst3|Ram0~0feeder                                                       ; 1       ;
-; clk~input                                                                           ; 1       ;
-; lcd_control_module:inst2|Mux0~57                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~56                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~55                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~54                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~53                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~52                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~51                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~50                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~49                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~48                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~47                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~46                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~45                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~44                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~43                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~42                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~41                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~40                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~39                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~38                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~37                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~36                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~35                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~34                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~33                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~32                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~31                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~30                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~29                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~28                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~27                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~26                                                    ; 1       ;
-; lcd_control_module:inst2|always0~0                                                  ; 1       ;
-; sync_module:inst1|count_v[0]~12                                                     ; 1       ;
-; lcd_control_module:inst2|always1~0                                                  ; 1       ;
-; sync_module:inst1|count_v[1]~11                                                     ; 1       ;
-; sync_module:inst1|count_v[2]~10                                                     ; 1       ;
-; sync_module:inst1|count_v[3]~9                                                      ; 1       ;
-; sync_module:inst1|count_v[4]~8                                                      ; 1       ;
-; sync_module:inst1|count_v[5]~7                                                      ; 1       ;
-; sync_module:inst1|count_v[6]~6                                                      ; 1       ;
-; sync_module:inst1|count_v[7]~5                                                      ; 1       ;
-; sync_module:inst1|count_v[9]~4                                                      ; 1       ;
-; sync_module:inst1|count_v[10]~3                                                     ; 1       ;
-; sync_module:inst1|count_v[8]~2                                                      ; 1       ;
-; sync_module:inst1|Equal1~3                                                          ; 1       ;
-; sync_module:inst1|Equal1~2                                                          ; 1       ;
-; sync_module:inst1|count_h~3                                                         ; 1       ;
-; sync_module:inst1|count_h~2                                                         ; 1       ;
-; sync_module:inst1|count_h~1                                                         ; 1       ;
-; sync_module:inst1|count_h~0                                                         ; 1       ;
-; sync_module:inst1|always2~5                                                         ; 1       ;
-; sync_module:inst1|always2~4                                                         ; 1       ;
-; sync_module:inst1|always2~3                                                         ; 1       ;
-; sync_module:inst1|LessThan0~1                                                       ; 1       ;
-; sync_module:inst1|LessThan0~0                                                       ; 1       ;
-; sync_module:inst1|LessThan2~1                                                       ; 1       ;
-; sync_module:inst1|LessThan2~0                                                       ; 1       ;
-; sync_module:inst1|always2~2                                                         ; 1       ;
-; sync_module:inst1|Equal1~1                                                          ; 1       ;
-; sync_module:inst1|always2~1                                                         ; 1       ;
-; lcd_control_module:inst2|Mux0~25                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~24                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~23                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~22                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~21                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~20                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~19                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~18                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~17                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~16                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~15                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~14                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~13                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~12                                                    ; 1       ;
-; lcd_control_module:inst2|n[4]                                                       ; 1       ;
-; lcd_control_module:inst2|Mux0~11                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~10                                                    ; 1       ;
-; lcd_control_module:inst2|Mux0~9                                                     ; 1       ;
-; lcd_control_module:inst2|Mux0~8                                                     ; 1       ;
-; lcd_control_module:inst2|Mux0~7                                                     ; 1       ;
-; lcd_control_module:inst2|Mux0~6                                                     ; 1       ;
-; lcd_control_module:inst2|Mux0~5                                                     ; 1       ;
-; lcd_control_module:inst2|Mux0~4                                                     ; 1       ;
-; lcd_control_module:inst2|Mux0~3                                                     ; 1       ;
-; lcd_control_module:inst2|Mux0~2                                                     ; 1       ;
-; lcd_control_module:inst2|Mux0~1                                                     ; 1       ;
-; lcd_control_module:inst2|Mux0~0                                                     ; 1       ;
-; sync_module:inst1|LessThan4~2                                                       ; 1       ;
-; sync_module:inst1|LessThan4~1                                                       ; 1       ;
-; sync_module:inst1|LessThan4~0                                                       ; 1       ;
-; sync_module:inst1|LessThan5~1                                                       ; 1       ;
-; sync_module:inst1|LessThan5~0                                                       ; 1       ;
-; sync_module:inst1|Add3~16                                                           ; 1       ;
-; sync_module:inst1|Add3~15                                                           ; 1       ;
-; sync_module:inst1|Add3~14                                                           ; 1       ;
-; sync_module:inst1|Add3~13                                                           ; 1       ;
-; sync_module:inst1|Add3~12                                                           ; 1       ;
-; sync_module:inst1|Add3~11                                                           ; 1       ;
-; sync_module:inst1|Add3~10                                                           ; 1       ;
-; sync_module:inst1|Add3~9                                                            ; 1       ;
-; sync_module:inst1|Add3~8                                                            ; 1       ;
-; sync_module:inst1|Add3~7                                                            ; 1       ;
-; sync_module:inst1|Add3~6                                                            ; 1       ;
-; sync_module:inst1|Add3~5                                                            ; 1       ;
-; sync_module:inst1|Add3~4                                                            ; 1       ;
-; sync_module:inst1|Add3~3                                                            ; 1       ;
-; sync_module:inst1|Add3~2                                                            ; 1       ;
-; sync_module:inst1|Add3~1                                                            ; 1       ;
-; sync_module:inst1|Add3~0                                                            ; 1       ;
-; sync_module:inst1|Add2~20                                                           ; 1       ;
-; sync_module:inst1|Add2~19                                                           ; 1       ;
-; sync_module:inst1|Add2~18                                                           ; 1       ;
-; sync_module:inst1|Add2~17                                                           ; 1       ;
-; sync_module:inst1|Add2~16                                                           ; 1       ;
-; sync_module:inst1|Add2~15                                                           ; 1       ;
-; sync_module:inst1|Add2~14                                                           ; 1       ;
-; sync_module:inst1|Add2~13                                                           ; 1       ;
-; sync_module:inst1|Add2~12                                                           ; 1       ;
-; sync_module:inst1|Add2~11                                                           ; 1       ;
-; sync_module:inst1|Add2~10                                                           ; 1       ;
-; sync_module:inst1|Add2~9                                                            ; 1       ;
-; sync_module:inst1|Add2~8                                                            ; 1       ;
-; sync_module:inst1|Add2~7                                                            ; 1       ;
-; sync_module:inst1|Add2~6                                                            ; 1       ;
-; sync_module:inst1|Add2~5                                                            ; 1       ;
-; sync_module:inst1|Add2~4                                                            ; 1       ;
-; sync_module:inst1|Add2~3                                                            ; 1       ;
-; sync_module:inst1|Add2~2                                                            ; 1       ;
-; sync_module:inst1|Add2~1                                                            ; 1       ;
-; sync_module:inst1|Add2~0                                                            ; 1       ;
-; sync_module:inst1|Add1~20                                                           ; 1       ;
-; sync_module:inst1|Add1~19                                                           ; 1       ;
-; sync_module:inst1|Add1~18                                                           ; 1       ;
-; sync_module:inst1|Add1~17                                                           ; 1       ;
-; sync_module:inst1|Add1~16                                                           ; 1       ;
-; sync_module:inst1|Add1~15                                                           ; 1       ;
-; sync_module:inst1|Add1~14                                                           ; 1       ;
-; sync_module:inst1|Add1~13                                                           ; 1       ;
-; sync_module:inst1|Add1~12                                                           ; 1       ;
-; sync_module:inst1|Add1~11                                                           ; 1       ;
-; sync_module:inst1|Add1~10                                                           ; 1       ;
-; sync_module:inst1|Add1~9                                                            ; 1       ;
-; sync_module:inst1|Add1~8                                                            ; 1       ;
-; sync_module:inst1|Add1~7                                                            ; 1       ;
-; sync_module:inst1|Add1~6                                                            ; 1       ;
-; sync_module:inst1|Add1~5                                                            ; 1       ;
-; sync_module:inst1|Add1~4                                                            ; 1       ;
-; sync_module:inst1|Add1~3                                                            ; 1       ;
-; sync_module:inst1|Add1~2                                                            ; 1       ;
-; sync_module:inst1|Add1~1                                                            ; 1       ;
-; sync_module:inst1|Add1~0                                                            ; 1       ;
-; sync_module:inst1|Add0~20                                                           ; 1       ;
-; sync_module:inst1|Add0~19                                                           ; 1       ;
-; sync_module:inst1|Add0~18                                                           ; 1       ;
-; sync_module:inst1|Add0~17                                                           ; 1       ;
-; sync_module:inst1|Add0~16                                                           ; 1       ;
-; sync_module:inst1|Add0~15                                                           ; 1       ;
-; sync_module:inst1|Add0~14                                                           ; 1       ;
-; sync_module:inst1|Add0~13                                                           ; 1       ;
-; sync_module:inst1|Add0~12                                                           ; 1       ;
-; sync_module:inst1|Add0~11                                                           ; 1       ;
-; sync_module:inst1|Add0~10                                                           ; 1       ;
-; sync_module:inst1|Add0~9                                                            ; 1       ;
-; sync_module:inst1|Add0~8                                                            ; 1       ;
-; sync_module:inst1|Add0~7                                                            ; 1       ;
-; sync_module:inst1|Add0~6                                                            ; 1       ;
-; sync_module:inst1|Add0~5                                                            ; 1       ;
-; sync_module:inst1|Add0~4                                                            ; 1       ;
-; sync_module:inst1|Add0~3                                                            ; 1       ;
-; sync_module:inst1|Add0~2                                                            ; 1       ;
-; sync_module:inst1|Add0~1                                                            ; 1       ;
-; sync_module:inst1|Add0~0                                                            ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a1  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a2  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a3  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a4  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a5  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a6  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a7  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a8  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a9  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a10 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a11 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a12 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a13 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a14 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a15 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a48 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a49 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a50 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a51 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a56 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a57 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a58 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a59 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a60 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a61 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a62 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a63 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a0  ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a17 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a18 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a19 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a20 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a21 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a22 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a23 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a24 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a25 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a26 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a27 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a28 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a29 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a30 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a31 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a32 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a33 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a34 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a35 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a36 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a37 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a38 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a39 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a40 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a41 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a42 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a43 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a44 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a45 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a46 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a47 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a52 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a53 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a54 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a55 ; 1       ;
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a16 ; 1       ;
-; pll:inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_fbout          ; 1       ;
-+-------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                            ;
++----------------------------------------------------------------------------------+---------+
+; Name                                                                             ; Fan-Out ;
++----------------------------------------------------------------------------------+---------+
+; rstn~input                                                                       ; 35      ;
+; lcd_control_module:inst2|n[3]                                                    ; 15      ;
+; lcd_control_module:inst2|n[2]                                                    ; 15      ;
+; lcd_control_module:inst2|n[0]                                                    ; 15      ;
+; lcd_control_module:inst2|n[1]                                                    ; 15      ;
+; sync_module:inst1|count_v[10]~1                                                  ; 11      ;
+; sync_module:inst1|count_v[1]~0                                                   ; 11      ;
+; sync_module:inst1|count_h[0]                                                     ; 9       ;
+; sync_module:inst1|count_v[2]                                                     ; 7       ;
+; sync_module:inst1|count_v[3]                                                     ; 7       ;
+; sync_module:inst1|count_v[4]                                                     ; 7       ;
+; sync_module:inst1|count_v[8]                                                     ; 7       ;
+; sync_module:inst1|Equal0~0                                                       ; 7       ;
+; lcd_control_module:inst2|always0~1                                               ; 6       ;
+; lcd_control_module:inst2|always1~1                                               ; 6       ;
+; sync_module:inst1|Equal0~1                                                       ; 6       ;
+; lcd_control_module:inst2|blue_sig[2]                                             ; 6       ;
+; sync_module:inst1|count_v[1]                                                     ; 6       ;
+; sync_module:inst1|count_v[9]                                                     ; 6       ;
+; sync_module:inst1|count_v[10]                                                    ; 6       ;
+; sync_module:inst1|count_h[2]                                                     ; 6       ;
+; sync_module:inst1|count_h[3]                                                     ; 6       ;
+; sync_module:inst1|count_h[9]                                                     ; 6       ;
+; sync_module:inst1|count_v[0]                                                     ; 5       ;
+; sync_module:inst1|count_v[5]                                                     ; 5       ;
+; sync_module:inst1|count_v[6]                                                     ; 5       ;
+; sync_module:inst1|count_v[7]                                                     ; 5       ;
+; sync_module:inst1|count_h[4]                                                     ; 5       ;
+; sync_module:inst1|count_h[10]                                                    ; 4       ;
+; sync_module:inst1|count_h[6]                                                     ; 4       ;
+; sync_module:inst1|count_h[7]                                                     ; 4       ;
+; sync_module:inst1|count_h[8]                                                     ; 4       ;
+; sync_module:inst1|count_h[5]                                                     ; 4       ;
+; sync_module:inst1|count_h[1]                                                     ; 4       ;
+; sync_module:inst1|isReady                                                        ; 4       ;
+; sync_module:inst1|Equal1~0                                                       ; 3       ;
+; lcd_control_module:inst2|m[5]                                                    ; 2       ;
+; lcd_control_module:inst2|m[4]                                                    ; 2       ;
+; lcd_control_module:inst2|m[3]                                                    ; 2       ;
+; lcd_control_module:inst2|m[2]                                                    ; 2       ;
+; lcd_control_module:inst2|m[1]                                                    ; 2       ;
+; lcd_control_module:inst2|m[0]                                                    ; 2       ;
+; sync_module:inst1|Equal1~4                                                       ; 2       ;
+; lcd_control_module:inst2|n[5]                                                    ; 2       ;
+; sync_module:inst1|always2~0                                                      ; 2       ;
+; clk~input                                                                        ; 1       ;
+; lcd_control_module:inst2|always0~0                                               ; 1       ;
+; sync_module:inst1|count_v[0]~12                                                  ; 1       ;
+; lcd_control_module:inst2|always1~0                                               ; 1       ;
+; sync_module:inst1|count_v[1]~11                                                  ; 1       ;
+; sync_module:inst1|count_v[2]~10                                                  ; 1       ;
+; sync_module:inst1|count_v[3]~9                                                   ; 1       ;
+; sync_module:inst1|count_v[4]~8                                                   ; 1       ;
+; sync_module:inst1|count_v[5]~7                                                   ; 1       ;
+; sync_module:inst1|count_v[6]~6                                                   ; 1       ;
+; sync_module:inst1|count_v[7]~5                                                   ; 1       ;
+; sync_module:inst1|count_v[9]~4                                                   ; 1       ;
+; sync_module:inst1|count_v[10]~3                                                  ; 1       ;
+; sync_module:inst1|count_v[8]~2                                                   ; 1       ;
+; sync_module:inst1|Equal1~3                                                       ; 1       ;
+; sync_module:inst1|Equal1~2                                                       ; 1       ;
+; sync_module:inst1|count_h~3                                                      ; 1       ;
+; sync_module:inst1|count_h~2                                                      ; 1       ;
+; sync_module:inst1|count_h~1                                                      ; 1       ;
+; sync_module:inst1|count_h~0                                                      ; 1       ;
+; sync_module:inst1|always2~5                                                      ; 1       ;
+; sync_module:inst1|always2~4                                                      ; 1       ;
+; sync_module:inst1|always2~3                                                      ; 1       ;
+; sync_module:inst1|LessThan0~1                                                    ; 1       ;
+; sync_module:inst1|LessThan0~0                                                    ; 1       ;
+; sync_module:inst1|LessThan2~1                                                    ; 1       ;
+; sync_module:inst1|LessThan2~0                                                    ; 1       ;
+; sync_module:inst1|always2~2                                                      ; 1       ;
+; sync_module:inst1|Equal1~1                                                       ; 1       ;
+; sync_module:inst1|always2~1                                                      ; 1       ;
+; lcd_control_module:inst2|Mux0~41                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~40                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~39                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~38                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~37                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~36                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~35                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~34                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~33                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~32                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~31                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~30                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~29                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~28                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~27                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~26                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~25                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~24                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~23                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~22                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~21                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~20                                                 ; 1       ;
+; lcd_control_module:inst2|n[4]                                                    ; 1       ;
+; lcd_control_module:inst2|Mux0~19                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~18                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~17                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~16                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~15                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~14                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~13                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~12                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~11                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~10                                                 ; 1       ;
+; lcd_control_module:inst2|Mux0~9                                                  ; 1       ;
+; lcd_control_module:inst2|Mux0~8                                                  ; 1       ;
+; lcd_control_module:inst2|Mux0~7                                                  ; 1       ;
+; lcd_control_module:inst2|Mux0~6                                                  ; 1       ;
+; lcd_control_module:inst2|Mux0~5                                                  ; 1       ;
+; lcd_control_module:inst2|Mux0~4                                                  ; 1       ;
+; lcd_control_module:inst2|Mux0~3                                                  ; 1       ;
+; lcd_control_module:inst2|Mux0~2                                                  ; 1       ;
+; lcd_control_module:inst2|Mux0~1                                                  ; 1       ;
+; lcd_control_module:inst2|Mux0~0                                                  ; 1       ;
+; sync_module:inst1|LessThan4~2                                                    ; 1       ;
+; sync_module:inst1|LessThan4~1                                                    ; 1       ;
+; sync_module:inst1|LessThan4~0                                                    ; 1       ;
+; sync_module:inst1|LessThan5~1                                                    ; 1       ;
+; sync_module:inst1|LessThan5~0                                                    ; 1       ;
+; sync_module:inst1|Add3~16                                                        ; 1       ;
+; sync_module:inst1|Add3~15                                                        ; 1       ;
+; sync_module:inst1|Add3~14                                                        ; 1       ;
+; sync_module:inst1|Add3~13                                                        ; 1       ;
+; sync_module:inst1|Add3~12                                                        ; 1       ;
+; sync_module:inst1|Add3~11                                                        ; 1       ;
+; sync_module:inst1|Add3~10                                                        ; 1       ;
+; sync_module:inst1|Add3~9                                                         ; 1       ;
+; sync_module:inst1|Add3~8                                                         ; 1       ;
+; sync_module:inst1|Add3~7                                                         ; 1       ;
+; sync_module:inst1|Add3~6                                                         ; 1       ;
+; sync_module:inst1|Add3~5                                                         ; 1       ;
+; sync_module:inst1|Add3~4                                                         ; 1       ;
+; sync_module:inst1|Add3~3                                                         ; 1       ;
+; sync_module:inst1|Add3~2                                                         ; 1       ;
+; sync_module:inst1|Add3~1                                                         ; 1       ;
+; sync_module:inst1|Add3~0                                                         ; 1       ;
+; sync_module:inst1|Add2~20                                                        ; 1       ;
+; sync_module:inst1|Add2~19                                                        ; 1       ;
+; sync_module:inst1|Add2~18                                                        ; 1       ;
+; sync_module:inst1|Add2~17                                                        ; 1       ;
+; sync_module:inst1|Add2~16                                                        ; 1       ;
+; sync_module:inst1|Add2~15                                                        ; 1       ;
+; sync_module:inst1|Add2~14                                                        ; 1       ;
+; sync_module:inst1|Add2~13                                                        ; 1       ;
+; sync_module:inst1|Add2~12                                                        ; 1       ;
+; sync_module:inst1|Add2~11                                                        ; 1       ;
+; sync_module:inst1|Add2~10                                                        ; 1       ;
+; sync_module:inst1|Add2~9                                                         ; 1       ;
+; sync_module:inst1|Add2~8                                                         ; 1       ;
+; sync_module:inst1|Add2~7                                                         ; 1       ;
+; sync_module:inst1|Add2~6                                                         ; 1       ;
+; sync_module:inst1|Add2~5                                                         ; 1       ;
+; sync_module:inst1|Add2~4                                                         ; 1       ;
+; sync_module:inst1|Add2~3                                                         ; 1       ;
+; sync_module:inst1|Add2~2                                                         ; 1       ;
+; sync_module:inst1|Add2~1                                                         ; 1       ;
+; sync_module:inst1|Add2~0                                                         ; 1       ;
+; sync_module:inst1|Add1~20                                                        ; 1       ;
+; sync_module:inst1|Add1~19                                                        ; 1       ;
+; sync_module:inst1|Add1~18                                                        ; 1       ;
+; sync_module:inst1|Add1~17                                                        ; 1       ;
+; sync_module:inst1|Add1~16                                                        ; 1       ;
+; sync_module:inst1|Add1~15                                                        ; 1       ;
+; sync_module:inst1|Add1~14                                                        ; 1       ;
+; sync_module:inst1|Add1~13                                                        ; 1       ;
+; sync_module:inst1|Add1~12                                                        ; 1       ;
+; sync_module:inst1|Add1~11                                                        ; 1       ;
+; sync_module:inst1|Add1~10                                                        ; 1       ;
+; sync_module:inst1|Add1~9                                                         ; 1       ;
+; sync_module:inst1|Add1~8                                                         ; 1       ;
+; sync_module:inst1|Add1~7                                                         ; 1       ;
+; sync_module:inst1|Add1~6                                                         ; 1       ;
+; sync_module:inst1|Add1~5                                                         ; 1       ;
+; sync_module:inst1|Add1~4                                                         ; 1       ;
+; sync_module:inst1|Add1~3                                                         ; 1       ;
+; sync_module:inst1|Add1~2                                                         ; 1       ;
+; sync_module:inst1|Add1~1                                                         ; 1       ;
+; sync_module:inst1|Add1~0                                                         ; 1       ;
+; sync_module:inst1|Add0~20                                                        ; 1       ;
+; sync_module:inst1|Add0~19                                                        ; 1       ;
+; sync_module:inst1|Add0~18                                                        ; 1       ;
+; sync_module:inst1|Add0~17                                                        ; 1       ;
+; sync_module:inst1|Add0~16                                                        ; 1       ;
+; sync_module:inst1|Add0~15                                                        ; 1       ;
+; sync_module:inst1|Add0~14                                                        ; 1       ;
+; sync_module:inst1|Add0~13                                                        ; 1       ;
+; sync_module:inst1|Add0~12                                                        ; 1       ;
+; sync_module:inst1|Add0~11                                                        ; 1       ;
+; sync_module:inst1|Add0~10                                                        ; 1       ;
+; sync_module:inst1|Add0~9                                                         ; 1       ;
+; sync_module:inst1|Add0~8                                                         ; 1       ;
+; sync_module:inst1|Add0~7                                                         ; 1       ;
+; sync_module:inst1|Add0~6                                                         ; 1       ;
+; sync_module:inst1|Add0~5                                                         ; 1       ;
+; sync_module:inst1|Add0~4                                                         ; 1       ;
+; sync_module:inst1|Add0~3                                                         ; 1       ;
+; sync_module:inst1|Add0~2                                                         ; 1       ;
+; sync_module:inst1|Add0~1                                                         ; 1       ;
+; sync_module:inst1|Add0~0                                                         ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[1]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[2]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[3]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[4]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[5]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[6]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[7]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[8]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[9]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[10] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[11] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[12] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[13] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[14] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[15] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[48] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[49] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[50] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[51] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[56] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[57] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[58] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[59] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[60] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[61] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[62] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[63] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[0]  ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[17] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[18] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[19] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[20] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[21] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[22] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[23] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[24] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[25] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[26] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[27] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[28] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[29] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[30] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[31] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[32] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[33] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[34] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[35] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[36] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[37] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[38] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[39] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[40] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[41] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[42] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[43] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[44] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[45] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[46] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[47] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[52] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[53] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[54] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[55] ; 1       ;
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|q_a[16] ; 1       ;
+; pll:inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_fbout       ; 1       ;
++----------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
-+----------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------------------------------------------+--------------------------------+----------------------+-----------------+-----------------+
-; Name                                                                             ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF                                         ; Location                       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
-+----------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------------------------------------------+--------------------------------+----------------------+-----------------+-----------------+
-; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 64           ; 64           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 4096 ; 64                          ; 64                          ; --                          ; --                          ; 4096                ; 2    ; db/lcd_test.rom0_rom_module_80245e0.hdl.mif ; M9K_X27_Y16_N0, M9K_X27_Y17_N0 ; Don't care           ; Old data        ; Old data        ;
-+----------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------------------------------------------+--------------------------------+----------------------+-----------------+-----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-------------+--------------------------------+----------------------+-----------------+-----------------+
+; Name                                                                                ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF         ; Location                       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-------------+--------------------------------+----------------------+-----------------+-----------------+
+; rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 64           ; 64           ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 4096 ; 64                          ; 64                          ; --                          ; --                          ; 4096                ; 2    ; ../pika.mif ; M9K_X27_Y18_N0, M9K_X27_Y17_N0 ; Don't care           ; Old data        ; Old data        ;
++-------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-------------+--------------------------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
 RAM content values are presented in the following format: (Binary) (Octal) (Decimal) (Hexadecimal) 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; |top|rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ALTSYNCRAM                                                                                                                                                                            ;
+; |top|rom:inst4|altsyncram:altsyncram_component|altsyncram_d591:auto_generated|ALTSYNCRAM                                                                                                                                                                         ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ;   Addr   ;              +0              ;              +1              ;              +2              ;              +3              ;              +4              ;              +5              ;              +6              ;              +7              ;
 +----------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+
@@ -1221,138 +1202,145 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 200 / 32,401 ( < 1 % ) ;
-; C16 interconnects           ; 1 / 1,326 ( < 1 % )    ;
-; C4 interconnects            ; 101 / 21,816 ( < 1 % ) ;
-; Direct links                ; 42 / 32,401 ( < 1 % )  ;
+; Block interconnects         ; 190 / 32,401 ( < 1 % ) ;
+; C16 interconnects           ; 3 / 1,326 ( < 1 % )    ;
+; C4 interconnects            ; 84 / 21,816 ( < 1 % )  ;
+; Direct links                ; 49 / 32,401 ( < 1 % )  ;
 ; Global clocks               ; 2 / 10 ( 20 % )        ;
-; Local interconnects         ; 92 / 10,320 ( < 1 % )  ;
-; R24 interconnects           ; 7 / 1,289 ( < 1 % )    ;
-; R4 interconnects            ; 136 / 28,186 ( < 1 % ) ;
+; Local interconnects         ; 84 / 10,320 ( < 1 % )  ;
+; R24 interconnects           ; 9 / 1,289 ( < 1 % )    ;
+; R4 interconnects            ; 125 / 28,186 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
++---------------------------------------------------------------------------+
+; LAB Logic Elements                                                        ;
++---------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 14.44) ; Number of LABs  (Total = 9) ;
++---------------------------------------------+-----------------------------+
+; 1                                           ; 0                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 0                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 1                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 0                           ;
+; 12                                          ; 0                           ;
+; 13                                          ; 1                           ;
+; 14                                          ; 1                           ;
+; 15                                          ; 2                           ;
+; 16                                          ; 4                           ;
++---------------------------------------------+-----------------------------+
+
+
++------------------------------------------------------------------+
+; LAB-wide Signals                                                 ;
++------------------------------------+-----------------------------+
+; LAB-wide Signals  (Average = 1.33) ; Number of LABs  (Total = 9) ;
++------------------------------------+-----------------------------+
+; 1 Async. clear                     ; 6                           ;
+; 1 Clock                            ; 6                           ;
++------------------------------------+-----------------------------+
+
+
 +----------------------------------------------------------------------------+
-; LAB Logic Elements                                                         ;
-+---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 14.70) ; Number of LABs  (Total = 10) ;
-+---------------------------------------------+------------------------------+
-; 1                                           ; 0                            ;
-; 2                                           ; 0                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 0                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 0                            ;
-; 9                                           ; 0                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
-; 12                                          ; 2                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 1                            ;
-; 15                                          ; 3                            ;
-; 16                                          ; 4                            ;
-+---------------------------------------------+------------------------------+
+; LAB Signals Sourced                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Signals Sourced  (Average = 18.33) ; Number of LABs  (Total = 9) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 0                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 0                           ;
+; 9                                            ; 0                           ;
+; 10                                           ; 1                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 1                           ;
+; 14                                           ; 1                           ;
+; 15                                           ; 0                           ;
+; 16                                           ; 1                           ;
+; 17                                           ; 0                           ;
+; 18                                           ; 0                           ;
+; 19                                           ; 0                           ;
+; 20                                           ; 0                           ;
+; 21                                           ; 3                           ;
+; 22                                           ; 1                           ;
+; 23                                           ; 0                           ;
+; 24                                           ; 0                           ;
+; 25                                           ; 0                           ;
+; 26                                           ; 0                           ;
+; 27                                           ; 1                           ;
++----------------------------------------------+-----------------------------+
 
 
-+-------------------------------------------------------------------+
-; LAB-wide Signals                                                  ;
-+------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.50) ; Number of LABs  (Total = 10) ;
-+------------------------------------+------------------------------+
-; 1 Async. clear                     ; 7                            ;
-; 1 Clock                            ; 7                            ;
-; 1 Clock enable                     ; 1                            ;
-+------------------------------------+------------------------------+
++-------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                       ;
++-------------------------------------------------+-----------------------------+
+; Number of Signals Sourced Out  (Average = 6.67) ; Number of LABs  (Total = 9) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 0                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 1                           ;
+; 3                                               ; 1                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 1                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 2                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 1                           ;
+; 11                                              ; 1                           ;
+; 12                                              ; 1                           ;
++-------------------------------------------------+-----------------------------+
 
 
-+-----------------------------------------------------------------------------+
-; LAB Signals Sourced                                                         ;
-+----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 18.30) ; Number of LABs  (Total = 10) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 0                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 0                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 2                            ;
-; 16                                           ; 1                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 2                            ;
-+----------------------------------------------+------------------------------+
-
-
-+--------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                        ;
-+-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 6.90) ; Number of LABs  (Total = 10) ;
-+-------------------------------------------------+------------------------------+
-; 0                                               ; 0                            ;
-; 1                                               ; 0                            ;
-; 2                                               ; 2                            ;
-; 3                                               ; 0                            ;
-; 4                                               ; 2                            ;
-; 5                                               ; 0                            ;
-; 6                                               ; 1                            ;
-; 7                                               ; 1                            ;
-; 8                                               ; 0                            ;
-; 9                                               ; 1                            ;
-; 10                                              ; 1                            ;
-; 11                                              ; 1                            ;
-; 12                                              ; 0                            ;
-; 13                                              ; 0                            ;
-; 14                                              ; 1                            ;
-+-------------------------------------------------+------------------------------+
-
-
-+-----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                         ;
-+----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 16.90) ; Number of LABs  (Total = 10) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 1                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 1                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
-; 23                                           ; 1                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 1                            ;
-+----------------------------------------------+------------------------------+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 17.44) ; Number of LABs  (Total = 9) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 1                           ;
+; 4                                            ; 0                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 0                           ;
+; 9                                            ; 0                           ;
+; 10                                           ; 1                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 2                           ;
+; 15                                           ; 0                           ;
+; 16                                           ; 2                           ;
+; 17                                           ; 0                           ;
+; 18                                           ; 0                           ;
+; 19                                           ; 0                           ;
+; 20                                           ; 0                           ;
+; 21                                           ; 0                           ;
+; 22                                           ; 0                           ;
+; 23                                           ; 0                           ;
+; 24                                           ; 0                           ;
+; 25                                           ; 0                           ;
+; 26                                           ; 1                           ;
+; 27                                           ; 0                           ;
+; 28                                           ; 1                           ;
+; 29                                           ; 0                           ;
+; 30                                           ; 1                           ;
++----------------------------------------------+-----------------------------+
 
 
 +------------------------------------------+
@@ -1491,24 +1479,24 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +--------------------------------------------------+----------------------+-------------------+
 ; Source Clock(s)                                  ; Destination Clock(s) ; Delay Added in ns ;
 +--------------------------------------------------+----------------------+-------------------+
-; inst|altpll_component|auto_generated|pll1|clk[0] ; clk                  ; 38.9              ;
+; inst|altpll_component|auto_generated|pll1|clk[0] ; clk                  ; 39.1              ;
 +--------------------------------------------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                                              ;
-+-------------------------------+--------------------------------------------------------------------------------------------------------+-------------------+
-; Source Register               ; Destination Register                                                                                   ; Delay Added in ns ;
-+-------------------------------+--------------------------------------------------------------------------------------------------------+-------------------+
-; lcd_control_module:inst2|m[4] ; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a57~porta_address_reg0 ; 3.442             ;
-; lcd_control_module:inst2|m[3] ; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a57~porta_address_reg0 ; 3.435             ;
-; lcd_control_module:inst2|m[0] ; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a57~porta_address_reg0 ; 3.435             ;
-; lcd_control_module:inst2|m[5] ; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a57~porta_address_reg0 ; 3.435             ;
-; lcd_control_module:inst2|m[2] ; rom_module:inst3|altsyncram:Ram0_rtl_0|altsyncram_e771:auto_generated|ram_block1a57~porta_address_reg0 ; 3.433             ;
-; lcd_control_module:inst2|m[1] ; lcd_r[2]                                                                                               ; 3.419             ;
-+-------------------------------+--------------------------------------------------------------------------------------------------------+-------------------+
++--------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                            ;
++-------------------------------+----------------------+-------------------+
+; Source Register               ; Destination Register ; Delay Added in ns ;
++-------------------------------+----------------------+-------------------+
+; lcd_control_module:inst2|m[0] ; lcd_r[2]             ; 3.433             ;
+; lcd_control_module:inst2|m[4] ; lcd_r[2]             ; 3.433             ;
+; lcd_control_module:inst2|m[2] ; lcd_r[2]             ; 3.432             ;
+; lcd_control_module:inst2|m[1] ; lcd_r[2]             ; 3.430             ;
+; lcd_control_module:inst2|m[5] ; lcd_r[2]             ; 3.422             ;
+; lcd_control_module:inst2|m[3] ; lcd_r[2]             ; 3.407             ;
++-------------------------------+----------------------+-------------------+
 Note: This table only shows the top 6 path(s) that have the largest delay added for hold.
 
 
@@ -1571,10 +1559,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file D:/Computer_Science/Projects/quartus_projects/lcd_test/output_files/lcd_test.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 1066 megabytes
-    Info: Processing ended: Mon Nov 27 17:07:44 2017
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 1061 megabytes
+    Info: Processing ended: Mon Nov 27 22:24:57 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+
