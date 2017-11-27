@@ -1,0 +1,13 @@
+module sync_module
+(
+	clk,rstn,
+	vsync_sig,hsync_sig,ready_sig,
+	column_addr_sig,row_addr_sig
+);
+input clk;
+input rstn;
+output vsync_sig;
+output hsync_sig;
+output ready_sig;
+output [10:0]column_addr_sig;
+output [10:0]row_addr_sig;
