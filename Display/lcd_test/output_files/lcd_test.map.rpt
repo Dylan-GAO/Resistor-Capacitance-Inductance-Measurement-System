@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lcd_test
-Tue Nov 28 20:00:24 2017
+Wed Nov 29 15:05:36 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -15,17 +15,22 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Source assignments for rom_3:inst2|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated
- 13. Parameter Settings for User Entity Instance: sync_module:inst1
- 14. Parameter Settings for User Entity Instance: pll:inst|altpll:altpll_component
- 15. Parameter Settings for User Entity Instance: lcd_control_module:inst10
- 16. Parameter Settings for User Entity Instance: rom_3:inst2|altsyncram:altsyncram_component
- 17. altpll Parameter Settings by Entity Instance
- 18. altsyncram Parameter Settings by Entity Instance
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+ 10. User-Specified and Inferred Latches
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for rom_2:inst4|altsyncram:altsyncram_component|altsyncram_ke91:auto_generated
+ 14. Source assignments for rom_3:inst6|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated
+ 15. Source assignments for rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated
+ 16. Parameter Settings for User Entity Instance: sync_module:inst1
+ 17. Parameter Settings for User Entity Instance: pll:inst|altpll:altpll_component
+ 18. Parameter Settings for User Entity Instance: lcd_control_module:inst10
+ 19. Parameter Settings for User Entity Instance: rom_2:inst4|altsyncram:altsyncram_component
+ 20. Parameter Settings for User Entity Instance: rom_3:inst6|altsyncram:altsyncram_component
+ 21. Parameter Settings for User Entity Instance: rom_1:inst3|altsyncram:altsyncram_component
+ 22. altpll Parameter Settings by Entity Instance
+ 23. altsyncram Parameter Settings by Entity Instance
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -51,18 +56,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 28 20:00:24 2017            ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 29 15:05:36 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; lcd_test                                         ;
 ; Top-level Entity Name              ; top                                              ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 97                                               ;
-;     Total combinational functions  ; 95                                               ;
-;     Dedicated logic registers      ; 31                                               ;
-; Total registers                    ; 31                                               ;
+; Total logic elements               ; 218                                              ;
+;     Total combinational functions  ; 207                                              ;
+;     Dedicated logic registers      ; 47                                               ;
+; Total registers                    ; 47                                               ;
 ; Total pins                         ; 30                                               ;
 ; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 160                                              ;
+; Total memory bits                  ; 320                                              ;
 ; Embedded Multiplier 9-bit elements ; 0                                                ;
 ; Total PLLs                         ; 1                                                ;
 +------------------------------------+--------------------------------------------------+
@@ -177,12 +182,15 @@ applicable agreement for further details.
 +----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                  ; Library ;
 +----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------+---------+
+; 1.mif                            ; yes             ; User Memory Initialization File        ; D:/Computer_Science/Projects/quartus_projects/lcd_test/1.mif                  ;         ;
 ; top.bdf                          ; yes             ; User Block Diagram/Schematic File      ; D:/Computer_Science/Projects/quartus_projects/lcd_test/top.bdf                ;         ;
 ; sync_module.v                    ; yes             ; User Verilog HDL File                  ; D:/Computer_Science/Projects/quartus_projects/lcd_test/sync_module.v          ;         ;
 ; lcd_control_module.v             ; yes             ; User Verilog HDL File                  ; D:/Computer_Science/Projects/quartus_projects/lcd_test/lcd_control_module.v   ;         ;
 ; pll.v                            ; yes             ; User Wizard-Generated File             ; D:/Computer_Science/Projects/quartus_projects/lcd_test/pll.v                  ;         ;
+; rom_1.v                          ; yes             ; User Wizard-Generated File             ; D:/Computer_Science/Projects/quartus_projects/lcd_test/rom_1.v                ;         ;
 ; data_combine_module.v            ; yes             ; User Verilog HDL File                  ; D:/Computer_Science/Projects/quartus_projects/lcd_test/data_combine_module.v  ;         ;
 ; rom_3.v                          ; yes             ; User Wizard-Generated File             ; D:/Computer_Science/Projects/quartus_projects/lcd_test/rom_3.v                ;         ;
+; rom_2.v                          ; yes             ; User Wizard-Generated File             ; D:/Computer_Science/Projects/quartus_projects/lcd_test/rom_2.v                ;         ;
 ; altpll.tdf                       ; yes             ; Megafunction                           ; d:/quartus_ii/quartus/libraries/megafunctions/altpll.tdf                      ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                           ; d:/quartus_ii/quartus/libraries/megafunctions/aglobal130.inc                  ;         ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                           ; d:/quartus_ii/quartus/libraries/megafunctions/stratix_pll.inc                 ;         ;
@@ -197,43 +205,46 @@ applicable agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                           ; d:/quartus_ii/quartus/libraries/megafunctions/altrom.inc                      ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; d:/quartus_ii/quartus/libraries/megafunctions/altram.inc                      ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; d:/quartus_ii/quartus/libraries/megafunctions/altdpram.inc                    ;         ;
+; db/altsyncram_ke91.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Computer_Science/Projects/quartus_projects/lcd_test/db/altsyncram_ke91.tdf ;         ;
+; 2.mif                            ; yes             ; Auto-Found Memory Initialization File  ; D:/Computer_Science/Projects/quartus_projects/lcd_test/2.mif                  ;         ;
 ; db/altsyncram_aa91.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Computer_Science/Projects/quartus_projects/lcd_test/db/altsyncram_aa91.tdf ;         ;
 ; 3.mif                            ; yes             ; Auto-Found Memory Initialization File  ; D:/Computer_Science/Projects/quartus_projects/lcd_test/3.mif                  ;         ;
+; db/altsyncram_je91.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Computer_Science/Projects/quartus_projects/lcd_test/db/altsyncram_je91.tdf ;         ;
 +----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                               ;
-+---------------------------------------------+-----------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                       ;
-+---------------------------------------------+-----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 97                                                                          ;
-;                                             ;                                                                             ;
-; Total combinational functions               ; 95                                                                          ;
-; Logic element usage by number of LUT inputs ;                                                                             ;
-;     -- 4 input functions                    ; 42                                                                          ;
-;     -- 3 input functions                    ; 9                                                                           ;
-;     -- <=2 input functions                  ; 44                                                                          ;
-;                                             ;                                                                             ;
-; Logic elements by mode                      ;                                                                             ;
-;     -- normal mode                          ; 57                                                                          ;
-;     -- arithmetic mode                      ; 38                                                                          ;
-;                                             ;                                                                             ;
-; Total registers                             ; 31                                                                          ;
-;     -- Dedicated logic registers            ; 31                                                                          ;
-;     -- I/O registers                        ; 0                                                                           ;
-;                                             ;                                                                             ;
-; I/O pins                                    ; 30                                                                          ;
-; Total memory bits                           ; 160                                                                         ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                           ;
-; Total PLLs                                  ; 1                                                                           ;
-;     -- PLLs                                 ; 1                                                                           ;
-;                                             ;                                                                             ;
-; Maximum fan-out node                        ; pll:inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 33                                                                          ;
-; Total fan-out                               ; 480                                                                         ;
-; Average fan-out                             ; 2.46                                                                        ;
-+---------------------------------------------+-----------------------------------------------------------------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 218        ;
+;                                             ;            ;
+; Total combinational functions               ; 207        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 98         ;
+;     -- 3 input functions                    ; 49         ;
+;     -- <=2 input functions                  ; 60         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 169        ;
+;     -- arithmetic mode                      ; 38         ;
+;                                             ;            ;
+; Total registers                             ; 47         ;
+;     -- Dedicated logic registers            ; 47         ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 30         ;
+; Total memory bits                           ; 320        ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+; Total PLLs                                  ; 1          ;
+;     -- PLLs                                 ; 1          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; rstn~input ;
+; Maximum fan-out                             ; 75         ;
+; Total fan-out                               ; 966        ;
+; Average fan-out                             ; 2.92       ;
++---------------------------------------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -241,26 +252,31 @@ applicable agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------+
-; |top                                      ; 95 (0)            ; 31 (0)       ; 160         ; 0            ; 0       ; 0         ; 30   ; 0            ; |top                                                                            ; work         ;
-;    |lcd_control_module:inst10|            ; 12 (12)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|lcd_control_module:inst10                                                  ; work         ;
+; |top                                      ; 207 (0)           ; 47 (0)       ; 320         ; 0            ; 0       ; 0         ; 30   ; 0            ; |top                                                                            ; work         ;
+;    |data_combine_module:inst11|           ; 67 (67)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|data_combine_module:inst11                                                 ; work         ;
+;    |lcd_control_module:inst10|            ; 52 (52)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|lcd_control_module:inst10                                                  ; work         ;
 ;    |pll:inst|                             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll:inst                                                                   ; work         ;
 ;       |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll:inst|altpll:altpll_component                                           ; work         ;
 ;          |pll_altpll:auto_generated|      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll:inst|altpll:altpll_component|pll_altpll:auto_generated                 ; work         ;
-;    |rom_3:inst2|                          ; 0 (0)             ; 0 (0)        ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|rom_3:inst2                                                                ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|rom_3:inst2|altsyncram:altsyncram_component                                ; work         ;
-;          |altsyncram_aa91:auto_generated| ; 0 (0)             ; 0 (0)        ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|rom_3:inst2|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated ; work         ;
-;    |sync_module:inst1|                    ; 83 (83)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sync_module:inst1                                                          ; work         ;
+;    |rom_2:inst4|                          ; 0 (0)             ; 0 (0)        ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|rom_2:inst4                                                                ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|rom_2:inst4|altsyncram:altsyncram_component                                ; work         ;
+;          |altsyncram_ke91:auto_generated| ; 0 (0)             ; 0 (0)        ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|rom_2:inst4|altsyncram:altsyncram_component|altsyncram_ke91:auto_generated ; work         ;
+;    |rom_3:inst6|                          ; 0 (0)             ; 0 (0)        ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|rom_3:inst6                                                                ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|rom_3:inst6|altsyncram:altsyncram_component                                ; work         ;
+;          |altsyncram_aa91:auto_generated| ; 0 (0)             ; 0 (0)        ; 160         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|rom_3:inst6|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated ; work         ;
+;    |sync_module:inst1|                    ; 88 (88)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sync_module:inst1                                                          ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                               ;
-+---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------+
-; Name                                                                                  ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF   ;
-+---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------+
-; rom_3:inst2|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 20           ; 8            ; --           ; --           ; 160  ; 3.mif ;
-+---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                  ;
++---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------+
+; Name                                                                                  ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF      ;
++---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------+
+; rom_2:inst4|altsyncram:altsyncram_component|altsyncram_ke91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 20           ; 8            ; --           ; --           ; 160  ; ../2.mif ;
+; rom_3:inst6|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 20           ; 8            ; --           ; --           ; 160  ; 3.mif    ;
++---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -269,8 +285,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance  ; IP Include File                                                ;
 +--------+--------------+---------+--------------+--------------+------------------+----------------------------------------------------------------+
 ; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |top|pll:inst    ; D:/Computer_Science/Projects/quartus_projects/lcd_test/pll.v   ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |top|rom_3:inst2 ; D:/Computer_Science/Projects/quartus_projects/lcd_test/rom_3.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |top|rom_1:inst3 ; D:/Computer_Science/Projects/quartus_projects/lcd_test/rom_1.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |top|rom_2:inst4 ; D:/Computer_Science/Projects/quartus_projects/lcd_test/rom_2.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |top|rom_3:inst6 ; D:/Computer_Science/Projects/quartus_projects/lcd_test/rom_3.v ;
 +--------+--------------+---------+--------------+--------------+------------------+----------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                     ;
++-----------------------------------------------------+------------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                      ; Free of Timing Hazards ;
++-----------------------------------------------------+------------------------------------------+------------------------+
+; data_combine_module:inst11|rom_data_2[0]            ; data_combine_module:inst11|rom_data_2[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_2[2]            ; data_combine_module:inst11|rom_data_2[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_2[3]            ; data_combine_module:inst11|rom_data_2[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_2[1]            ; data_combine_module:inst11|rom_data_2[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_2[4]            ; data_combine_module:inst11|rom_data_2[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_2[6]            ; data_combine_module:inst11|rom_data_2[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_2[7]            ; data_combine_module:inst11|rom_data_2[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_2[5]            ; data_combine_module:inst11|rom_data_2[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_1[0]            ; data_combine_module:inst11|rom_data_1[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_1[2]            ; data_combine_module:inst11|rom_data_1[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_1[3]            ; data_combine_module:inst11|rom_data_1[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_1[1]            ; data_combine_module:inst11|rom_data_1[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_1[4]            ; data_combine_module:inst11|rom_data_1[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_1[6]            ; data_combine_module:inst11|rom_data_1[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_1[7]            ; data_combine_module:inst11|rom_data_1[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_1[5]            ; data_combine_module:inst11|rom_data_1[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_0[0]            ; data_combine_module:inst11|rom_data_0[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_0[2]            ; data_combine_module:inst11|rom_data_0[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_0[3]            ; data_combine_module:inst11|rom_data_0[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_0[1]            ; data_combine_module:inst11|rom_data_0[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_0[4]            ; data_combine_module:inst11|rom_data_0[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_0[6]            ; data_combine_module:inst11|rom_data_0[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_0[7]            ; data_combine_module:inst11|rom_data_0[7] ; yes                    ;
+; data_combine_module:inst11|rom_data_0[5]            ; data_combine_module:inst11|rom_data_0[7] ; yes                    ;
+; data_combine_module:inst11|rom_3_addr[0]            ; data_combine_module:inst11|rom_3_addr[4] ; yes                    ;
+; data_combine_module:inst11|rom_3_addr[1]            ; data_combine_module:inst11|rom_3_addr[4] ; yes                    ;
+; data_combine_module:inst11|rom_3_addr[2]            ; data_combine_module:inst11|rom_3_addr[4] ; yes                    ;
+; data_combine_module:inst11|rom_3_addr[3]            ; data_combine_module:inst11|rom_3_addr[4] ; yes                    ;
+; data_combine_module:inst11|rom_3_addr[4]            ; data_combine_module:inst11|rom_3_addr[4] ; yes                    ;
+; data_combine_module:inst11|rom_2_addr[0]            ; data_combine_module:inst11|rom_2_addr[4] ; yes                    ;
+; data_combine_module:inst11|rom_2_addr[1]            ; data_combine_module:inst11|rom_2_addr[4] ; yes                    ;
+; data_combine_module:inst11|rom_2_addr[2]            ; data_combine_module:inst11|rom_2_addr[4] ; yes                    ;
+; data_combine_module:inst11|rom_2_addr[3]            ; data_combine_module:inst11|rom_2_addr[4] ; yes                    ;
+; data_combine_module:inst11|rom_2_addr[4]            ; data_combine_module:inst11|rom_2_addr[4] ; yes                    ;
+; Number of user-specified and inferred latches = 34  ;                                          ;                        ;
++-----------------------------------------------------+------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -278,27 +340,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 31    ;
+; Total registers                              ; 47    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 31    ;
+; Number of registers using Asynchronous Clear ; 47    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|sync_module:inst1|count_v[5] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top|sync_module:inst1|count_v[10]            ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |top|data_combine_module:inst11|rom_2_addr[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for rom_3:inst2|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated ;
+; Source assignments for rom_2:inst4|altsyncram:altsyncram_component|altsyncram_ke91:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------+
+; Assignment                      ; Value              ; From ; To                                  ;
++---------------------------------+--------------------+------+-------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
++---------------------------------+--------------------+------+-------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Source assignments for rom_3:inst6|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------+
+; Assignment                      ; Value              ; From ; To                                  ;
++---------------------------------+--------------------+------+-------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
++---------------------------------+--------------------+------+-------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Source assignments for rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -711,12 +792,77 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; bar_data       ; 111111110000000011111111 ; Unsigned Binary            ;
 ; char_row_0     ; 136                      ; Signed Integer             ;
 ; char_column_0  ; 240                      ; Signed Integer             ;
+; char_row_1     ; 136                      ; Signed Integer             ;
+; char_column_1  ; 249                      ; Signed Integer             ;
+; char_row_2     ; 136                      ; Signed Integer             ;
+; char_column_2  ; 258                      ; Signed Integer             ;
 +----------------+--------------------------+----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: rom_3:inst2|altsyncram:altsyncram_component ;
+; Parameter Settings for User Entity Instance: rom_2:inst4|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------+
+; Parameter Name                     ; Value                ; Type                         ;
++------------------------------------+----------------------+------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                   ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                 ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                 ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE               ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                      ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                      ;
+; WIDTH_A                            ; 8                    ; Signed Integer               ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer               ;
+; NUMWORDS_A                         ; 20                   ; Signed Integer               ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                      ;
+; WIDTH_B                            ; 1                    ; Untyped                      ;
+; WIDTHAD_B                          ; 1                    ; Untyped                      ;
+; NUMWORDS_B                         ; 1                    ; Untyped                      ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                      ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                      ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer               ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                      ;
+; BYTE_SIZE                          ; 8                    ; Untyped                      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                      ;
+; INIT_FILE                          ; ../2.mif             ; Untyped                      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                      ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                      ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                      ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                      ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                      ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                      ;
+; CBXI_PARAMETER                     ; altsyncram_ke91      ; Untyped                      ;
++------------------------------------+----------------------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rom_3:inst6|altsyncram:altsyncram_component ;
 +------------------------------------+----------------------+------------------------------+
 ; Parameter Name                     ; Value                ; Type                         ;
 +------------------------------------+----------------------+------------------------------+
@@ -776,6 +922,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rom_1:inst3|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------+
+; Parameter Name                     ; Value                ; Type                         ;
++------------------------------------+----------------------+------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                   ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                 ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                 ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE               ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                      ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                      ;
+; WIDTH_A                            ; 8                    ; Signed Integer               ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer               ;
+; NUMWORDS_A                         ; 20                   ; Signed Integer               ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                      ;
+; WIDTH_B                            ; 1                    ; Untyped                      ;
+; WIDTHAD_B                          ; 1                    ; Untyped                      ;
+; NUMWORDS_B                         ; 1                    ; Untyped                      ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                      ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                      ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer               ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                      ;
+; BYTE_SIZE                          ; 8                    ; Untyped                      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                      ;
+; INIT_FILE                          ; ../1.mif             ; Untyped                      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                      ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                      ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                      ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                      ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                      ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                      ;
+; CBXI_PARAMETER                     ; altsyncram_je91      ; Untyped                      ;
++------------------------------------+----------------------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                     ;
 +-------------------------------+----------------------------------+
@@ -798,8 +1005,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------+
 ; Name                                      ; Value                                       ;
 +-------------------------------------------+---------------------------------------------+
-; Number of entity instances                ; 1                                           ;
-; Entity Instance                           ; rom_3:inst2|altsyncram:altsyncram_component ;
+; Number of entity instances                ; 3                                           ;
+; Entity Instance                           ; rom_2:inst4|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                         ;
+;     -- WIDTH_A                            ; 8                                           ;
+;     -- NUMWORDS_A                         ; 20                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                ;
+;     -- WIDTH_B                            ; 1                                           ;
+;     -- NUMWORDS_B                         ; 1                                           ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                      ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ;
+; Entity Instance                           ; rom_3:inst6|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                         ;
+;     -- WIDTH_A                            ; 8                                           ;
+;     -- NUMWORDS_A                         ; 20                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                ;
+;     -- WIDTH_B                            ; 1                                           ;
+;     -- NUMWORDS_B                         ; 1                                           ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                      ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ;
+; Entity Instance                           ; rom_1:inst3|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                         ;
 ;     -- WIDTH_A                            ; 8                                           ;
 ;     -- NUMWORDS_A                         ; 20                                          ;
@@ -828,7 +1057,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Nov 28 20:00:22 2017
+    Info: Processing started: Wed Nov 29 15:05:34 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lcd_test -c lcd_test
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file top.bdf
@@ -847,6 +1076,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file data_co
     Info (12023): Found entity 1: data_combine_module
 Info (12021): Found 1 design units, including 1 entities, in source file rom_3.v
     Info (12023): Found entity 1: rom_3
+Info (12021): Found 1 design units, including 1 entities, in source file rom_2.v
+    Info (12023): Found entity 1: rom_2
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Info (12128): Elaborating entity "sync_module" for hierarchy "sync_module:inst1"
 Warning (10230): Verilog HDL assignment warning at sync_module.v(76): truncated value with size 32 to match size of target (11)
@@ -914,14 +1145,80 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/pll_
     Info (12023): Found entity 1: pll_altpll
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:inst|altpll:altpll_component|pll_altpll:auto_generated"
 Info (12128): Elaborating entity "lcd_control_module" for hierarchy "lcd_control_module:inst10"
-Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(38): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(44): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(50): truncated value with size 32 to match size of target (5)
-Info (12128): Elaborating entity "data_combine_module" for hierarchy "data_combine_module:inst8"
-Info (12128): Elaborating entity "rom_3" for hierarchy "rom_3:inst2"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "rom_3:inst2|altsyncram:altsyncram_component"
-Info (12130): Elaborated megafunction instantiation "rom_3:inst2|altsyncram:altsyncram_component"
-Info (12133): Instantiated megafunction "rom_3:inst2|altsyncram:altsyncram_component" with the following parameter:
+Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(45): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(51): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(57): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(72): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(78): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(84): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(100): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(106): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at lcd_control_module.v(112): truncated value with size 32 to match size of target (5)
+Info (12128): Elaborating entity "data_combine_module" for hierarchy "data_combine_module:inst11"
+Warning (10240): Verilog HDL Always Construct warning at data_combine_module.v(54): inferring latch(es) for variable "rom_data_0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at data_combine_module.v(54): inferring latch(es) for variable "rom_data_1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at data_combine_module.v(54): inferring latch(es) for variable "rom_data_2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at data_combine_module.v(54): inferring latch(es) for variable "rom_2_addr", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at data_combine_module.v(54): inferring latch(es) for variable "rom_3_addr", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "rom_3_addr[0]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_3_addr[1]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_3_addr[2]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_3_addr[3]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_3_addr[4]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_2_addr[0]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_2_addr[1]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_2_addr[2]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_2_addr[3]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_2_addr[4]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_2[0]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_2[1]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_2[2]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_2[3]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_2[4]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_2[5]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_2[6]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_2[7]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_1[0]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_1[1]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_1[2]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_1[3]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_1[4]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_1[5]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_1[6]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_1[7]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_0[0]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_0[1]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_0[2]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_0[3]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_0[4]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_0[5]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_0[6]" at data_combine_module.v(61)
+Info (10041): Inferred latch for "rom_data_0[7]" at data_combine_module.v(61)
+Info (12128): Elaborating entity "rom_2" for hierarchy "rom_2:inst4"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom_2:inst4|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "rom_2:inst4|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "rom_2:inst4|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../2.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "20"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "5"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ke91.tdf
+    Info (12023): Found entity 1: altsyncram_ke91
+Info (12128): Elaborating entity "altsyncram_ke91" for hierarchy "rom_2:inst4|altsyncram:altsyncram_component|altsyncram_ke91:auto_generated"
+Info (12128): Elaborating entity "rom_3" for hierarchy "rom_3:inst6"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom_3:inst6|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "rom_3:inst6|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "rom_3:inst6|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -938,7 +1235,90 @@ Info (12133): Instantiated megafunction "rom_3:inst2|altsyncram:altsyncram_compo
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_aa91.tdf
     Info (12023): Found entity 1: altsyncram_aa91
-Info (12128): Elaborating entity "altsyncram_aa91" for hierarchy "rom_3:inst2|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated"
+Info (12128): Elaborating entity "altsyncram_aa91" for hierarchy "rom_3:inst6|altsyncram:altsyncram_component|altsyncram_aa91:auto_generated"
+Info (12128): Elaborating entity "rom_1" for hierarchy "rom_1:inst3"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom_1:inst3|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "rom_1:inst3|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "rom_1:inst3|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../1.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "20"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "5"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_je91.tdf
+    Info (12023): Found entity 1: altsyncram_je91
+Info (12128): Elaborating entity "altsyncram_je91" for hierarchy "rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated"
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "rom_1:inst3|altsyncram:altsyncram_component|altsyncram_je91:auto_generated|q_a[7]"
+Warning (13012): Latch data_combine_module:inst11|rom_data_1[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_1
+Warning (13012): Latch data_combine_module:inst11|rom_data_1[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_1
+Warning (13012): Latch data_combine_module:inst11|rom_data_1[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_1
+Warning (13012): Latch data_combine_module:inst11|rom_data_1[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_1
+Warning (13012): Latch data_combine_module:inst11|rom_data_1[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_1
+Warning (13012): Latch data_combine_module:inst11|rom_data_1[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_1
+Warning (13012): Latch data_combine_module:inst11|rom_data_1[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_1
+Warning (13012): Latch data_combine_module:inst11|rom_data_1[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_1
+Warning (13012): Latch data_combine_module:inst11|rom_data_0[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_data_0[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_data_0[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_data_0[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_data_0[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_data_0[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_data_0[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_data_0[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_3_addr[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sync_module:inst1|isReady
+Warning (13012): Latch data_combine_module:inst11|rom_3_addr[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sync_module:inst1|isReady
+Warning (13012): Latch data_combine_module:inst11|rom_3_addr[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sync_module:inst1|isReady
+Warning (13012): Latch data_combine_module:inst11|rom_3_addr[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sync_module:inst1|isReady
+Warning (13012): Latch data_combine_module:inst11|rom_3_addr[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sync_module:inst1|isReady
+Warning (13012): Latch data_combine_module:inst11|rom_2_addr[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_2_addr[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_2_addr[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_2_addr[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
+Warning (13012): Latch data_combine_module:inst11|rom_2_addr[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_control_module:inst10|char_ready_0
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "lcd_g[7]" is stuck at GND
     Warning (13410): Pin "lcd_g[6]" is stuck at GND
@@ -951,15 +1331,15 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 137 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 272 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 98 logic cells
-    Info (21064): Implemented 8 RAM segments
+    Info (21061): Implemented 225 logic cells
+    Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 527 megabytes
-    Info: Processing ended: Tue Nov 28 20:00:24 2017
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 87 warnings
+    Info: Peak virtual memory: 528 megabytes
+    Info: Processing ended: Wed Nov 29 15:05:36 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

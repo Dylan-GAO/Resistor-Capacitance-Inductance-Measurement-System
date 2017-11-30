@@ -1,5 +1,5 @@
 Flow report for lcd_test
-Tue Nov 28 20:00:38 2017
+Wed Nov 29 15:05:53 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 28 20:00:38 2017            ;
+; Flow Status                        ; Successful - Wed Nov 29 15:05:53 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; lcd_test                                         ;
 ; Top-level Entity Name              ; top                                              ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE6F17C8                                      ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 97 / 6,272 ( 2 % )                               ;
-;     Total combinational functions  ; 95 / 6,272 ( 2 % )                               ;
-;     Dedicated logic registers      ; 31 / 6,272 ( < 1 % )                             ;
-; Total registers                    ; 31                                               ;
+; Total logic elements               ; 208 / 6,272 ( 3 % )                              ;
+;     Total combinational functions  ; 207 / 6,272 ( 3 % )                              ;
+;     Dedicated logic registers      ; 47 / 6,272 ( < 1 % )                             ;
+; Total registers                    ; 47                                               ;
 ; Total pins                         ; 30 / 180 ( 17 % )                                ;
 ; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 160 / 276,480 ( < 1 % )                          ;
+; Total memory bits                  ; 320 / 276,480 ( < 1 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                                   ;
 ; Total PLLs                         ; 1 / 2 ( 50 % )                                   ;
 +------------------------------------+--------------------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/28/2017 20:00:23 ;
+; Start date & time ; 11/29/2017 15:05:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lcd_test            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 35490512582301.151187042313596        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 35490512582301.151193913411364        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                    ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
@@ -83,6 +83,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; ROM: 1-PORT                           ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; ROM: 1-PORT                           ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; ROM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; ROM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
@@ -97,6 +99,8 @@ applicable agreement for further details.
 ; MISC_FILE                           ; rom_3.bsf                             ; --            ; --          ; --             ;
 ; MISC_FILE                           ; rom_3_bb.v                            ; --            ; --          ; --             ;
 ; MISC_FILE                           ; rom_3_syn.v                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; rom_2.bsf                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; rom_2_bb.v                            ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; top         ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; top         ; Top            ;
@@ -113,12 +117,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 520 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:05     ; 1.2                     ; 1066 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 467 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 537 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 437 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:11                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 521 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:07     ; 1.4                     ; 1077 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 467 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 552 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 442 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
