@@ -12,9 +12,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_processi
 # IP: bd/system/ip/system_dds_compiler_0_1/system_dds_compiler_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_dds_compiler_0_1 || ORIG_REF_NAME==system_dds_compiler_0_1}]
 
-# IP: bd/system/ip/system_DDS_0_0/system_DDS_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_DDS_0_0 || ORIG_REF_NAME==system_DDS_0_0}]
-
 # IP: bd/system/ip/system_ps7_0_axi_periph_0/system_ps7_0_axi_periph_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_ps7_0_axi_periph_0 || ORIG_REF_NAME==system_ps7_0_axi_periph_0}]
 
@@ -29,6 +26,15 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_0 |
 
 # IP: bd/system/ip/system_ADC_0_0/system_ADC_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_ADC_0_0 || ORIG_REF_NAME==system_ADC_0_0}]
+
+# IP: bd/system/ip/system_DDS_0_1/system_DDS_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_DDS_0_1 || ORIG_REF_NAME==system_DDS_0_1}]
+
+# IP: bd/system/ip/system_ComplementCalibration_0_0/system_ComplementCalibration_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_ComplementCalibration_0_0 || ORIG_REF_NAME==system_ComplementCalibration_0_0}]
+
+# IP: bd/system/ip/system_Clk_4_Div_0_0/system_Clk_4_Div_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_Clk_4_Div_0_0 || ORIG_REF_NAME==system_Clk_4_Div_0_0}]
 
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0}]

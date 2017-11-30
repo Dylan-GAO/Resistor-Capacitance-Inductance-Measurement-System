@@ -1,9 +1,0 @@
-
-
-/***************************** Include Files *******************************/
-#include "DDS.h"
-
-/************************** Function Definitions ***************************/
-void ChangeFreq(){
-	DDS_mWriteReg(0x43c00000, DDS_S00_AXI_SLV_REG3_OFFSET, u32 Data);
-}

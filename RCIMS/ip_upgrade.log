@@ -1,0 +1,136 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Nov 30 22:41:36 2017
+| Host         : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_ADC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_ADC_0_0 (xilinx.com:user:ADC:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Nov 30 19:52:17 2017
+| Host         : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_ADC_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_ADC_0_0 (xilinx.com:user:ADC:1.0) from (Rev. 6) to (Rev. 7)
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_ADC_0_0'.
+
+
+-Upgrade has added interface 'ADC_Clk_2Mhz' (xilinx.com:signal:clock:1.0)
+
+-Upgrade has added interface 'ADC_MISO' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'ADC_MOSI' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'ADC_SCK' (xilinx.com:signal:clock:1.0)
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Nov 30 16:37:01 2017
+| Host         : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_DDS_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_DDS_0_0 (xilinx.com:user:DDS:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Nov 30 16:21:15 2017
+| Host         : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_DDS_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_DDS_0_0 (xilinx.com:user:DDS:1.0) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Nov 30 15:10:05 2017
+| Host         : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_ADC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_ADC_0_0 (xilinx.com:user:ADC:1.0) from (Rev. 4) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sun Nov 26 22:22:38 2017
+| Host         : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_ADC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_ADC_0_0 (xilinx.com:user:ADC:1.0) from (Rev. 3) to (Rev. 4)
+

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date                      : Wed Nov 22 22:42:40 2017
+| Date                      : Thu Nov 30 23:03:59 2017
 | Host                      : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
 | Command                   : report_io -file system_wrapper_io_placed.rpt
 | Design                    : system_wrapper
@@ -345,8 +345,8 @@ Table of Contents
 | T8         |                      | Dedicated  | VCCO_13                 | VCCO          |                   |      13 |            |      |                     |                      |   any** |            |           |          |      |                  |
 | T9         |                      |            | NC                      | Not Connected |                   |         |            |      |                     |                      |         |            |           |          |      |                  |
 | T10        |                      | High Range | IO_L1N_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| T11        |                      | High Range | IO_L1P_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| T12        | clk_out1             | High Range | IO_L2P_T0_34            | OUTPUT        | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
+| T11        | clk_out              | High Range | IO_L1P_T0_34            | OUTPUT        | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
+| T12        |                      | High Range | IO_L2P_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | T13        |                      |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | T14        | ADC_MISO             | High Range | IO_L5P_T0_34            | INPUT         | LVCMOS33          |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | T15        |                      | High Range | IO_L5N_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |

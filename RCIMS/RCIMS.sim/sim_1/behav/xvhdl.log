@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_dds_compiler_0_1/sim/system_dds_compiler_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_dds_compiler_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_rst_ps7_0_50M_0/sim/system_rst_ps7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_rst_ps7_0_50M_0

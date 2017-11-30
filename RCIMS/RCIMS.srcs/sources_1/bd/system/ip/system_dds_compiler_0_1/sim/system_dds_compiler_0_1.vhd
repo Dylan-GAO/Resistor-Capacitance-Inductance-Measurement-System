@@ -60,7 +60,7 @@ ENTITY system_dds_compiler_0_1 IS
   PORT (
     aclk : IN STD_LOGIC;
     s_axis_config_tvalid : IN STD_LOGIC;
-    s_axis_config_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    s_axis_config_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     m_axis_data_tvalid : OUT STD_LOGIC;
     m_axis_data_tdata : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
   );
@@ -130,7 +130,7 @@ ARCHITECTURE system_dds_compiler_0_1_arch OF system_dds_compiler_0_1 IS
       s_axis_phase_tuser : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       s_axis_config_tvalid : IN STD_LOGIC;
       s_axis_config_tready : OUT STD_LOGIC;
-      s_axis_config_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+      s_axis_config_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       s_axis_config_tlast : IN STD_LOGIC;
       m_axis_data_tvalid : OUT STD_LOGIC;
       m_axis_data_tready : IN STD_LOGIC;
@@ -164,7 +164,7 @@ BEGIN
       C_XDEVICEFAMILY => "zynq",
       C_MODE_OF_OPERATION => 0,
       C_MODULUS => 9,
-      C_ACCUMULATOR_WIDTH => 16,
+      C_ACCUMULATOR_WIDTH => 31,
       C_CHANNELS => 1,
       C_HAS_PHASE_OUT => 0,
       C_HAS_PHASEGEN => 1,
@@ -179,7 +179,7 @@ BEGIN
       C_OUTPUT_WIDTH => 8,
       C_PHASE_ANGLE_WIDTH => 8,
       C_PHASE_INCREMENT => 1,
-      C_PHASE_INCREMENT_VALUE => "0000000000000010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+      C_PHASE_INCREMENT_VALUE => "1000011000111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
       C_RESYNC => 0,
       C_PHASE_OFFSET => 0,
       C_PHASE_OFFSET_VALUE => "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -197,7 +197,7 @@ BEGIN
       C_S_PHASE_TUSER_WIDTH => 1,
       C_HAS_S_CONFIG => 1,
       C_S_CONFIG_SYNC_MODE => 0,
-      C_S_CONFIG_TDATA_WIDTH => 16,
+      C_S_CONFIG_TDATA_WIDTH => 32,
       C_HAS_M_DATA => 1,
       C_M_DATA_TDATA_WIDTH => 8,
       C_M_DATA_HAS_TUSER => 0,

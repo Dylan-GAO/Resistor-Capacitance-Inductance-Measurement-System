@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:ADC:1.0
-// IP Revision: 3
+// IP Revision: 8
 
 (* X_CORE_INFO = "ADC_v1_0,Vivado 2017.2" *)
 (* CHECK_LICENSE_TYPE = "system_ADC_0_0,ADC_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "system_ADC_0_0,ADC_v1_0,{x_ipProduct=Vivado 2017.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ADC,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
+(* CORE_GENERATION_INFO = "system_ADC_0_0,ADC_v1_0,{x_ipProduct=Vivado 2017.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ADC,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_ADC_0_0 (
   ADC_reset,
@@ -86,11 +86,15 @@ module system_ADC_0_0 (
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ADC_reset RST" *)
 input wire ADC_reset;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ADC_Clk_2Mhz CLK" *)
 input wire ADC_Clk_2Mhz;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 ADC_MISO DATA" *)
 input wire ADC_MISO;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 ADC_MOSI DATA" *)
 output wire ADC_MOSI;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ADC_ADC_reset RST" *)
 output wire ADC_ADC_reset;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ADC_SCK CLK" *)
 output wire ADC_SCK;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *)
 input wire [3 : 0] s00_axi_awaddr;

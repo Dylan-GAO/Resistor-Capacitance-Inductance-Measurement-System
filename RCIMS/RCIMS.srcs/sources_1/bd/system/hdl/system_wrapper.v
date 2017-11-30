@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-//Date        : Wed Nov 22 22:22:33 2017
+//Date        : Thu Nov 30 22:56:40 2017
 //Host        : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -35,7 +35,7 @@ module system_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    clk_out1,
+    clk_out,
     clock_rtl,
     m_axis_data_tdata,
     m_axis_data_tvalid,
@@ -65,7 +65,7 @@ module system_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output clk_out1;
+  output clk_out;
   input clock_rtl;
   output [7:0]m_axis_data_tdata;
   output m_axis_data_tvalid;
@@ -96,7 +96,7 @@ module system_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire clk_out1;
+  wire clk_out;
   wire clock_rtl;
   wire [7:0]m_axis_data_tdata;
   wire m_axis_data_tvalid;
@@ -128,7 +128,7 @@ module system_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .clk_out1(clk_out1),
+        .clk_out(clk_out),
         .clock_rtl(clock_rtl),
         .m_axis_data_tdata(m_axis_data_tdata),
         .m_axis_data_tvalid(m_axis_data_tvalid),

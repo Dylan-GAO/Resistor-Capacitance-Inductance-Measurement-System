@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1511360558"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1511360558"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1511360558"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1512053804"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1512053804"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1512053804"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_processing_system7_0_0\system_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -22,15 +22,8 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\system_DDS_0_0\system_DDS_0_0.xci" Type="IP">
-        <Instance HierarchyPath="DDS_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\system_ps7_0_axi_periph_0\system_ps7_0_axi_periph_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -70,6 +63,30 @@
       </File>
       <File Name="ip\system_ADC_0_0\system_ADC_0_0.xci" Type="IP">
         <Instance HierarchyPath="ADC_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_DDS_0_1\system_DDS_0_1.xci" Type="IP">
+        <Instance HierarchyPath="DDS_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_ComplementCalibration_0_0\system_ComplementCalibration_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ComplementCalibration_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_Clk_4_Div_0_0\system_Clk_4_Div_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Clk_4_Div_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

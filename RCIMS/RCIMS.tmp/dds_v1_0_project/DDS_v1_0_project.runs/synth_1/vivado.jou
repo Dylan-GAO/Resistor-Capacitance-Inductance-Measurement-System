@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Nov 30 16:25:43 2017
+# Process ID: 6444
+# Current directory: c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/dds_v1_0_project/DDS_v1_0_project.runs/synth_1
+# Command line: vivado.exe -log DDS_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DDS_v1_0.tcl
+# Log file: c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/dds_v1_0_project/DDS_v1_0_project.runs/synth_1/DDS_v1_0.vds
+# Journal file: c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/dds_v1_0_project/DDS_v1_0_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DDS_v1_0.tcl -notrace

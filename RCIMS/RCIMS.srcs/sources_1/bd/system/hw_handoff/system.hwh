@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov 22 22:22:37 2017" VIVADOVERSION="2017.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 30 22:56:43 2017" VIVADOVERSION="2017.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="system" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -25,9 +25,9 @@
     <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef"/>
     <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef"/>
     <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="7" NAME="m_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_0_m_axis_data_tdata">
+    <PORT DIR="O" LEFT="7" NAME="m_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="ComplementCalibration_0_DDS_DATA_OUT">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="dds_compiler_0" PORT="m_axis_data_tdata"/>
+        <CONNECTION INSTANCE="ComplementCalibration_0" PORT="DDS_DATA_OUT"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="m_axis_data_tvalid" SIGIS="undef" SIGNAME="dds_compiler_0_m_axis_data_tvalid">
@@ -40,9 +40,9 @@
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT CLKFREQUENCY="4919191" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+    <PORT CLKFREQUENCY="4919191" DIR="O" NAME="clk_out" SIGIS="clk" SIGNAME="Clk_4_Div_0_Clk_2Mhz">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+        <CONNECTION INSTANCE="Clk_4_Div_0" PORT="Clk_2Mhz"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="ADC_ADC_reset" SIGIS="rst" SIGNAME="ADC_0_ADC_ADC_reset">
@@ -139,17 +139,17 @@
             <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="ADC_Clk_2Mhz" SIGIS="undef" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ADC_Clk_2Mhz" SIGIS="clk" SIGNAME="Clk_4_Div_0_Clk_2Mhz">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+            <CONNECTION INSTANCE="Clk_4_Div_0" PORT="Clk_2Mhz"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="ADC_MISO" SIGIS="undef" SIGNAME="External_Ports_ADC_MISO">
+        <PORT DIR="I" NAME="ADC_MISO" SIGIS="data" SIGNAME="External_Ports_ADC_MISO">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="ADC_MISO"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="ADC_MOSI" SIGIS="undef" SIGNAME="ADC_0_ADC_MOSI">
+        <PORT DIR="O" NAME="ADC_MOSI" SIGIS="data" SIGNAME="ADC_0_ADC_MOSI">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="ADC_MOSI"/>
           </CONNECTIONS>
@@ -159,7 +159,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="ADC_ADC_reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="ADC_SCK" SIGIS="undef" SIGNAME="ADC_0_ADC_SCK">
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ADC_SCK" SIGIS="clk" SIGNAME="ADC_0_ADC_SCK">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="ADC_SCK"/>
           </CONNECTIONS>
@@ -328,6 +328,47 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
+    <MODULE FULLNAME="/Clk_4_Div_0" HWVERSION="1.0" INSTANCE="Clk_4_Div_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Clk_4_Div" VLNV="xilinx.com:module_ref:Clk_4_Div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="system_Clk_4_Div_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Clk_8Mhz" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Clk_2Mhz" SIGIS="undef" SIGNAME="Clk_4_Div_0_Clk_2Mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_out"/>
+            <CONNECTION INSTANCE="ADC_0" PORT="ADC_Clk_2Mhz"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ComplementCalibration_0" HWVERSION="1.0" INSTANCE="ComplementCalibration_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ComplementCalibration" VLNV="xilinx.com:module_ref:ComplementCalibration:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="system_ComplementCalibration_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="DDS_DATA_IN" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_0_m_axis_data_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dds_compiler_0" PORT="m_axis_data_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="DDS_DATA_OUT" RIGHT="0" SIGIS="undef" SIGNAME="ComplementCalibration_0_DDS_DATA_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_axis_data_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
     <MODULE FULLNAME="/DDS_0" HWVERSION="1.0" INSTANCE="DDS_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DDS" VLNV="xilinx.com:user:DDS:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
@@ -336,14 +377,14 @@
       <PARAMETERS>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="DDS_PHASE_WIDTH" VALUE="16"/>
-        <PARAMETER NAME="Component_Name" VALUE="system_DDS_0_0"/>
+        <PARAMETER NAME="DDS_PHASE_WIDTH" VALUE="31"/>
+        <PARAMETER NAME="Component_Name" VALUE="system_DDS_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x43C00000"/>
         <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x43C0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" LEFT="15" NAME="DDS_PHASE_DATA" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_DDS_PHASE_DATA">
+        <PORT DIR="O" LEFT="30" NAME="DDS_PHASE_DATA" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_DDS_PHASE_DATA">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds_compiler_0" PORT="s_axis_config_tdata"/>
           </CONNECTIONS>
@@ -594,14 +635,14 @@
         <PARAMETER NAME="C_INCLK_SUM_ROW2" VALUE="no_secondary_input_clock"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0A" VALUE="Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0B" VALUE="Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)"/>
-        <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="clk_out1_____4.919______0.000______50.0______972.000____855.057"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="clk_out1_____8.000______0.000______50.0______308.663____151.172"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW2" VALUE="no_CLK_OUT2_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW3" VALUE="no_CLK_OUT3_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW4" VALUE="no_CLK_OUT4_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW5" VALUE="no_CLK_OUT5_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW6" VALUE="no_CLK_OUT6_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW7" VALUE="no_CLK_OUT7_output"/>
-        <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="4.9152"/>
+        <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="8"/>
         <PARAMETER NAME="C_CLKOUT2_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT3_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT4_REQUESTED_OUT_FREQ" VALUE="100.000"/>
@@ -622,7 +663,7 @@
         <PARAMETER NAME="C_CLKOUT5_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT6_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT7_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
-        <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="4.919"/>
+        <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="8.000"/>
         <PARAMETER NAME="C_CLKOUT2_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT3_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT4_OUT_FREQ" VALUE="100.000"/>
@@ -654,17 +695,17 @@
         <PARAMETER NAME="C_CLKOUT7_SEQUENCE_NUMBER" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_NOTES" VALUE="None"/>
         <PARAMETER NAME="C_MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
-        <PARAMETER NAME="C_MMCM_CLKFBOUT_MULT_F" VALUE="60.875"/>
+        <PARAMETER NAME="C_MMCM_CLKFBOUT_MULT_F" VALUE="17.500"/>
         <PARAMETER NAME="C_MMCM_CLKIN1_PERIOD" VALUE="20.000"/>
         <PARAMETER NAME="C_MMCM_CLKIN2_PERIOD" VALUE="10.0"/>
         <PARAMETER NAME="C_MMCM_CLKOUT4_CASCADE" VALUE="FALSE"/>
         <PARAMETER NAME="C_MMCM_CLOCK_HOLD" VALUE="FALSE"/>
         <PARAMETER NAME="C_MMCM_COMPENSATION" VALUE="ZHOLD"/>
-        <PARAMETER NAME="C_MMCM_DIVCLK_DIVIDE" VALUE="5"/>
+        <PARAMETER NAME="C_MMCM_DIVCLK_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_REF_JITTER1" VALUE="0.010"/>
         <PARAMETER NAME="C_MMCM_REF_JITTER2" VALUE="0.010"/>
         <PARAMETER NAME="C_MMCM_STARTUP_WAIT" VALUE="FALSE"/>
-        <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="123.750"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="109.375"/>
         <PARAMETER NAME="C_MMCM_CLKOUT1_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT2_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT3_DIVIDE" VALUE="1"/>
@@ -796,12 +837,12 @@
         <PARAMETER NAME="C_FILTER_1" VALUE="0000"/>
         <PARAMETER NAME="C_FILTER_2" VALUE="0000"/>
         <PARAMETER NAME="C_DIVIDE1_AUTO" VALUE="1"/>
-        <PARAMETER NAME="C_DIVIDE2_AUTO" VALUE="0.049151999999999994"/>
-        <PARAMETER NAME="C_DIVIDE3_AUTO" VALUE="0.049151999999999994"/>
-        <PARAMETER NAME="C_DIVIDE4_AUTO" VALUE="0.049151999999999994"/>
-        <PARAMETER NAME="C_DIVIDE5_AUTO" VALUE="0.049151999999999994"/>
-        <PARAMETER NAME="C_DIVIDE6_AUTO" VALUE="0.049151999999999994"/>
-        <PARAMETER NAME="C_DIVIDE7_AUTO" VALUE="0.049151999999999994"/>
+        <PARAMETER NAME="C_DIVIDE2_AUTO" VALUE="0.080000000000000002"/>
+        <PARAMETER NAME="C_DIVIDE3_AUTO" VALUE="0.080000000000000002"/>
+        <PARAMETER NAME="C_DIVIDE4_AUTO" VALUE="0.080000000000000002"/>
+        <PARAMETER NAME="C_DIVIDE5_AUTO" VALUE="0.080000000000000002"/>
+        <PARAMETER NAME="C_DIVIDE6_AUTO" VALUE="0.080000000000000002"/>
+        <PARAMETER NAME="C_DIVIDE7_AUTO" VALUE="0.080000000000000002"/>
         <PARAMETER NAME="C_PLLBUFGCEDIV" VALUE="false"/>
         <PARAMETER NAME="C_MMCMBUFGCEDIV" VALUE="false"/>
         <PARAMETER NAME="C_PLLBUFGCEDIV1" VALUE="false"/>
@@ -822,7 +863,7 @@
         <PARAMETER NAME="C_CLKOUT5_MATCHED_ROUTING" VALUE="false"/>
         <PARAMETER NAME="C_CLKOUT6_MATCHED_ROUTING" VALUE="false"/>
         <PARAMETER NAME="C_CLKOUT7_MATCHED_ROUTING" VALUE="false"/>
-        <PARAMETER NAME="C_CLKOUT0_ACTUAL_FREQ" VALUE="4.919"/>
+        <PARAMETER NAME="C_CLKOUT0_ACTUAL_FREQ" VALUE="8.000"/>
         <PARAMETER NAME="C_CLKOUT1_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT2_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT3_ACTUAL_FREQ" VALUE="100.000"/>
@@ -905,7 +946,7 @@
         <PARAMETER NAME="PSEN_PORT" VALUE="psen"/>
         <PARAMETER NAME="PSINCDEC_PORT" VALUE="psincdec"/>
         <PARAMETER NAME="PSDONE_PORT" VALUE="psdone"/>
-        <PARAMETER NAME="CLKOUT1_REQUESTED_OUT_FREQ" VALUE="4.9152"/>
+        <PARAMETER NAME="CLKOUT1_REQUESTED_OUT_FREQ" VALUE="8"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="CLKOUT2_REQUESTED_OUT_FREQ" VALUE="100.000"/>
@@ -975,9 +1016,9 @@
         <PARAMETER NAME="SS_MOD_TIME" VALUE="0.004"/>
         <PARAMETER NAME="OVERRIDE_MMCM" VALUE="false"/>
         <PARAMETER NAME="MMCM_NOTES" VALUE="None"/>
-        <PARAMETER NAME="MMCM_DIVCLK_DIVIDE" VALUE="5"/>
+        <PARAMETER NAME="MMCM_DIVCLK_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
-        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="60.875"/>
+        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="17.500"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_USE_FINE_PS" VALUE="false"/>
         <PARAMETER NAME="MMCM_CLKIN1_PERIOD" VALUE="20.000"/>
@@ -988,7 +1029,7 @@
         <PARAMETER NAME="MMCM_REF_JITTER1" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_REF_JITTER2" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_STARTUP_WAIT" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="123.750"/>
+        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="109.375"/>
         <PARAMETER NAME="MMCM_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT0_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT0_USE_FINE_PS" VALUE="false"/>
@@ -1066,8 +1107,8 @@
         <PARAMETER NAME="CDDCREQ_PORT" VALUE="cddcreq"/>
         <PARAMETER NAME="ENABLE_CLKOUTPHY" VALUE="false"/>
         <PARAMETER NAME="CLKOUTPHY_REQUESTED_FREQ" VALUE="600.000"/>
-        <PARAMETER NAME="CLKOUT1_JITTER" VALUE="972.000"/>
-        <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="855.057"/>
+        <PARAMETER NAME="CLKOUT1_JITTER" VALUE="308.663"/>
+        <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="151.172"/>
         <PARAMETER NAME="CLKOUT2_JITTER" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT2_PHASE_ERROR" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT3_JITTER" VALUE="0.0"/>
@@ -1092,9 +1133,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="clock_rtl"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="4919191" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+        <PORT CLKFREQUENCY="8000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="clk_out1"/>
+            <CONNECTION INSTANCE="Clk_4_Div_0" PORT="Clk_8Mhz"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1108,7 +1149,7 @@
         <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
         <PARAMETER NAME="C_MODE_OF_OPERATION" VALUE="0"/>
         <PARAMETER NAME="C_MODULUS" VALUE="9"/>
-        <PARAMETER NAME="C_ACCUMULATOR_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_ACCUMULATOR_WIDTH" VALUE="31"/>
         <PARAMETER NAME="C_CHANNELS" VALUE="1"/>
         <PARAMETER NAME="C_HAS_PHASE_OUT" VALUE="0"/>
         <PARAMETER NAME="C_HAS_PHASEGEN" VALUE="1"/>
@@ -1123,7 +1164,7 @@
         <PARAMETER NAME="C_OUTPUT_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_PHASE_ANGLE_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_PHASE_INCREMENT" VALUE="1"/>
-        <PARAMETER NAME="C_PHASE_INCREMENT_VALUE" VALUE="0000000000000010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <PARAMETER NAME="C_PHASE_INCREMENT_VALUE" VALUE="1000011000111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
         <PARAMETER NAME="C_RESYNC" VALUE="0"/>
         <PARAMETER NAME="C_PHASE_OFFSET" VALUE="0"/>
         <PARAMETER NAME="C_PHASE_OFFSET_VALUE" VALUE="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
@@ -1141,7 +1182,7 @@
         <PARAMETER NAME="C_S_PHASE_TUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_HAS_S_CONFIG" VALUE="1"/>
         <PARAMETER NAME="C_S_CONFIG_SYNC_MODE" VALUE="0"/>
-        <PARAMETER NAME="C_S_CONFIG_TDATA_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_S_CONFIG_TDATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_HAS_M_DATA" VALUE="1"/>
         <PARAMETER NAME="C_M_DATA_TDATA_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_M_DATA_HAS_TUSER" VALUE="0"/>
@@ -1162,7 +1203,7 @@
         <PARAMETER NAME="Spurious_Free_Dynamic_Range" VALUE="45"/>
         <PARAMETER NAME="Frequency_Resolution" VALUE="0.4"/>
         <PARAMETER NAME="Noise_Shaping" VALUE="None"/>
-        <PARAMETER NAME="Phase_Width" VALUE="16"/>
+        <PARAMETER NAME="Phase_Width" VALUE="31"/>
         <PARAMETER NAME="Output_Width" VALUE="8"/>
         <PARAMETER NAME="Phase_Increment" VALUE="Programmable"/>
         <PARAMETER NAME="Resync" VALUE="false"/>
@@ -1188,7 +1229,7 @@
         <PARAMETER NAME="Has_ARESETn" VALUE="false"/>
         <PARAMETER NAME="Has_ACLKEN" VALUE="false"/>
         <PARAMETER NAME="Output_Frequency1" VALUE="0"/>
-        <PARAMETER NAME="PINC1" VALUE="0000000000000010"/>
+        <PARAMETER NAME="PINC1" VALUE="1000011000111"/>
         <PARAMETER NAME="Phase_Offset_Angles1" VALUE="0"/>
         <PARAMETER NAME="POFF1" VALUE="0"/>
         <PARAMETER NAME="Output_Frequency2" VALUE="0"/>
@@ -1268,7 +1309,7 @@
             <CONNECTION INSTANCE="DDS_0" PORT="DDS_PHASE_READY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="s_axis_config_tdata" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_DDS_PHASE_DATA">
+        <PORT DIR="I" LEFT="31" NAME="s_axis_config_tdata" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_DDS_PHASE_DATA">
           <CONNECTIONS>
             <CONNECTION INSTANCE="DDS_0" PORT="DDS_PHASE_DATA"/>
           </CONNECTIONS>
@@ -1280,7 +1321,7 @@
         </PORT>
         <PORT DIR="O" LEFT="7" NAME="m_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="dds_compiler_0_m_axis_data_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="m_axis_data_tdata"/>
+            <CONNECTION INSTANCE="ComplementCalibration_0" PORT="DDS_DATA_IN"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1304,7 +1345,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="S_AXIS_CONFIG" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
@@ -2462,12 +2503,11 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
             <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_aclk"/>
-            <CONNECTION INSTANCE="ADC_0" PORT="s00_axi_aclk"/>
-            <CONNECTION INSTANCE="ADC_0" PORT="ADC_Clk_2Mhz"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ACLK"/>
+            <CONNECTION INSTANCE="ADC_0" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" SIGIS="rst"/>
@@ -3173,101 +3213,6 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_RDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M00_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_awprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_awprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_arprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_arprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="ADC_0_s00_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ADC_0" PORT="s00_axi_awaddr"/>
@@ -3361,6 +3306,101 @@
         <PORT DIR="O" NAME="M01_AXI_rready" SIGIS="undef" SIGNAME="ADC_0_s00_axi_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ADC_0" PORT="s00_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M00_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="DDS_0_s00_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="DDS_0_s00_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="DDS_0_s00_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="DDS_0_s00_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="DDS_0_s00_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="DDS_0_s00_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="DDS_0_s00_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="DDS_0_s00_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="DDS_0_s00_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="DDS_0_s00_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="DDS_0_s00_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_rready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3499,11 +3539,11 @@
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="rst_ps7_0_50M_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="DDS_0" PORT="s00_axi_aresetn"/>
-            <CONNECTION INSTANCE="ADC_0" PORT="s00_axi_aresetn"/>
-            <CONNECTION INSTANCE="ADC_0" PORT="ADC_reset"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ARESETN"/>
+            <CONNECTION INSTANCE="ADC_0" PORT="ADC_reset"/>
+            <CONNECTION INSTANCE="ADC_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

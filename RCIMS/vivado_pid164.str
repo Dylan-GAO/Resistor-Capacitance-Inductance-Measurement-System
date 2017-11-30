@@ -1,0 +1,2288 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 164
+License: Customer
+
+Current time: 	11/30/17 2:21:58 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1280x800
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 8 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/;C:/Program Files/IVI Foundation/VISA/Win64/Bin/;C:/Users/gaojingbo/AppData/Local/Microsoft/WindowsApps;C:/altera/13.1/modelsim_ase/win32aloem;C:/Users/gaojingbo/AppData/Local/GitHubDesktop/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	gaojingbo
+User home directory: C:/Users/gaojingbo
+User working directory: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/gaojingbo/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/gaojingbo/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/gaojingbo/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/.Xil/Vivado-164-DESKTOP-GLIA512
+
+GUI allocated memory:	176 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 488 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+56822kb) [00:00:15]
+// [Engine Memory]: 442 MB (+312175kb) [00:00:15]
+// bs:g (cg:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.xpr. Version: Vivado v2017.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 510 MB. GUI used memory: 32 MB. Current time: 11/30/17 2:22:00 PM CST
+// [Engine Memory]: 510 MB (+47729kb) [00:00:20]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 538 MB (+2350kb) [00:00:28]
+// [GUI Memory]: 63 MB (+4028kb) [00:00:31]
+// Tcl Message: open_project C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 757.598 ; gain = 87.441 
+// Project name: RCIMS; location: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS; part: xc7z010clg400-1
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// [GUI Memory]: 70 MB (+3323kb) [00:00:37]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 566 MB (+1792kb) [00:00:42]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (system_wrapper.v) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system_wrapper.v":12'
+// [Engine Memory]: 599 MB (+4379kb) [00:00:45]
+// HMemoryUtils.trashcanNow. Engine heap size: 599 MB. GUI used memory: 40 MB. Current time: 11/30/17 2:22:27 PM CST
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// x:aN (cg:JFrame): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Nov 30 14:22:45 2017] Launched synth_1... Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 8 seconds
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// Elapsed time: 34 seconds
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "Reset Layout", 2); // aZ:e (f:CommandBar, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_RESET_LAYOUT
+// [GUI Memory]: 75 MB (+2489kb) [00:02:03]
+// Elapsed time: 26 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 40 MB. Current time: 11/30/17 2:23:46 PM CST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, system_wrapper (system_wrapper.v)]", 5, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, system_wrapper (system_wrapper.v)]", 5, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, system_wrapper (system_wrapper.v), ComplementCalibration_i : ComplementCalibration (ComplementCalibration.v)]", 7, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system_wrapper.v":12'
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 39 seconds
+selectButton((HResource) null, "Properties_settings"); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// PAResourceOtoP.PAViews_SOURCES: Sources: close view
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i:JideTabbedPane (JPanel:JComponent, cg:JFrame)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i:JideTabbedPane (JPanel:JComponent, cg:JFrame)
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "Reset Layout", 2); // aZ:e (f:CommandBar, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_RESET_LAYOUT
+// Elapsed time: 23 seconds
+selectButton(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "project_summary"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+// [GUI Memory]: 80 MB (+506kb) [00:03:30]
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i:JideTabbedPane (N:aJ, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, system]", 1); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, system, Simulation]", 4); // B:i (D:JPanel, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, system]", 1); // B:i (D:JPanel, cg:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i:JideTabbedPane (N:aJ, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 10 seconds
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav' INFO: [SIM-utils-54] Inspecting design source files for 'system_wrapper' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// [GUI Memory]: 87 MB (+3530kb) [00:04:07]
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav' 
+// Tcl Message: "xvlog -m64 --relax -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_14 -L xil_common_vip_v1_0_0 -L axi_vip_v1_0_2 -L axi_vip_v1_0_1 -prj system_wrapper_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 823.285 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '5' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav' 
+// Tcl Message: Completed simulation data flow analysis 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message: Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_syn... Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_axi... Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_syn... Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_syn... Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_cor... 
+// Tcl Message: Compiling package xil_common_vip_v1_0_0.xil_common_vip_v1_0_0_pkg Compiling package std.std Compiling package smartconnect_v1_0.sc_util_v1_0_2_pkg 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// Tcl Message: Built simulation snapshot system_wrapper_behav 
+// Tcl Message:  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav/xsim.dir/system_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav/xsim.dir/system_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Nov 30 14:27:18 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Thu Nov 30 14:27:18 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:01:28 . Memory (MB): peak = 823.285 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '87' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "system_wrapper_behav -key {Behavioral:sim_1:Functional:system_wrapper} -tclbatch {system_wrapper.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// PAPropertyPanels.initPanels (system_wrapper.v) elapsed time: 0.2s
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source system_wrapper.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_wrapper_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:01:43 . Memory (MB): peak = 855.793 ; gain = 32.508 
+// 'd' command handler elapsed time: 101 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 52 MB. Current time: 11/30/17 2:27:23 PM CST
+// Elapsed time: 101 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// Elapsed time: 10 seconds
+selectComboBox(PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, "s", 0); // b:e (a:JPanel, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, "simulation_live_run_all"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: run all 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 50 MB. Current time: 11/30/17 2:27:39 PM CST
+// bs:g (cg:JFrame):  Run All : addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 50 MB. Current time: 11/30/17 2:27:43 PM CST
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 50 MB. Current time: 11/30/17 2:27:44 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 50 MB. Current time: 11/30/17 2:27:46 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 50 MB. Current time: 11/30/17 2:27:49 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 50 MB. Current time: 11/30/17 2:27:51 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 50 MB. Current time: 11/30/17 2:27:52 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 51 MB. Current time: 11/30/17 2:27:55 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // ax:DockableFrame (aF:FrameContainer, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// RDIResource.RDIViews_WAVEFORM_VIEWER: Untitled 1: float view
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 53 MB. Current time: 11/30/17 2:27:58 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+maximizeFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // ax:DockableFrame (aF:FrameContainer, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:27:59 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:01 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:04 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:06 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:09 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 54 MB. Current time: 11/30/17 2:28:12 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:15 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:18 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:22 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:25 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 54 MB. Current time: 11/30/17 2:28:29 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Elapsed time: 27 seconds
+unMaximizeFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // ax:DockableFrame (aF:FrameContainer, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 54 MB. Current time: 11/30/17 2:28:31 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+dockFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // ax:DockableFrame (aF:FrameContainer, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 54 MB. Current time: 11/30/17 2:28:33 PM CST
+// RDIResource.RDIViews_WAVEFORM_VIEWER: Untitled 1: dock view
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_BREAK, "simulation_live_break"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_BREAK
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:28:35 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:57 . Memory (MB): peak = 858.336 ; gain = 0.000 
+dismissDialog("Run All"); // bs:g (cg:JFrame)
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// [GUI Memory]: 101 MB (+9756kb) [00:06:57]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 54 MB. Current time: 11/30/17 2:28:38 PM CST
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // ax:DockableFrame (aF:FrameContainer, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// RDIResource.RDIViews_WAVEFORM_VIEWER: Untitled 1: float view
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:38 PM CST
+maximizeFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // ax:DockableFrame (aF:FrameContainer, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 74, 335); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:28:42 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:28:43 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:28:43 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 89, 8); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:28:45 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 58 MB. Current time: 11/30/17 2:28:47 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:28:51 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:28:51 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:28:52 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:28:56 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:28:58 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ADC_MISO]", 1, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ADC_MISO]", 1, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ADC_SCK]", 3, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, DDR_ba[2:0]]", 5, true); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:29:02 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata_w[7:0]]", 25, true); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:04 PM CST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tvalid]", 23, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, clk_out1]", 20, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, clk_out1]", 20, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata[7:0]]", 22, true); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 57 MB. Current time: 11/30/17 2:29:05 PM CST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, clock_rtl]", 21, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, clk_out1]", 20, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata[7:0]]", 22, true); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Node
+// [GUI Memory]: 107 MB (+1103kb) [00:07:26]
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, clock_rtl]", 21, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:07 PM CST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, clk_out1]", 20, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, clock_rtl]", 21, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:09 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 19, 534); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 396, 540); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 371, 541); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:29:12 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 359, 541); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 57 MB. Current time: 11/30/17 2:29:13 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, clock_rtl]", 21, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:14 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:22 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:23 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:24 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 11 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ADC_SCK]", 3, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ADC_SCK]", 3, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:28 PM CST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ADC_MOSI]", 3, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 86 MB. Current time: 11/30/17 2:29:30 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 953, -23); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:40 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:29:42 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:45 PM CST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ADC_MISO]", 2, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:29:52 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ADC_MOSI]", 3, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:29:54 PM CST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ADC_MOSI]", 3, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:04 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:04 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:05 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:05 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:07 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:08 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:08 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:09 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:10 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:10 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:11 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:11 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:12 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:12 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:14 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:15 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:15 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:16 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:17 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:17 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:18 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:19 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:19 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:20 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:23 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 29 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata[7:0]]", 22, true); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:24 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 94 MB. Current time: 11/30/17 2:30:27 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:29 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:29 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:30 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:31 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:35 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:36 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 295, 554); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:38 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tvalid]", 23, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:40 PM CST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata_w[7:0]]", 25, true); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata[7:0]]", 22, true); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tvalid]", 23, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:42 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:43 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:43 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:44 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:44 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:44 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:44 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:45 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:45 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 59 MB. Current time: 11/30/17 2:30:45 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:45 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:46 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:46 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:46 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:46 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:46 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:48 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata[7:0]]", 22, true); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 107, 597); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:50 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 194, 592); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata[7:0]]", 22); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:30:52 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 55 MB. Current time: 11/30/17 2:30:52 PM CST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata[7:0]]", 16, true, false, false, false, true, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Popup Trigger - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenuItem((HResource) null, "Analog Settings..."); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+// a:p (FrameFloatingContainer:ResizableFrame): Analog Settings: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog("Analog Settings"); // a:p (FrameFloatingContainer:ResizableFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata[7:0]]", 16, true, false, false, false, true, false); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Name"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Name"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenuItem((HResource) null, "Analog"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 58 MB. Current time: 11/30/17 2:31:06 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:31:07 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 66 MB. Current time: 11/30/17 2:31:10 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m_axis_data_tdata[7:0]]", 10); // a:i (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 217, 558); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:31:14 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:31:14 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 231, 501); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:31:15 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 345, 479); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 261, 480); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 58 MB. Current time: 11/30/17 2:31:17 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 383, 524); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 57 MB. Current time: 11/30/17 2:31:17 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 57 MB. Current time: 11/30/17 2:31:19 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 57 MB. Current time: 11/30/17 2:31:20 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B:JideButton (f:CommandBar, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 62 MB. Current time: 11/30/17 2:31:24 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 57 MB. Current time: 11/30/17 2:31:24 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 186, 430); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 272, 440); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 273, 440, false, false, false, false, true); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame) - Double Click
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 57 MB. Current time: 11/30/17 2:31:26 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 344, 443); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 398, 446); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 56 MB. Current time: 11/30/17 2:31:26 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 500, 449); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 530, 447); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 562, 446); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 57 MB. Current time: 11/30/17 2:31:27 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 597, 451); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 616, 447); // n:a (JViewport:JComponent, FrameFloatingContainer:ResizableFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 57 MB. Current time: 11/30/17 2:31:28 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 616, 447); // n:a (JViewport:JComponent, cg:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 616, 447); // n:a (JViewport:JComponent, cg:JFrame)Waveform: addNotify
+dockFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // ax:DockableFrame (aF:FrameContainer, FrameFloatingContainer:ResizableFrame)
+maximizeFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // ax:DockableFrame (aF:FrameContainer, FrameFloatingContainer:ResizableFrame)
+// RDIResource.RDIViews_WAVEFORM_VIEWER: Untitled 1*: dock view
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 59 MB. Current time: 11/30/17 2:31:30 PM CST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib]", 2); // B:i (D:JPanel, cg:JFrame)
+// Elapsed time: 20 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i:JideTabbedPane (N:aJ, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd} 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0 Adding cell -- xilinx.com:user:DDS:1.0 - DDS_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0 Adding cell -- xilinx.com:user:ADC:1.0 - ADC_0 
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <system> from BD file <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 633 MB (+4858kb) [00:10:34]
+// PAPropertyPanels.initPanels (system.bd) elapsed time: 0.2s
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 924.176 ; gain = 49.789 
+// Elapsed time: 12 seconds
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // Z:JMenu (JPopupMenu:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ac:JMenuItem (JPopupMenu:JComponent, cg:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cg:JFrame): Create and Package New IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 657 MB. GUI used memory: 61 MB. Current time: 11/30/17 2:32:26 PM CST
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_BLOCK_DESIGN_FROM_CURRENT, "Package a block design from the current project. Choose a block design as the source for creating a new IP Definition."); // b:a (a:C, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b:a (a:C, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_BLOCK_DESIGN_FROM_CURRENT, "Package a block design from the current project. Choose a block design as the source for creating a new IP Definition."); // b:a (a:C, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b:a (a:C, P:g)
+// bs:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bs:g (P:g)
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'q' command handler elapsed time: 16 seconds
+dismissDialog("Create and Package New IP"); // P:g (cg:JFrame)
+// PAPropertyPanels.initPanels (ps7_0_axi_periph_M01_AXI) elapsed time: 0.2s
+// Elapsed time: 19 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 526, 393, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+// PAPropertyPanels.initPanels (rst_ps7_0_50M_peripheral_aresetn) elapsed time: 0.2s
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 564, 418, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// Elapsed time: 75 seconds
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 455, 96, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 302, 117, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 691, 263, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 522, 48, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 478, 51, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 408, 39, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+selectButton(PAResourceCommand.PACommandNames_AUTO_FIT_SELECTION, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+// Run Command: PAResourceCommand.PACommandNames_AUTO_FIT_SELECTION
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 212, 23, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 200, 20, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+// Elapsed time: 23 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 395, 120, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 347, 119, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+// [Engine Memory]: 667 MB (+2254kb) [00:13:56]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 214, 206, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 654, 114, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+// Elapsed time: 14 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 475, 106, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 469, 105, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 114 MB (+1337kb) [00:14:23]
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h:k (JPanel:JComponent, cg:JFrame)
+// w:p (cg:JFrame): Run Connection Automation: addNotify
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (8 out of 8 selected)]", 0, true, true, ui.utils.TriState.True); // J:a (JViewport:JComponent, w:p) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, w:p)
+dismissDialog("Run Connection Automation"); // w:p (cg:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// bs:g (cg:JFrame):  Run Connection Automation : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// HOptionPane Warning: ''3' automation cannot be run as they are obsolete due to previously run automation. (Run Connection Automation)'
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins DDS_0/s00_axi_aclk] 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins ps7_0_axi_periph/ACLK] 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins ps7_0_axi_periph/M01_ACLK] 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins rst_ps7_0_50M/slowest_sync_clk] 
+// Tcl Message: endgroup 
+selectButton("PAResourceAtoD.ApplyRSBMultiAutomationDialog_AUTOMATION_CANNOT_BE_RUN_AS_IT_OBSOLETE_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]' 
+// Elapsed time: 28 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("IP Integrator", "Block Design", "DesignTask.IP_INTEGRATOR");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: close_bd_design [get_bd_designs system] 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0 Adding cell -- xilinx.com:user:DDS:1.0 - DDS_0 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0 Adding cell -- xilinx.com:user:ADC:1.0 - ADC_0 
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <system> from BD file <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 65 MB. Current time: 11/30/17 2:37:06 PM CST
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 240, 39); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 242, 50); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 242, 50, false, false, false, false, true); // dv:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 616, 89); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 705, 57); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 716, 46); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 678, 44); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 166, 46); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 314, 47); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 350, 48); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 543, 55); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 602, 43); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 818, 52); // dv:J (JPanel:JComponent, cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 318, 164, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_SELECT_ALL, "Select All"); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// PAPropertyPanels.initPanels (ADC_MOSI) elapsed time: 0.2s
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 315, 163, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN, "Disconnect Pin"); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins ADC_0/ADC_Clk_2Mhz] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// bs:g (cg:JFrame):  Save Design : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd>  
+dismissDialog("Save Design"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 369, 117, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+// bs:g (cg:JFrame):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 760 MB. GUI used memory: 68 MB. Current time: 11/30/17 2:37:46 PM CST
+// [Engine Memory]: 761 MB (+63148kb) [00:16:05]
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1046.051 ; gain = 79.941 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// p:g (cg:JFrame): Customize Pin: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Customize Pin"); // p:g (cg:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 277, 94, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC, "Customize Block..."); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// M:bs (cg:JFrame):  Re-customize IP : addNotify
+// [Engine Memory]: 802 MB (+3707kb) [00:16:21]
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 78 MB. Current time: 11/30/17 2:38:07 PM CST
+dismissDialog("Re-customize IP"); // M:bs (cg:JFrame)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "PLL"); // cM:a
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER, (String) null); // u:JideToggleButton (JPanel:JComponent, p:g): TRUE
+// Elapsed time: 29 seconds
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER_MANUAL, "PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER"); // u:JideToggleButton (JPanel:JComponent, p:g): FALSE
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER, (String) null); // u:JideToggleButton (JPanel:JComponent, p:g): TRUE
+setText("PRIM IN FREQ", "50.000"); // z:X (cS:y, p:g)
+selectCheckBox((HResource) null, "Phase Alignment", false); // g:JCheckBox (bu:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "Phase Alignment", false); // g:JCheckBox (bu:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "Phase Alignment", true); // g:JCheckBox (bu:F, p:g): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "PLLE2 Settings", 2); // cR:i (C:JPanel, p:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 854 MB. GUI used memory: 81 MB. Current time: 11/30/17 2:39:01 PM CST
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cR:i (C:JPanel, p:g)
+// [Engine Memory]: 856 MB (+14068kb) [00:17:21]
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cR:i (C:JPanel, p:g)
+// Elapsed time: 14 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cR:i (C:JPanel, p:g)
+selectCheckBox((HResource) null, "reset", false); // g:JCheckBox (bu:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "locked", false); // g:JCheckBox (bu:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "reset", true); // g:JCheckBox (bu:F, p:g): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "reset", false); // g:JCheckBox (bu:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [GUI Memory]: 121 MB (+1462kb) [00:18:06]
+// Elapsed time: 26 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "2.000"); // z:X (cS:y)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cR:i (C:JPanel, p:g)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "MMCM"); // cM:a
+// HMemoryUtils.trashcanNow. Engine heap size: 883 MB. GUI used memory: 94 MB. Current time: 11/30/17 2:40:12 PM CST
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cR:i (C:JPanel, p:g)
+// Elapsed time: 11 seconds
+selectCheckBox((HResource) null, "locked", false); // g:JCheckBox (bu:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "reset", false); // g:JCheckBox (bu:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "power_down", true); // g:JCheckBox (bu:F, p:g): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "power_down", false); // g:JCheckBox (bu:F, p:g): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Elapsed time: 13 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 264, 115, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells clk_wiz_1] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "System_zoom_out"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Tcl Command: 'set_property location {2 516 46} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 516 46} [get_bd_cells clk_wiz_0] 
+// Tcl Command: 'set_property location {1 285 60} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 285 60} [get_bd_cells clk_wiz_0] 
+// Tcl Command: 'set_property location {1 191 53} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 191 53} [get_bd_cells clk_wiz_0] 
+// Elapsed time: 18 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 202, 116, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC, "Customize Block..."); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// M:bs (cg:JFrame):  Re-customize IP : addNotify
+// p:g (cg:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // M:bs (cg:JFrame)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cR:i (C:JPanel, p:g)
+// Elapsed time: 32 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 2); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // cR:i (C:JPanel, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ADC_0/ADC_Clk_2Mhz] [get_bd_pins clk_wiz_0/clk_out1] 
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Tcl Command: 'set_property location {2 516 49} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 516 49} [get_bd_cells clk_wiz_0] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd>  Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ui/bd_c954508f.ui>  
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Command: 'set_property location {1 203 55} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 203 55} [get_bd_cells clk_wiz_0] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ui/bd_c954508f.ui>  
+// Elapsed time: 32 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 573, 229, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:p (cg:JFrame): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:p)
+// bs:g (cg:JFrame):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name ADC_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/ADC_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/adc_v1_0_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 907 MB (+8777kb) [00:21:25]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 917 MB. GUI used memory: 105 MB. Current time: 11/30/17 2:43:08 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1132.125 ; gain = 0.922 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 130 MB (+3643kb) [00:21:31]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1137.523 ; gain = 6.320 
+// 'i' command handler elapsed time: 13 seconds
+// Elapsed time: 12 seconds
+dismissDialog("Edit in IP Packager"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 138 MB (+1577kb) [00:21:38]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (ADC_v1_0_S00_AXI.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+// [GUI Memory]: 146 MB (+1064kb) [00:21:45]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/hdl/ADC_v1_0.v":4'
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 37 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/hdl/ADC_v1_0_S00_AXI.v":4'
+// Elapsed time: 41 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/src/adc.v":1'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/hdl/ADC_v1_0_S00_AXI.v":4'
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/hdl/ADC_v1_0.v":4'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/hdl/ADC_v1_0_S00_AXI.v":4'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/src/adc.v":1'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v), spi_master_i : spi_master (spi_master.v)]", 4, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/src/spi_master.v":17'
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v), spi_master_i : spi_master (spi_master.v)]", 4, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/src/adc.v":1'
+// [GUI Memory]: 154 MB (+806kb) [00:25:23]
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 165 MB (+2862kb) [00:35:52]
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 1301 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/hdl/ADC_v1_0_S00_AXI.v":4'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v)]", 2); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ADC_v1_0 (ADC_v1_0.v), ADC_v1_0_S00_AXI_inst : ADC_v1_0_S00_AXI (ADC_v1_0_S00_AXI.v), adc_i : adc (adc.v)]", 3, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/src/adc.v":1'
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // an:k (JViewport:JComponent, cg:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // an:k (JViewport:JComponent, cg:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // an:k (JViewport:JComponent, cg:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // an:k (JViewport:JComponent, cg:JFrame)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h:k (JPanel:JComponent, cg:JFrame)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // an:k (JViewport:JComponent, cg:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // an:k (JViewport:JComponent, cg:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // an:k (JViewport:JComponent, cg:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cg:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 5 [ipx::current_core] 
+// bs:g (cg:JFrame):  Package IP : addNotify
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceItoN.MessageBanner_SEE_LIST_OF_WARNING_MESSAGES, "1 warning"); // h:k (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, IP Packager, Ports and Interfaces Wizard, [IP_Flow 19-3153] Bus Interface 's00_axi_aclk': ASSOCIATED_BUSIF bus parameter is missing.. ]", 3, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectButton(PAResourceItoN.MessageBanner_SEE_LIST_OF_INFO_MESSAGES, "1 info message"); // h:k (JPanel:JComponent, cg:JFrame)
+selectButton(PAResourceItoN.MessageBanner_SEE_LIST_OF_WARNING_MESSAGES, "1 warning"); // h:k (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, IP Packager, Ports and Interfaces Wizard, [IP_Flow 19-3153] Bus Interface 's00_axi_aclk': ASSOCIATED_BUSIF bus parameter is missing.. ]", 3, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, IP Packager, Ports and Interfaces Wizard, [IP_Flow 19-3153] Bus Interface 's00_axi_aclk': ASSOCIATED_BUSIF bus parameter is missing.. ]", 3, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, IP Packager, Ports and Interfaces Wizard, [IP_Flow 19-3153] Bus Interface 's00_axi_aclk': ASSOCIATED_BUSIF bus parameter is missing.. ]", 3, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, IP Packager]", 1, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, IP Packager, Ports and Interfaces Wizard, [IP_Flow 19-3153] Bus Interface 's00_axi_aclk': ASSOCIATED_BUSIF bus parameter is missing.. ]", 3, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, IP Packager, Ports and Interfaces Wizard]", 2, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, IP Packager, Ports and Interfaces Wizard, [IP_Flow 19-3153] Bus Interface 's00_axi_aclk': ASSOCIATED_BUSIF bus parameter is missing.. ]", 3, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cg:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 6 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bs:g (cg:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 949 MB. GUI used memory: 114 MB. Current time: 11/30/17 3:08:41 PM CST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bs:g (cg:JFrame)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0' 
+selectButton(PAResourceCommand.PACommandNames_SELECT_AREA, "System_select_area"); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+// Run Command: PAResourceCommand.PACommandNames_SELECT_AREA
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 554, 118, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bs:g (cg:JFrame):  IP Catalog : addNotify
+dismissDialog("IP Catalog"); // bs:g (cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // ad:aJ
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "ADC_0 ; S00_AXI ; S00_AXI_reg ; 0x43C1_0000 ; 64K ; 0x43C1_FFFF", 2, "0x43C1_0000", 3, false); // g:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "DDS_0 ; S00_AXI ; S00_AXI_reg ; 0x43C0_0000 ; 64K ; 0x43C0_FFFF", 3, "0x43C0_0000", 3, false); // g:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "ADC_0 ; S00_AXI ; S00_AXI_reg ; 0x43C1_0000 ; 64K ; 0x43C1_FFFF", 2, "S00_AXI_reg", 2, false); // g:af (JViewport:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: ERROR: [BD 41-1179] The following IPs in this design are locked. This command cannot be run until these IPs are unlocked. Please run report_ip_status for more details and a recommendation on how to fix this issue.  /ADC_0  ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd  ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution. 
+// aj:a (cg:JFrame): Launch Run Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, aj:a)
+dismissDialog("Launch Run Critical Messages"); // aj:a (cg:JFrame)
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a:JButton (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// bs:g (cg:JFrame):  Upgrade IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:ADC:1.0 [get_ips  system_ADC_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated system_ADC_0_0 to use current project options 
+// Tcl Message: Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips system_ADC_0_0] -no_script -sync -force -quiet 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// au:p (cg:JFrame): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectTree(PAResourceQtoS.SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE, "[root, system.bd]", 2, false); // aL:i (JViewport:JComponent, au:p)
+selectTree(PAResourceQtoS.SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE, "[root, system.bd]", 0, true); // aL:i (JViewport:JComponent, au:p) - Node
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, au:p)
+// bs:g (cg:JFrame):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Verilog Output written to : C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system.v Verilog Output written to : C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block DDS_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M . INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block ADC_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hw_handoff/system.hwh Generated Block Design Tcl file C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl Generated Hardware Definition File C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1204.535 ; gain = 9.996 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 108 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h:k (JPanel:JComponent, cg:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bs:g (cg:JFrame):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bs:g (cg:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("IP Integrator", "Block Design", "DesignTask.IP_INTEGRATOR");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: close_bd_design [get_bd_designs system] 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), ComplementCalibration_i : ComplementCalibration (ComplementCalibration.v)]", 3, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system_wrapper.v":12'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 154 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ComplementCalibration (ComplementCalibration.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ComplementCalibration (ComplementCalibration.v)]", 2, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/new/ComplementCalibration.v":23'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 52 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, system_wrapper (system_wrapper.v)]", 5); // B:i (D:JPanel, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0 Adding cell -- xilinx.com:user:DDS:1.0 - DDS_0 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0 Adding cell -- xilinx.com:user:ADC:1.0 - ADC_0 
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <system> from BD file <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 511, 37); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 489, 60); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 444, 53); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 463, 44); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 650, 46); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 165, 45); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 415, 47); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 302, 44); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 618, 42); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 181, 46); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 738, 46); // dv:J (JPanel:JComponent, cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), ComplementCalibration_i : ComplementCalibration (ComplementCalibration.v)]", 3, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system_wrapper.v":12'
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IP_INTEGRATOR
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 380, 89, 999, 282, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 386, 89, 999, 282, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// u:p (cg:JFrame): Settings: addNotify
+dismissDialog("Settings"); // u:p (cg:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 386, 88, 999, 282, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Pin Properties..."); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectLabel((HResource) null, "clk_wiz_0_clk_out1"); // k:b (cW:h, cg:JFrame)
+selectLabel((HResource) null, "clk_wiz_0_clk_out1"); // k:b (cW:h, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// u:p (cg:JFrame): Settings: addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+dismissDialog("Settings"); // u:p (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 17, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// f:p (cg:JFrame): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Nov 30 15:17:11 2017] Launched synth_1... Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/runme.log [Thu Nov 30 15:17:11 2017] Launched impl_1... Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// u:p (cg:JFrame): Settings: addNotify
+dismissDialog("Settings"); // u:p (cg:JFrame)
+// [GUI Memory]: 177 MB (+4127kb) [00:56:33]
+// [GUI Memory]: 187 MB (+878kb) [00:57:01]
+// Elapsed time: 70 seconds
+collapseTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Running synth_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Nov 30 15:17:17 CST 2017 ; 00:01:15 ; Vivado Synthesis Defaults (Vivado Synthesis 2017) ; xc7z010clg400-1 ; Vivado Synthesis Defaults", 0); // V:af (JViewport:JComponent, cg:JFrame)
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Running synth_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Nov 30 15:17:17 CST 2017 ; 00:01:15 ; Vivado Synthesis Defaults (Vivado Synthesis 2017) ; xc7z010clg400-1 ; Vivado Synthesis Defaults", 0); // V:af (JViewport:JComponent, cg:JFrame)
+// Elapsed time: 38 seconds
+collapseTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Running synth_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Nov 30 15:17:17 CST 2017 ; 00:01:45 ; Vivado Synthesis Defaults (Vivado Synthesis 2017) ; xc7z010clg400-1 ; Vivado Synthesis Defaults", 0); // V:af (JViewport:JComponent, cg:JFrame)
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Running synth_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Nov 30 15:17:17 CST 2017 ; 00:01:45 ; Vivado Synthesis Defaults (Vivado Synthesis 2017) ; xc7z010clg400-1 ; Vivado Synthesis Defaults", 0); // V:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Queued... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 00:00:00 ; Vivado Implementation Defaults (Vivado Implementation 2017) ; xc7z010clg400-1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // V:af (JViewport:JComponent, cg:JFrame)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.5s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2); // B:i (D:JPanel, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2); // B:i (D:JPanel, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 199 MB (+3066kb) [00:58:15]
+// Elapsed time: 25 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "220 warnings"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5788] Register hold_to_send_reg in module spi_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/6a7e/src/spi_master.v:56]. ]", 3, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6014] Unused sequential element byte_index was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/6a7e/hdl/ADC_v1_0_S00_AXI.v:227]. ]", 4, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5788] Register hold_to_send_reg in module spi_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/6a7e/src/spi_master.v:56]. ]", 3, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6014] Unused sequential element byte_index was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/6a7e/hdl/ADC_v1_0_S00_AXI.v:227]. ]", 4, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.. ]", 9, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation]", 10); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 11, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 11); // ah:i (JViewport:JComponent, cg:JFrame)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 1); // ah:i (JViewport:JComponent, cg:JFrame)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation]", 2); // ah:i (JViewport:JComponent, cg:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 146 seconds
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:p (cg:JFrame): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g:JCheckBox (JPanel:JComponent, X:p): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:p)
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, H:JDialog)
+dismissDialog("Export Hardware"); // X:p (cg:JFrame)
+// Tcl Message: file copy -force C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.sysdef C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:p (cg:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:p)
+dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
+// Tcl Message: launch_sdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v)]", 3, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+// Elapsed time: 109 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:p (cg:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:p)
+dismissDialog("Export Hardware"); // X:p (cg:JFrame)
+// Tcl Message: file mkdir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk 
+// Tcl Message: file copy -force C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.sysdef C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:p (cg:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:p)
+dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
+// Tcl Message: launch_sdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// [GUI Memory]: 212 MB (+3474kb) [01:04:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 949 MB. GUI used memory: 120 MB. Current time: 11/30/17 3:42:49 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// Elapsed time: 1604 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 18, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (system.bd) elapsed time: 0.3s
+// Tcl Message: open_hw 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h:k (JPanel:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// bs:g (cg:JFrame):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1528.496 ; gain = 143.199 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bs:g (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// PAPropertyPanels.initPanels (xc7z010_1) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// n:a (cg:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081 
+// Tcl Message: ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+// Tcl Message: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors. 
+// n:a (cg:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// TclEventType: HW_SERVER_UPDATE
+// n:a (cg:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081 
+// Tcl Message: ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+// Tcl Message: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors. 
+// n:a (cg:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// TclEventType: HW_SERVER_UPDATE
+// n:a (cg:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081 
+// Tcl Message: ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+// Tcl Message: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors. 
+// n:a (cg:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 94 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, n:a)
+dismissDialog("Close Hardware Target"); // n:a (cg:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, n:a)
+dismissDialog("Close Hardware Target"); // n:a (cg:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, n:a)
+dismissDialog("Close Hardware Target"); // n:a (cg:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, n:a)
+dismissDialog("Close Hardware Target"); // n:a (cg:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, n:a)
+dismissDialog("Close Hardware Target"); // n:a (cg:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, n:a)
+dismissDialog("Close Hardware Target"); // n:a (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h:k (JPanel:JComponent, cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// Elapsed time: 761 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h:k (JPanel:JComponent, cg:JFrame)
+selectMenuItem((HResource) null, "xc7z010_1"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// bs:g (cg:JFrame):  Refresh Device : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Refresh Device"); // bs:g (cg:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// n:a (cg:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081 
+// Tcl Message: ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+// Tcl Message: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors. 
+// n:a (cg:JFrame): Close Hardware Target: addNotify
+dismissDialog("Close Hardware Target"); // n:a (cg:JFrame)
+dismissDialog("Close Hardware Target"); // n:a (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v)]", 3, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+// Elapsed time: 24 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// M:bs (cg:JFrame):  Re-customize IP : addNotify
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// Elapsed time: 13 seconds
+dismissDialog("Re-customize IP"); // M:bs (cg:JFrame)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Implementation", 1); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cR:i (C:JPanel, p:g)
+// Elapsed time: 10 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Additional Summary", 5); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Implementation", 1); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Configuration", 0); // cR:i (C:JPanel, p:g)
+setText("Phase Width", "31"); // z:X (cS:y, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cR:i (C:JPanel, p:g)
+// Elapsed time: 14 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, "PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE", (HResource) null, "Configuration", 0, false, true); // cR:i (C:JPanel, p:g) - Double Click
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Implementation", 1); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+// Elapsed time: 21 seconds
+setText("1", "0000000000000000000"); // z:X (cS:y, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cR:i (C:JPanel, p:g)
+// Elapsed time: 61 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+// Elapsed time: 11 seconds
+setText("1", "0001000011000110"); // z:X (cS:y, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Additional Summary", 5); // cR:i (C:JPanel, p:g)
+// Elapsed time: 14 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cR:i (C:JPanel, p:g)
+setText("1", "0001000011000111"); // z:X (cS:y, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Additional Summary", 5); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Additional Summary", 5); // cR:i (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cR:i (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.Phase_Width {31} CONFIG.PINC1 {0001000011000111} CONFIG.Output_Width {8}] [get_bd_cells dds_compiler_0]'
+// TclEventType: FILE_SET_CHANGE
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// bs:g (p:g):  Customize IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.Phase_Width {31} CONFIG.PINC1 {0001000011000111} CONFIG.Output_Width {8}] [get_bd_cells dds_compiler_0] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bs:g (p:g)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 532, 386, 999, 546, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:p (cg:JFrame): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:p)
+// bs:g (cg:JFrame):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name DDS_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/DDS_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/dds_v1_0_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1600.016 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1600.016 ; gain = 0.000 
+// 'i' command handler elapsed time: 12 seconds
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 12 seconds
+dismissDialog("Edit in IP Packager"); // bs:g (cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: current_project RCIMS 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// PAPropertyPanels.initPanels (DDS_v1_0.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+// Tcl Message: current_project DDS_v1_0_project 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v), DDS_v1_0_S00_AXI_inst : DDS_v1_0_S00_AXI (DDS_v1_0_S00_AXI.v)]", 2, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0/hdl/DDS_v1_0.v":4'
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v), DDS_v1_0_S00_AXI_inst : DDS_v1_0_S00_AXI (DDS_v1_0_S00_AXI.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v), DDS_v1_0_S00_AXI_inst : DDS_v1_0_S00_AXI (DDS_v1_0_S00_AXI.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v), DDS_v1_0_S00_AXI_inst : DDS_v1_0_S00_AXI (DDS_v1_0_S00_AXI.v)]", 2, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0/hdl/DDS_v1_0_S00_AXI.v":4'
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0/hdl/DDS_v1_0.v":4'
+// HMemoryUtils.trashcanNow. Engine heap size: 949 MB. GUI used memory: 149 MB. Current time: 11/30/17 4:12:51 PM CST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0/hdl/DDS_v1_0.v":4'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v), DDS_v1_0_S00_AXI_inst : DDS_v1_0_S00_AXI (DDS_v1_0_S00_AXI.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS_v1_0 (DDS_v1_0.v), DDS_v1_0_S00_AXI_inst : DDS_v1_0_S00_AXI (DDS_v1_0_S00_AXI.v)]", 2, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0/hdl/DDS_v1_0_S00_AXI.v":4'
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 71 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // an:k (JViewport:JComponent, cg:JFrame)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h:k (JPanel:JComponent, cg:JFrame)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // an:k (JViewport:JComponent, cg:JFrame)

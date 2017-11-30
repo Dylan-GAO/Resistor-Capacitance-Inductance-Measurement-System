@@ -37,6 +37,13 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 # To test this script, run the following commands from Vivado Tcl console:
 # source system_script.tcl
 
+
+# The design that will be created by this Tcl script contains the following 
+# module references:
+# Clk_4_Div, ComplementCalibration
+
+# Please add the sources of those modules before sourcing this Tcl script.
+
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
 # <./myproj/project_1.xpr> in the current working folder.
@@ -161,7 +168,7 @@ proc create_root_design { parentCell } {
   set ADC_MISO [ create_bd_port -dir I ADC_MISO ]
   set ADC_MOSI [ create_bd_port -dir O ADC_MOSI ]
   set ADC_SCK [ create_bd_port -dir O ADC_SCK ]
-  set clk_out1 [ create_bd_port -dir O -type clk clk_out1 ]
+  set clk_out [ create_bd_port -dir O -type clk clk_out ]
   set clock_rtl [ create_bd_port -dir I -type clk clock_rtl ]
   set_property -dict [ list \
 CONFIG.FREQ_HZ {50000000} \
@@ -177,6 +184,28 @@ CONFIG.POLARITY {ACTIVE_LOW} \
   # Create instance: ADC_0, and set properties
   set ADC_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:ADC:1.0 ADC_0 ]
 
+  # Create instance: Clk_4_Div_0, and set properties
+  set block_name Clk_4_Div
+  set block_cell_name Clk_4_Div_0
+  if { [catch {set Clk_4_Div_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $Clk_4_Div_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: ComplementCalibration_0, and set properties
+  set block_name ComplementCalibration
+  set block_cell_name ComplementCalibration_0
+  if { [catch {set ComplementCalibration_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $ComplementCalibration_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: DDS_0, and set properties
   set DDS_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:DDS:1.0 DDS_0 ]
 
@@ -185,9 +214,9 @@ CONFIG.POLARITY {ACTIVE_LOW} \
   set_property -dict [ list \
 CONFIG.CLKIN1_JITTER_PS {200.0} \
 CONFIG.CLKOUT1_DRIVES {BUFG} \
-CONFIG.CLKOUT1_JITTER {972.000} \
-CONFIG.CLKOUT1_PHASE_ERROR {855.057} \
-CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {4.9152} \
+CONFIG.CLKOUT1_JITTER {308.663} \
+CONFIG.CLKOUT1_PHASE_ERROR {151.172} \
+CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {8} \
 CONFIG.CLKOUT2_DRIVES {BUFG} \
 CONFIG.CLKOUT3_DRIVES {BUFG} \
 CONFIG.CLKOUT4_DRIVES {BUFG} \
@@ -195,12 +224,12 @@ CONFIG.CLKOUT5_DRIVES {BUFG} \
 CONFIG.CLKOUT6_DRIVES {BUFG} \
 CONFIG.CLKOUT7_DRIVES {BUFG} \
 CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} \
-CONFIG.MMCM_CLKFBOUT_MULT_F {60.875} \
+CONFIG.MMCM_CLKFBOUT_MULT_F {17.500} \
 CONFIG.MMCM_CLKIN1_PERIOD {20.000} \
 CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
-CONFIG.MMCM_CLKOUT0_DIVIDE_F {123.750} \
+CONFIG.MMCM_CLKOUT0_DIVIDE_F {109.375} \
 CONFIG.MMCM_COMPENSATION {ZHOLD} \
-CONFIG.MMCM_DIVCLK_DIVIDE {5} \
+CONFIG.MMCM_DIVCLK_DIVIDE {1} \
 CONFIG.PRIMITIVE {MMCM} \
 CONFIG.PRIM_IN_FREQ {50.000} \
 CONFIG.USE_FREQ_SYNTH {true} \
@@ -220,10 +249,10 @@ CONFIG.Noise_Shaping {None} \
 CONFIG.Output_Frequency1 {0} \
 CONFIG.Output_Selection {Cosine} \
 CONFIG.Output_Width {8} \
-CONFIG.PINC1 {0000000000000010} \
+CONFIG.PINC1 {1000011000111} \
 CONFIG.Parameter_Entry {Hardware_Parameters} \
 CONFIG.Phase_Increment {Programmable} \
-CONFIG.Phase_Width {16} \
+CONFIG.Phase_Width {31} \
 CONFIG.S_PHASE_Has_TUSER {Not_Required} \
  ] $dds_compiler_0
 
@@ -256,13 +285,15 @@ CONFIG.NUM_MI {2} \
   connect_bd_net -net ADC_0_ADC_MOSI [get_bd_ports ADC_MOSI] [get_bd_pins ADC_0/ADC_MOSI]
   connect_bd_net -net ADC_0_ADC_SCK [get_bd_ports ADC_SCK] [get_bd_pins ADC_0/ADC_SCK]
   connect_bd_net -net ADC_MISO_1 [get_bd_ports ADC_MISO] [get_bd_pins ADC_0/ADC_MISO]
+  connect_bd_net -net Clk_4_Div_0_Clk_2Mhz [get_bd_ports clk_out] [get_bd_pins ADC_0/ADC_Clk_2Mhz] [get_bd_pins Clk_4_Div_0/Clk_2Mhz]
+  connect_bd_net -net ComplementCalibration_0_DDS_DATA_OUT [get_bd_ports m_axis_data_tdata] [get_bd_pins ComplementCalibration_0/DDS_DATA_OUT]
   connect_bd_net -net DDS_0_DDS_PHASE_DATA [get_bd_pins DDS_0/DDS_PHASE_DATA] [get_bd_pins dds_compiler_0/s_axis_config_tdata]
   connect_bd_net -net DDS_0_DDS_PHASE_READY [get_bd_pins DDS_0/DDS_PHASE_READY] [get_bd_pins dds_compiler_0/s_axis_config_tvalid]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_ports clk_out1] [get_bd_pins clk_wiz_0/clk_out1]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins Clk_4_Div_0/Clk_8Mhz] [get_bd_pins clk_wiz_0/clk_out1]
   connect_bd_net -net clock_rtl_1 [get_bd_ports clock_rtl] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_ports m_axis_data_tdata] [get_bd_pins dds_compiler_0/m_axis_data_tdata]
+  connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_pins ComplementCalibration_0/DDS_DATA_IN] [get_bd_pins dds_compiler_0/m_axis_data_tdata]
   connect_bd_net -net dds_compiler_0_m_axis_data_tvalid [get_bd_ports m_axis_data_tvalid] [get_bd_pins dds_compiler_0/m_axis_data_tvalid]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins ADC_0/ADC_Clk_2Mhz] [get_bd_pins ADC_0/s00_axi_aclk] [get_bd_pins DDS_0/s00_axi_aclk] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins ADC_0/s00_axi_aclk] [get_bd_pins DDS_0/s00_axi_aclk] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_50M_interconnect_aresetn [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins rst_ps7_0_50M/interconnect_aresetn]
   connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins ADC_0/ADC_reset] [get_bd_pins ADC_0/s00_axi_aresetn] [get_bd_pins DDS_0/s00_axi_aresetn] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]

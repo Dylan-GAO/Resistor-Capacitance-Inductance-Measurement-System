@@ -545,7 +545,7 @@ ximum {}} value 0} bitoffset {attribs {resolve_type generated dependency user_of
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_CONFIG.TDATA_NUM_BYTES">2</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_CONFIG.TDATA_NUM_BYTES">4</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -874,7 +874,7 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:515ce2f6</spirit:value>
+            <spirit:value>7:9088c899</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -888,11 +888,11 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Nov 18 04:26:48 UTC 2017</spirit:value>
+            <spirit:value>Thu Nov 30 08:21:32 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:515ce2f6</spirit:value>
+            <spirit:value>7:9088c899</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -907,11 +907,11 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Nov 18 04:26:48 UTC 2017</spirit:value>
+            <spirit:value>Thu Nov 30 08:21:32 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:515ce2f6</spirit:value>
+            <spirit:value>7:9088c899</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -954,7 +954,7 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:53803510</spirit:value>
+            <spirit:value>7:01cb86a2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -969,11 +969,11 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Nov 18 04:26:48 UTC 2017</spirit:value>
+            <spirit:value>Thu Nov 30 08:21:32 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:53803510</spirit:value>
+            <spirit:value>7:01cb86a2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1215,7 +1215,7 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_CONFIG_TDATA_WIDTH&apos;)) - 1)">15</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_CONFIG_TDATA_WIDTH&apos;)) - 1)">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1706,7 +1706,7 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ACCUMULATOR_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ACCUMULATOR_WIDTH">16</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ACCUMULATOR_WIDTH">31</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_CHANNELS</spirit:name>
@@ -1766,7 +1766,7 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_PHASE_INCREMENT_VALUE</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PHASE_INCREMENT_VALUE">0000000000000010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PHASE_INCREMENT_VALUE">1000011000111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_RESYNC</spirit:name>
@@ -1838,7 +1838,7 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_S_CONFIG_TDATA_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_CONFIG_TDATA_WIDTH">16</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_CONFIG_TDATA_WIDTH">32</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_HAS_M_DATA</spirit:name>
@@ -2375,12 +2375,12 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
     <spirit:parameter>
       <spirit:name>Phase_Width</spirit:name>
       <spirit:displayName>Phase Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Phase_Width" spirit:order="9" spirit:minimum="3" spirit:maximum="48" spirit:rangeType="long">16</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Phase_Width" spirit:order="9" spirit:minimum="3" spirit:maximum="48" spirit:rangeType="long">31</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Output_Width</spirit:name>
       <spirit:displayName>Output Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Output_Width" spirit:order="10" spirit:minimum="3" spirit:maximum="26" spirit:rangeType="long">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Output_Width" spirit:order="10" spirit:minimum="3" spirit:maximum="16" spirit:rangeType="long">8</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Phase_Increment</spirit:name>
@@ -2501,7 +2501,7 @@ rated dependency chanid_width format long minimum {} maximum {}} value 0} bitoff
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PINC1</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PINC1" spirit:order="33">0000000000000010</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PINC1" spirit:order="33">1000011000111</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Phase_Offset_Angles1</spirit:name>
