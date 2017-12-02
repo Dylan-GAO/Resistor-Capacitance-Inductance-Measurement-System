@@ -1,0 +1,19 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+C:/Users/Administrator/lcd_test/lcd_test.ip_user_files/bd/system/hdl/system.v,1512114712,verilog,,,,system,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.ip_user_files/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.v,1512114717,verilog,,,,system_clk_wiz_0_0,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.ip_user_files/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_clk_wiz.v,1512114716,verilog,,,,system_clk_wiz_0_0_clk_wiz,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.ip_user_files/bd/system/ip/system_data_combine_module_0_0/sim/system_data_combine_module_0_0.v,1512109893,verilog,,,,system_data_combine_module_0_0,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.ip_user_files/bd/system/ip/system_dist_mem_gen_0_0/sim/system_dist_mem_gen_0_0.v,1512114713,verilog,,,,system_dist_mem_gen_0_0,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.ip_user_files/bd/system/ip/system_lcd_control_module_0_1/sim/system_lcd_control_module_0_1.v,1512109893,verilog,,,,system_lcd_control_module_0_1,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.ip_user_files/bd/system/ip/system_num_1_0/sim/system_num_1_0.v,1512114714,verilog,,,,system_num_1_0,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.ip_user_files/bd/system/ip/system_num_1_1/sim/system_num_1_1.v,1512114714,verilog,,,,system_num_1_1,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.ip_user_files/bd/system/ip/system_sync_module_0_0/sim/system_sync_module_0_0.v,1512109893,verilog,,,,system_sync_module_0_0,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.sim/sim_1/behav/glbl.v,1497407496,verilog,,,,glbl,,,,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.srcs/sim_1/new/lcd_tb.v,1512116296,verilog,,,,lcd_tb,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.srcs/sources_1/bd/system/hdl/system_wrapper.v,1512114712,verilog,,,,system_wrapper,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.srcs/sources_1/imports/lcd_test/data_combine_module.v,1512099396,verilog,,,,data_combine_module,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.srcs/sources_1/imports/lcd_test/lcd_control_module.v,1512099461,verilog,,,,lcd_control_module,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,
+C:/Users/Administrator/lcd_test/lcd_test.srcs/sources_1/imports/lcd_test/sync_module.v,1512099542,verilog,,,,sync_module,,,../../../lcd_test.srcs/sources_1/bd/system/ipshared/9c7f,,,,,

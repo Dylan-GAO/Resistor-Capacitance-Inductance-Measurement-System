@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="lcd_test">
-		<CBX_INST_ENTRY INSTANCE_NAME="|top|pll:inst|altpll:altpll_component" CBX_FILE_NAME="pll_altpll.v"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top|rom_1:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_je91.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top|rom_2:inst4|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ke91.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top|rom_3:inst6|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_aa91.tdf"/>
-	</PROJECT>
-</LOG_ROOT>
