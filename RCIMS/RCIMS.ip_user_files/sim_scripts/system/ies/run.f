@@ -92,10 +92,10 @@
 -endlib
 -makelib ies/xil_defaultlib \
   "../../../bd/system/ip/system_xbar_0/sim/system_xbar_0.v" \
-  "../../../bd/system/ipshared/2d43/hdl/ADC_v1_0_S00_AXI.v" \
-  "../../../bd/system/ipshared/2d43/src/adc.v" \
-  "../../../bd/system/ipshared/2d43/src/spi_master.v" \
-  "../../../bd/system/ipshared/2d43/hdl/ADC_v1_0.v" \
+  "../../../bd/system/ipshared/eeb5/hdl/ADC_v1_0_S00_AXI.v" \
+  "../../../bd/system/ipshared/eeb5/src/adc.v" \
+  "../../../bd/system/ipshared/eeb5/src/spi_master.v" \
+  "../../../bd/system/ipshared/eeb5/hdl/ADC_v1_0.v" \
   "../../../bd/system/ip/system_ADC_0_0/sim/system_ADC_0_0.v" \
   "../../../bd/system/ipshared/315f/hdl/DDS_v1_0_S00_AXI.v" \
   "../../../bd/system/ipshared/315f/hdl/DDS_v1_0.v" \

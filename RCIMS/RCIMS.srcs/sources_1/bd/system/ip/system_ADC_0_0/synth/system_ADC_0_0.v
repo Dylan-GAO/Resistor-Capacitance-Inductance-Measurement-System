@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:ADC:1.0
-// IP Revision: 8
+// IP Revision: 11
 
 (* X_CORE_INFO = "ADC_v1_0,Vivado 2017.2" *)
 (* CHECK_LICENSE_TYPE = "system_ADC_0_0,ADC_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "system_ADC_0_0,ADC_v1_0,{x_ipProduct=Vivado 2017.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ADC,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
+(* CORE_GENERATION_INFO = "system_ADC_0_0,ADC_v1_0,{x_ipProduct=Vivado 2017.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ADC,x_ipVersion=1.0,x_ipCoreRevision=11,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_ADC_0_0 (
   ADC_reset,

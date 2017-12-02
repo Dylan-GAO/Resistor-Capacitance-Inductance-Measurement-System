@@ -1,0 +1,5 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "system_wrapper_time_impl.v" --include "../../../../RCIMS.srcs/sources_1/bd/system/ipshared/7e3a/hdl" --include "../../../../RCIMS.srcs/sources_1/bd/system/ipshared/2ad9/hdl" --include "../../../../RCIMS.srcs/sources_1/bd/system/ipshared/39ca/hdl/verilog" --include "../../../../RCIMS.srcs/sources_1/bd/system/ipshared/6eb1/hdl" --include "../../../../RCIMS.srcs/sources_1/bd/system/ipshared/1d61/hdl" --include "../../../../RCIMS.srcs/sources_1/bd/system/ipshared/9c7f"
+
+# Do not sort compile order
+nosort

@@ -42,16 +42,14 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
-  create_project -in_memory -part xc7z010clg400-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.dcp
   set_property webtalk.parent_dir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/wt [current_project]
   set_property parent.project_path C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr [current_project]
   set_property ip_repo_paths {
@@ -62,16 +60,6 @@ set rc [catch {
   set_property ip_output_repo C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/system_wrapper.dcp
-  set_msg_config -source 4 -id {BD 41-1661} -suppress
-  set_param project.isImplRun true
-  add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd
-  set_property is_locked true [get_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd]
-  set_param project.isImplRun false
-  read_xdc C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/constrs_1/new/system.xdc
-  set_param project.isImplRun true
-  link_design -top system_wrapper -part xc7z010clg400-1
-  set_param project.isImplRun false
   write_hwdef -force -file system_wrapper.hwdef
   close_msg_db -file init_design.pb
 } RESULT]
@@ -140,26 +128,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
-  catch { write_mem_info -force system_wrapper.mmi }
-  write_bitstream -force system_wrapper.bit 
-  catch { write_sysdef -hwdef system_wrapper.hwdef -bitfile system_wrapper.bit -meminfo system_wrapper.mmi -file system_wrapper.sysdef }
-  catch {write_debug_probes -no_partial_ltxfile -quiet -force debug_nets}
-  catch {file copy -force debug_nets.ltx system_wrapper.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

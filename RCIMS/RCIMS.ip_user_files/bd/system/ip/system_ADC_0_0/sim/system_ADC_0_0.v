@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:ADC:1.0
-// IP Revision: 8
+// IP Revision: 11
 
 `timescale 1ns/1ps
 

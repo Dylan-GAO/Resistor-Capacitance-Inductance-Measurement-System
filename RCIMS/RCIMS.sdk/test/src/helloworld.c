@@ -68,7 +68,7 @@ u32 ADC_ReadData(){
 
 int main()
 {
-	u32 ADC_data;
+	u16 ADC_data;
 	int count = 0;
 	int Delay;
     init_platform();
@@ -83,12 +83,19 @@ int main()
 //    for (Delay = 0; Delay < 100000000; Delay++);
 //    DAC_ChangeFreq(0x218E);
 
-    while(1) {
+/*    while(1) {
         ADC_data = ADC_ReadData();
         xil_printf("%d\t%x\n\r", ++count, ADC_data);
-        for (Delay = 0; Delay < 20000000; Delay++);
+        for (Delay = 0; Delay < 50000000; Delay++);
     }
+*/
 
+    while (1){
+    	count++;
+    	//ADC_mWriteReg(ADC_BASEADDR, ADC_S00_AXI_SLV_REG1_OFFSET, count);
+    	xil_printf("%d\t%d\n\r", count, ADC_mReadReg(ADC_BASEADDR, ADC_S00_AXI_SLV_REG0_OFFSET));
+    	for (Delay = 0; Delay < 100000000; Delay++);
+    }
     cleanup_platform();
     return 0;
 }

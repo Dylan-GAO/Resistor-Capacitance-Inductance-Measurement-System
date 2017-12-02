@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Checkpoint Version="7" Minor="0">
+	<BUILD_NUMBER Name="1909853"/>
+	<FULL_BUILD Name="SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017"/>
+	<PRODUCT Name="Vivado v2017.2 (64-bit)"/>
+	<Part Name="xc7z010clg400-1"/>
+	<Top Name="dbg_hub_CV"/>
+	<DisableAutoIOBuffers Name="1"/>
+	<OutOfContext Name="1"/>
+	<HDPlatform Name="0"/>

@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Thu Nov 30 22:56:56 2017
-# Process ID: 9172
+# Start of session at: Fri Dec  1 16:39:07 2017
+# Process ID: 3920
 # Current directory: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1
 # Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
 # Log file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/system_wrapper.vds
@@ -16,31 +16,32 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-
 WARNING: [IP_Flow 19-2207] Repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0' already exists; ignoring attempt to add it again.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 262.289 ; gain = 42.922
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 263.750 ; gain = 44.211
 Command: synth_design -top system_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4828 
+INFO: Helper process launched with PID 6988 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 347.773 ; gain = 82.852
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 349.160 ; gain = 82.746
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'system_wrapper' [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'system' [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system.v:610]
 INFO: [Synth 8-638] synthesizing module 'system_ADC_0_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_ADC_0_0/synth/system_ADC_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'ADC_v1_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/hdl/ADC_v1_0.v:4]
-INFO: [Synth 8-638] synthesizing module 'ADC_v1_0_S00_AXI' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/hdl/ADC_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-226] default block is never used [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/hdl/ADC_v1_0_S00_AXI.v:378]
-INFO: [Synth 8-638] synthesizing module 'adc' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/src/adc.v:1]
-INFO: [Synth 8-638] synthesizing module 'spi_master' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/src/spi_master.v:17]
-WARNING: [Synth 8-5788] Register hold_to_send_reg in module spi_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/src/spi_master.v:56]
-INFO: [Synth 8-256] done synthesizing module 'spi_master' (1#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/src/spi_master.v:17]
-WARNING: [Synth 8-5788] Register raw_data_reg in module adc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/src/adc.v:147]
-INFO: [Synth 8-256] done synthesizing module 'adc' (2#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/src/adc.v:1]
-WARNING: [Synth 8-6014] Unused sequential element byte_index was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/hdl/ADC_v1_0_S00_AXI.v:227]
-INFO: [Synth 8-256] done synthesizing module 'ADC_v1_0_S00_AXI' (3#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/hdl/ADC_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-256] done synthesizing module 'ADC_v1_0' (4#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/hdl/ADC_v1_0.v:4]
+INFO: [Synth 8-638] synthesizing module 'ADC_v1_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/hdl/ADC_v1_0.v:4]
+INFO: [Synth 8-638] synthesizing module 'ADC_v1_0_S00_AXI' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/hdl/ADC_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/hdl/ADC_v1_0_S00_AXI.v:378]
+INFO: [Synth 8-638] synthesizing module 'adc' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/src/adc.v:1]
+INFO: [Synth 8-638] synthesizing module 'spi_master' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/src/spi_master.v:17]
+WARNING: [Synth 8-5788] Register hold_to_send_reg in module spi_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/src/spi_master.v:56]
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (1#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/src/spi_master.v:17]
+WARNING: [Synth 8-5788] Register raw_data_tmp_reg in module adc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/src/adc.v:148]
+WARNING: [Synth 8-5788] Register raw_data_reg in module adc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/src/adc.v:155]
+INFO: [Synth 8-256] done synthesizing module 'adc' (2#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/src/adc.v:1]
+WARNING: [Synth 8-6014] Unused sequential element byte_index was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/hdl/ADC_v1_0_S00_AXI.v:227]
+INFO: [Synth 8-256] done synthesizing module 'ADC_v1_0_S00_AXI' (3#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/hdl/ADC_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ADC_v1_0' (4#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/hdl/ADC_v1_0.v:4]
 INFO: [Synth 8-256] done synthesizing module 'system_ADC_0_0' (5#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_ADC_0_0/synth/system_ADC_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'system_Clk_4_Div_0_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Clk_4_Div_0_0/synth/system_Clk_4_Div_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'Clk_4_Div' [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/new/Clk_4_Div.v:23]
@@ -337,7 +338,7 @@ WARNING: [Synth 8-3331] design axi_register_slice_v2_1_13_axic_register_slice__p
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awid[0]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:18 ; elapsed = 00:01:50 . Memory (MB): peak = 505.020 ; gain = 240.098
+Finished RTL Elaboration : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 506.387 ; gain = 239.973
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -347,7 +348,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:51 . Memory (MB): peak = 505.020 ; gain = 240.098
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 506.387 ; gain = 239.973
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -386,16 +387,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 712.895 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 716.039 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:40 ; elapsed = 00:02:24 . Memory (MB): peak = 712.895 ; gain = 447.973
+Finished Constraint Validation : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 716.039 ; gain = 449.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:40 ; elapsed = 00:02:24 . Memory (MB): peak = 712.895 ; gain = 447.973
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 716.039 ; gain = 449.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -416,7 +417,7 @@ Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_coupler
 Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/rst_ps7_0_50M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:02:25 . Memory (MB): peak = 712.895 ; gain = 447.973
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 716.039 ; gain = 449.625
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "SCK" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -426,7 +427,7 @@ INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size
 INFO: [Synth 8-5545] ROM "received" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'adc'
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/src/adc.v:85]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/src/adc.v:86]
 INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
 WARNING: [Synth 8-6014] Unused sequential element axaddr_incr_reg was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/f0ae/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3140]
@@ -518,7 +519,7 @@ WARNING: [Synth 8-6014] Unused sequential element q_int_reg was removed.  [c:/wo
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:45 ; elapsed = 00:02:33 . Memory (MB): peak = 712.895 ; gain = 447.973
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 716.039 ; gain = 449.625
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'system_i/dds_compiler_0/U0/i_synth/i_dds/I_PHASEGEN.i_conventional_accum.i_phase_final_speedup' (xbip_pipe_v3_0_3_viv__parameterized9) to 'system_i/dds_compiler_0/U0/i_synth/i_dds/I_PHASEGEN.i_conventional_accum.i_fabric.i_ph_adj_pipe'
 INFO: [Synth 8-223] decloning instance 'system_i/dds_compiler_0/U0/i_synth/i_dds/I_PHASEGEN.i_conventional_accum.i_phase_final_speedup' (xbip_pipe_v3_0_3_viv__parameterized9) to 'system_i/dds_compiler_0/U0/i_synth/i_dds/I_PHASEGEN.i_conventional_accum.i_fabric.i_dither_pipe'
@@ -557,7 +558,7 @@ Start Cross Boundary and Area Optimization
 INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-5545] ROM "inst/ADC_v1_0_S00_AXI_inst/adc_i/spi_master_i/SCK" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element inst/ADC_v1_0_S00_AXI_inst/adc_i/cnt_reg was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/2d43/src/adc.v:85]
+WARNING: [Synth 8-6014] Unused sequential element inst/ADC_v1_0_S00_AXI_inst/adc_i/cnt_reg was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/eeb5/src/adc.v:86]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:318]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:318]
 WARNING: [Synth 8-6014] Unused sequential element inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg was removed.  [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ipshared/f0ae/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3140]
@@ -570,6 +571,22 @@ INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instan
 INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/adc_i/to_send_reg[1]' (FDCE) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/adc_i/to_send_reg[0]'
 INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/adc_i/to_send_reg[2]' (FDCE) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/adc_i/to_send_reg[6]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_i/ADC_0/\inst/ADC_v1_0_S00_AXI_inst/adc_i/to_send_reg[7] )
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[16]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[17]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[18]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[18]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[19]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[20]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[20]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[21]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[22]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[23]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[24]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[25]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[25]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[26]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[26]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[27]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[27]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[28]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[28]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[29]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[29]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[30]' (FDR) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_i/ADC_0/\inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[31] )
 INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_i/ADC_0/\inst/ADC_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'system_i/ADC_0/inst/ADC_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
@@ -580,6 +597,7 @@ INFO: [Synth 8-3332] Sequential element (inst/ADC_v1_0_S00_AXI_inst/axi_araddr_r
 INFO: [Synth 8-3332] Sequential element (inst/ADC_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module system_ADC_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/ADC_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module system_ADC_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/ADC_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module system_ADC_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/ADC_v1_0_S00_AXI_inst/slv_reg0_reg[31]) is unused and will be removed from module system_ADC_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/ADC_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module system_ADC_0_0.
 INFO: [Synth 8-3886] merging instance 'system_i/DDS_0/inst/DDS_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'system_i/DDS_0/inst/DDS_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_i/DDS_0/\inst/DDS_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
@@ -670,7 +688,7 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GE
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:02:46 . Memory (MB): peak = 712.895 ; gain = 447.973
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 716.039 ; gain = 449.625
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -682,13 +700,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:13 ; elapsed = 00:03:21 . Memory (MB): peak = 847.855 ; gain = 582.934
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:41 . Memory (MB): peak = 849.246 ; gain = 582.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:17 ; elapsed = 00:03:26 . Memory (MB): peak = 904.715 ; gain = 639.793
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:44 . Memory (MB): peak = 907.109 ; gain = 640.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -702,7 +720,7 @@ Start Technology Mapping
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module system_auto_pc_0.
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module system_auto_pc_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:22 ; elapsed = 00:03:32 . Memory (MB): peak = 912.543 ; gain = 647.621
+Finished Technology Mapping : Time (s): cpu = 00:01:38 ; elapsed = 00:01:47 . Memory (MB): peak = 907.109 ; gain = 640.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -741,7 +759,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:25 ; elapsed = 00:03:37 . Memory (MB): peak = 912.543 ; gain = 647.621
+Finished IO Insertion : Time (s): cpu = 00:01:40 ; elapsed = 00:01:50 . Memory (MB): peak = 907.109 ; gain = 640.695
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -754,7 +772,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:25 ; elapsed = 00:03:37 . Memory (MB): peak = 912.543 ; gain = 647.621
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:40 ; elapsed = 00:01:50 . Memory (MB): peak = 907.109 ; gain = 640.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -766,25 +784,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:26 ; elapsed = 00:03:38 . Memory (MB): peak = 912.543 ; gain = 647.621
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 907.109 ; gain = 640.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:26 ; elapsed = 00:03:38 . Memory (MB): peak = 912.543 ; gain = 647.621
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 907.109 ; gain = 640.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:26 ; elapsed = 00:03:38 . Memory (MB): peak = 912.543 ; gain = 647.621
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 907.109 ; gain = 640.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:26 ; elapsed = 00:03:38 . Memory (MB): peak = 912.543 ; gain = 647.621
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 907.109 ; gain = 640.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -804,11 +822,11 @@ Report Cell Usage:
 |2     |BUFG       |     3|
 |3     |CARRY4     |    26|
 |4     |LUT1       |   163|
-|5     |LUT2       |    80|
+|5     |LUT2       |    83|
 |6     |LUT3       |   294|
-|7     |LUT4       |   169|
-|8     |LUT5       |   126|
-|9     |LUT6       |   197|
+|7     |LUT4       |   171|
+|8     |LUT5       |   118|
+|9     |LUT6       |   202|
 |10    |MMCME2_ADV |     1|
 |11    |PS7        |     1|
 |12    |RAMB18E1   |     1|
@@ -818,17 +836,17 @@ Report Cell Usage:
 |16    |FDCE       |    23|
 |17    |FDPE       |    11|
 |18    |FDR        |     8|
-|19    |FDRE       |  1014|
+|19    |FDRE       |  1038|
 |20    |FDSE       |    54|
 |21    |IBUF       |     3|
 |22    |OBUF       |    13|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:26 ; elapsed = 00:03:38 . Memory (MB): peak = 912.543 ; gain = 647.621
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 907.109 ; gain = 640.695
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 231 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:03:14 . Memory (MB): peak = 912.543 ; gain = 439.746
-Synthesis Optimization Complete : Time (s): cpu = 00:02:26 ; elapsed = 00:03:39 . Memory (MB): peak = 912.543 ; gain = 647.621
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:35 . Memory (MB): peak = 907.109 ; gain = 431.043
+Synthesis Optimization Complete : Time (s): cpu = 00:01:41 ; elapsed = 00:01:51 . Memory (MB): peak = 907.109 ; gain = 640.695
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -839,9 +857,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 8 instances
   SRL16 => SRL16E: 1 instances
 
-347 Infos, 221 Warnings, 0 Critical Warnings and 0 Errors encountered.
+364 Infos, 222 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:32 ; elapsed = 00:03:50 . Memory (MB): peak = 912.543 ; gain = 650.254
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:58 . Memory (MB): peak = 907.109 ; gain = 643.359
 INFO: [Common 17-1381] The checkpoint 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/system_wrapper.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 912.543 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 30 23:01:23 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 907.109 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  1 16:41:25 2017...

@@ -48,6 +48,6 @@ levelinfo -pg 1 0 190 530 900 1310 1710 1930 -top 0 -bot 810
 {
    da_axi4_cnt: "6",
    da_board_cnt: "3",
-   da_clkrst_cnt: "1",
+   da_clkrst_cnt: "2",
    da_ps7_cnt: "1",
 }
