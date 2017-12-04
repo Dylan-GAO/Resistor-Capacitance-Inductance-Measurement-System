@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xF2A8993308F7AC39" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2017.2" bd:top="system" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x0" bd:device="xc7z010clg400-1" bd:synthFlowMode="Hierarchical" bd:tool_version="2017.2" bd:top="system" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -30,35 +30,7 @@
             </spirit:physicalPort>
           </spirit:portMap>
         </spirit:portMaps>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>FREQ_HZ</spirit:name>
-            <spirit:value>50000000</spirit:value>
-            <spirit:vendorExtensions>
-              <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
-              </bd:configElementInfos>
-            </spirit:vendorExtensions>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>PHASE</spirit:name>
-            <spirit:value>0.000</spirit:value>
-            <spirit:vendorExtensions>
-              <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default"/>
-              </bd:configElementInfos>
-            </spirit:vendorExtensions>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>CLK_DOMAIN</spirit:name>
-            <spirit:value>system_clk_in1</spirit:value>
-            <spirit:vendorExtensions>
-              <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default"/>
-              </bd:configElementInfos>
-            </spirit:vendorExtensions>
-          </spirit:parameter>
-        </spirit:parameters>
+        <spirit:parameters/>
       </spirit:busInterface>
     </spirit:busInterfaces>
     <spirit:model>
@@ -71,9 +43,35 @@
       </spirit:views>
       <spirit:ports>
         <spirit:port>
+          <spirit:name>blue_sig</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
           <spirit:name>clk</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>green_sig</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>hsync_sig</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -89,18 +87,6 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>hsync_sig</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>vsync_sig</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
           <spirit:name>red_sig</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
@@ -111,23 +97,9 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>green_sig</spirit:name>
+          <spirit:name>vsync_sig</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>7</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>blue_sig</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>7</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>
@@ -141,238 +113,18 @@
     <spirit:version>1.00.a</spirit:version>
     <spirit:componentInstances>
       <spirit:componentInstance>
-        <spirit:instanceName>clk_wiz_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="5.4"/>
+        <spirit:instanceName>system_wrapper_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="peter" spirit:name="system_wrapper" spirit:vendor="fudan_university" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_clk_wiz_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="USE_PHASE_ALIGNMENT">true</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PRIM_IN_FREQ">50</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SECONDARY_SOURCE">Single_ended_clock_capable_pin</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKIN1_JITTER_PS">200.0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLK_OUT1_PORT">clk_9Mhz</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">9</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PRIM_SOURCE">No_buffer</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_DRIVES">BUFGCE</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_DRIVES">BUFGCE</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT3_DRIVES">BUFGCE</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT4_DRIVES">BUFGCE</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT5_DRIVES">BUFGCE</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT6_DRIVES">BUFGCE</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT7_DRIVES">BUFGCE</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="FEEDBACK_SOURCE">FDBK_AUTO</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="USE_LOCKED">false</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="USE_RESET">false</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="MMCM_DIVCLK_DIVIDE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKFBOUT_MULT_F">19.125</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKIN1_PERIOD">20.000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKIN2_PERIOD">10.0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKOUT0_DIVIDE_F">106.250</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="USE_SAFE_CLOCK_STARTUP">true</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">295.323</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">163.698</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_system_wrapper_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>sync_module_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="module_ref" spirit:name="sync_module" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:instanceName>test_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="test" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_sync_module_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">sync_module</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_2</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_dist_mem_gen_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/2.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_3</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_2_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/3.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_4</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_3_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/4.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_5</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_3_1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/5.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_6</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_3_2</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/6.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_7</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_3_3</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/7.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_8</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_3_4</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/8.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_9</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_3_5</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/9.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_1</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_3_6</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/1.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_3_7</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/0.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_R</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/R.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_C</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_R_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/C.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_L</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_R_1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/L.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_equal</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_R_2</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/equal.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_omega</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_R_3</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="data_width">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/omega.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_nF</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_omega_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="data_width">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/nF.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>rom_mH</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="dist_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_rom_omega_1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="depth">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="data_width">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="memory_type">rom</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="coefficient_file">../../../../../../../Desktop/mH.coe</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>data_combine_module_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="module_ref" spirit:name="data_combine_module" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_data_combine_module_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">data_combine_module</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>lcd_control_module_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="module_ref" spirit:name="lcd_control_module" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_lcd_control_module_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">lcd_control_module</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_test_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">test</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
@@ -381,340 +133,49 @@
     </spirit:componentInstances>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
-        <spirit:name>clk_in1_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="clk"/>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="clk"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>clk_wiz_0_clk_9Mhz</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_9Mhz"/>
-        <spirit:internalPortReference spirit:componentRef="sync_module_0" spirit:portRef="clk"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="clk"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rst_clk_wiz_0_9M_peripheral_aresetn</spirit:name>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sync_module_0_lcd_dclk</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="sync_module_0" spirit:portRef="lcd_dclk"/>
-        <spirit:externalPortReference spirit:portRef="lcd_dclk"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sync_module_0_ready_sig</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="sync_module_0" spirit:portRef="ready_sig"/>
-        <spirit:externalPortReference spirit:portRef="lcd_de"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="ready_sig"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sync_module_0_hsync_sig</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="sync_module_0" spirit:portRef="hsync_sig"/>
-        <spirit:externalPortReference spirit:portRef="hsync_sig"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sync_module_0_vsync_sig</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="sync_module_0" spirit:portRef="vsync_sig"/>
-        <spirit:externalPortReference spirit:portRef="vsync_sig"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sync_module_0_column_addr_sig</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="sync_module_0" spirit:portRef="column_addr_sig"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="column_addr_sig"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>sync_module_0_row_addr_sig</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="sync_module_0" spirit:portRef="row_addr_sig"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="row_addr_sig"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_red_sig</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="red_sig"/>
-        <spirit:externalPortReference spirit:portRef="red_sig"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_green_sig</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="green_sig"/>
-        <spirit:externalPortReference spirit:portRef="green_sig"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_blue_sig</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="blue_sig"/>
+        <spirit:name>system_wrapper_0_blue_sig</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="system_wrapper_0" spirit:portRef="blue_sig"/>
         <spirit:externalPortReference spirit:portRef="blue_sig"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_rom_addr_0</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_addr_0"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_addr_0"/>
+        <spirit:name>clk_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="system_wrapper_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_rom_addr_1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_addr_1"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_addr_1"/>
+        <spirit:name>system_wrapper_0_green_sig</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="system_wrapper_0" spirit:portRef="green_sig"/>
+        <spirit:externalPortReference spirit:portRef="green_sig"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_rom_addr_2</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_addr_2"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_addr_2"/>
+        <spirit:name>system_wrapper_0_hsync_sig</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="system_wrapper_0" spirit:portRef="hsync_sig"/>
+        <spirit:externalPortReference spirit:portRef="hsync_sig"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_char_ready_0</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="char_ready_0"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="char_ready_0"/>
+        <spirit:name>system_wrapper_0_lcd_dclk</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="system_wrapper_0" spirit:portRef="lcd_dclk"/>
+        <spirit:externalPortReference spirit:portRef="lcd_dclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_char_ready_1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="char_ready_1"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="char_ready_1"/>
+        <spirit:name>system_wrapper_0_lcd_de</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="system_wrapper_0" spirit:portRef="lcd_de"/>
+        <spirit:externalPortReference spirit:portRef="lcd_de"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_char_ready_2</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="char_ready_2"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="char_ready_2"/>
+        <spirit:name>system_wrapper_0_red_sig</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="system_wrapper_0" spirit:portRef="red_sig"/>
+        <spirit:externalPortReference spirit:portRef="red_sig"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_data_0</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_data_0"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_data_0"/>
+        <spirit:name>system_wrapper_0_vsync_sig</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="system_wrapper_0" spirit:portRef="vsync_sig"/>
+        <spirit:externalPortReference spirit:portRef="vsync_sig"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_data_1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_data_1"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_data_1"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_data_2</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_data_2"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_data_2"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_2_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_2_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_2" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_2_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_2" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_2_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_3_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_3" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_3_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_3_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_3_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_3" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_0_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_0" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_0_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_1_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_1" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_1_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_4_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_4" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_4_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_5_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_5" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_5_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_6_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_6" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_6_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_7_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_7" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_7_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_8_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_8" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_8_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_9_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_9" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_9_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_0_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_0_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_0" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_1_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_1_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_1" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_4_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_4_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_4" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_5_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_5_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_5" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_6_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_6_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_6" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_7_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_7_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_7" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_8_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_8_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_8" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_9_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_9_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_9" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_char_ready_3</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="char_ready_3"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="char_ready_3"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_data_3</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_data_3"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_data_3"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_rom_addr_3</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_addr_3"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_addr_3"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_R_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_R" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_R_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_C_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_C" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_C_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_L_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_L" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_L_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_equal_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_equal" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_equal_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_omega_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_omega" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_omega_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_nF_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_nF" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_nF_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>rom_mH_spo</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="rom_mH" spirit:portRef="spo"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_mH_data"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_R_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_R_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_R" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_C_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_C_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_C" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_L_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_L_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_L" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_equal_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_equal_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_equal" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_omega_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_omega_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_omega" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_nF_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_nF_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_nF" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_mH_addr</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_mH_addr"/>
-        <spirit:internalPortReference spirit:componentRef="rom_mH" spirit:portRef="a"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_data_4</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_data_4"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_data_4"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_data_5</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_data_5"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_data_5"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_combine_module_0_rom_data_6</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_data_6"/>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_data_6"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_rom_addr_4</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_addr_4"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_addr_4"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_rom_addr_5</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_addr_5"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_addr_5"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_rom_addr_6</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="rom_addr_6"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="rom_addr_6"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_char_ready_4</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="char_ready_4"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="char_ready_4"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_char_ready_5</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="char_ready_5"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="char_ready_5"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>lcd_control_module_0_char_ready_6</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="lcd_control_module_0" spirit:portRef="char_ready_6"/>
-        <spirit:internalPortReference spirit:componentRef="data_combine_module_0" spirit:portRef="char_ready_6"/>
+        <spirit:name>test_0_data_output</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="test_0" spirit:portRef="data_output"/>
+        <spirit:internalPortReference spirit:componentRef="system_wrapper_0" spirit:portRef="data_in"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

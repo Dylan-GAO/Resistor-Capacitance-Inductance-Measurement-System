@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Administrator/lcd_test/lcd_test.runs/synth_1'
+HD_PWD='C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+EAStep vivado -log test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test.tcl

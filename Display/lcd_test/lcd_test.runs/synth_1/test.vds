@@ -1,0 +1,481 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec  4 22:37:07 2017
+# Process ID: 3660
+# Current directory: C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.runs/synth_1
+# Command line: vivado.exe -log test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test.tcl
+# Log file: C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.runs/synth_1/test.vds
+# Journal file: C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test.tcl -notrace
+Command: synth_design -top test -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3416 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 356.922 ; gain = 77.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test' [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/sources_1/new/test.v:23]
+INFO: [Synth 8-256] done synthesizing module 'test' (1#1) [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/sources_1/new/test.v:23]
+WARNING: [Synth 8-3330] design test has an empty top module
+WARNING: [Synth 8-3917] design test has port data_output[32] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[31] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[30] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[29] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[28] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[27] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[26] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[25] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[24] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[23] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[22] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[21] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[20] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[19] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[18] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[17] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[16] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[15] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[14] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[13] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[12] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[11] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[10] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[9] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[8] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[7] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[6] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[5] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[4] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[3] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[2] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[1] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 396.254 ; gain = 116.938
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 396.254 ; gain = 116.938
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc]
+WARNING: [Vivado 12-584] No ports matched 'red_sig[0]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[1]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[2]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[3]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[4]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[5]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[6]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[7]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[0]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[1]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[2]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[3]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[4]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[5]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[6]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[7]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[0]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[1]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[2]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[3]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[4]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[5]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[6]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[7]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_dclk'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_de'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vsync_sig'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hsync_sig'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[0]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[1]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[2]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[3]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[4]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[5]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[6]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red_sig[7]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[0]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[1]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[2]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[3]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[4]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[5]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[6]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green_sig[7]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[0]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[1]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[2]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[3]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[4]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[5]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[6]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue_sig[7]'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_dclk'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hsync_sig'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vsync_sig'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_de'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.srcs/constrs_1/imports/new/lcd.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 600.457 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 600.457 ; gain = 321.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 600.457 ; gain = 321.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 600.457 ; gain = 321.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 600.457 ; gain = 321.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3330] design test has an empty top module
+WARNING: [Synth 8-3917] design test has port data_output[32] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[31] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[30] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[29] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[28] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[27] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[26] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[25] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[24] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[23] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[22] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[21] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[20] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[19] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[18] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[17] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[16] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[15] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[14] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[13] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[12] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[11] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[10] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[9] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[8] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[7] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[6] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[5] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[4] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[3] driven by constant 0
+WARNING: [Synth 8-3917] design test has port data_output[2] driven by constant 1
+WARNING: [Synth 8-3917] design test has port data_output[1] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 600.457 ; gain = 321.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 641.422 ; gain = 362.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 641.422 ; gain = 362.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 652.566 ; gain = 373.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 652.566 ; gain = 373.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 652.566 ; gain = 373.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 652.566 ; gain = 373.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 652.566 ; gain = 373.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 652.566 ; gain = 373.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 652.566 ; gain = 373.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    32|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    32|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 652.566 ; gain = 373.250
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 652.566 ; gain = 169.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 652.566 ; gain = 373.250
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+10 Infos, 124 Warnings, 58 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 665.090 ; gain = 393.539
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Documents/GitHub/Resistor-Capacitance-Inductance-Measurement-System/Display/lcd_test/lcd_test.runs/synth_1/test.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 665.090 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  4 22:38:04 2017...
