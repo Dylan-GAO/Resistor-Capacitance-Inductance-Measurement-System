@@ -1,0 +1,1201 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Wed Dec  6 13:19:50 2017
+| Host         : SC-201709270320 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_wrapper_methodology_drc_routed.rpt -rpx top_wrapper_methodology_drc_routed.rpx
+| Design       : top_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 233
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell | 97         |
+| TIMING-20 | Warning  | Non-clocked latch           | 136        |
++-----------+----------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clkout1_buf/I0 is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/seq_reg1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/seq_reg1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/seq_reg1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/seq_reg1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/seq_reg1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/seq_reg1_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/seq_reg1_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/seq_reg1_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_0_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_0_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_0_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_0_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_2_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_2_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_2_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_2_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_3_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_3_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_3_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_3_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_4_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_4_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_4_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_4_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_5_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_5_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_5_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_5_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_6_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_6_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_6_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_6_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_m_6_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_0_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_0_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_0_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_0_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_0_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_1_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_2_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_2_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_2_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_2_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_2_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_3_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_3_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_3_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_3_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_3_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_4_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_4_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_4_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#62 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_4_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#63 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_4_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#64 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_5_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_5_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_5_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_5_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_5_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_6_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_6_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_6_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_6_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_6_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#77 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#81 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#82 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#83 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#84 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_h_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#85 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#86 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#87 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#88 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#89 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#90 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#91 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#92 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#93 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#94 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#95 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/isReady_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Warning
+Non-clocked sequential cell  
+The clock pin top_i/lcd_display_0/inst/system_i/sync_module_1/inst/isReady_reg_lopt_replica/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[1] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[2] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[1] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[2] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[1] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[2] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[10] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[11] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[12] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[13] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[14] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[15] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[6] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[7] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[8] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[9] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[10] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[11] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[12] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[13] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[14] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[15] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[6] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[7] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[8] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[9] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[10] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[11] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[12] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[13] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[14] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[15] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[6] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[7] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[8] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[9] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[10] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[11] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[12] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[13] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[14] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[15] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[6] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[7] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[8] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[9] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[10] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[11] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[12] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[13] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[14] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[15] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[16] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[2] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[6] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[7] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[8] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[9] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[10] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[11] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[12] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[13] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[14] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[15] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[16] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[6] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[7] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[8] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[9] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[10] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[11] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[12] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[13] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[14] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[15] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[16] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[18] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[19] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[20] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[21] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#108 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[22] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#109 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[23] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#110 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[24] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#111 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[25] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#112 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[26] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#113 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[27] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#114 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[28] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#115 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[29] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#116 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[2] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#117 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[30] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#118 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[31] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#119 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[32] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#120 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#121 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#122 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#123 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[6] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#124 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[7] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#125 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[8] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#126 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[9] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_6_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#127 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[1] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#128 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[2] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#129 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#130 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#131 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#132 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[1] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#133 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[2] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#134 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[3] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#135 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[4] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#136 Warning
+Non-clocked latch  
+The latch top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[5] cannot be properly analyzed as its control pin top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+

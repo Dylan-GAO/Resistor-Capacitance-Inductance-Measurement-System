@@ -1,35 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1512398225">
-  <File Type="RDS-PROPCONSTRS" Name="test_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="test.tcl"/>
-  <File Type="RDS-RDS" Name="test.vds"/>
-  <File Type="RDS-UTIL" Name="test_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="test_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="test.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="test_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="test_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1512537396">
+  <File Type="RDS-PROPCONSTRS" Name="top_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="top_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="top_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="top_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/test.v">
+    <File Path="$PSRCDIR/sources_1/imports/new/test.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/lcd_test/lcd_test.srcs/sources_1/imports/new/test.v"/>
+        <Attr Name="ImportTime" Val="1512533803"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/top.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
+    <File Path="$PSRCDIR/sources_1/bd/top/hdl/top_wrapper.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/2.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/3.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/4.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/5.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/6.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/7.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/8.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/9.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/1.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/0.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/R.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/C.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/L.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/equal.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/omega.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/nF.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/top/ip/top_lcd_display_0_0/sources_1/new/mH.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="test"/>
-      <Option Name="TopLib" Val="xil_defaultlib"/>
-      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/test.v"/>
+      <Option Name="TopModule" Val="top_wrapper"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -49,7 +157,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

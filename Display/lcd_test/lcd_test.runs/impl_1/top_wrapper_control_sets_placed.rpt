@@ -1,0 +1,91 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Wed Dec  6 13:19:15 2017
+| Host         : SC-201709270320 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+| Design       : top_wrapper
+| Device       : xc7z010
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |    88 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             157 |           51 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              70 |           28 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               5 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+|                                         Clock Signal                                        |                                 Enable Signal                                 |                             Set/Reset Signal                            | Slice Load Count | Bel Load Count |
++---------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+|  top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_0_reg[1]_0              |                                                                               |                                                                         |                2 |              5 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  | top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v[10]_i_1_n_1      | top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v[4]_i_1_n_1 |                2 |              5 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[5]_i_1_n_1     |                                                                               |                                                                         |                2 |              5 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[5]_i_1_n_1     |                                                                               |                                                                         |                2 |              5 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[5]_i_1_n_1 |                                                                               |                                                                         |                2 |              5 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[5]_i_1_n_1    |                                                                               |                                                                         |                2 |              5 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  | top_i/lcd_display_0/inst/system_i/sync_module_1/inst/count_v[10]_i_1_n_1      |                                                                         |                4 |              6 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz_system_clk_wiz_0_0_en_clk        |                                                                               |                                                                         |                1 |              8 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  | top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/E[0]              |                                                                         |                3 |              9 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  | top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_1_reg[1]_0 |                                                                         |                4 |              9 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  | top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_0_reg[1]_0 |                                                                         |                4 |              9 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  | top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_3_reg[1]_0 |                                                                         |                3 |              9 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  | top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_4_reg[1]_0 |                                                                         |                2 |              9 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  | top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_5_reg[1]_0 |                                                                         |                3 |              9 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  | top_i/lcd_display_0/inst/system_i/lcd_control_module_1/inst/char_n_6_reg[1]_0 |                                                                         |                5 |             10 |
+|  top_i/lcd_display_0/inst/system_i/clk_wiz_0/inst/clk_9Mhz                                  |                                                                               |                                                                         |                6 |             13 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[16]_i_2_n_1    |                                                                               |                                                                         |                4 |             13 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[16]_i_2_n_1    |                                                                               |                                                                         |                4 |             13 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[16]_i_2_n_1    |                                                                               |                                                                         |                4 |             13 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[16]_i_2_n_1    |                                                                               |                                                                         |                4 |             13 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[16]_i_2_n_1    |                                                                               |                                                                         |                5 |             14 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[16]_i_2_n_1    |                                                                               |                                                                         |                4 |             15 |
+|  top_i/lcd_display_0/inst/system_i/data_combine_module_1/n_0_7_BUFG                         |                                                                               |                                                                         |                9 |             30 |
++---------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 5      |                     6 |
+| 6      |                     1 |
+| 8      |                     1 |
+| 9      |                     6 |
+| 10     |                     1 |
+| 13     |                     5 |
+| 14     |                     1 |
+| 15     |                     1 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+
