@@ -1,0 +1,307 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date             : Thu Dec  7 21:11:50 2017
+| Host             : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
+| Command          : report_power -file RCIMS_bd_wrapper_power_routed.rpt -pb RCIMS_bd_wrapper_power_summary_routed.pb -rpx RCIMS_bd_wrapper_power_routed.rpx
+| Design           : RCIMS_bd_wrapper
+| Device           : xc7z010clg400-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 1.907  |
+| Dynamic (W)              | 1.776  |
+| Device Static (W)        | 0.131  |
+| Effective TJA (C/W)      | 11.5   |
+| Max Ambient (C)          | 63.0   |
+| Junction Temperature (C) | 47.0   |
+| Confidence Level         | Medium |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.003 |        8 |       --- |             --- |
+| Slice Logic             |    <0.001 |     3262 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |     1221 |     17600 |            6.94 |
+|   Register              |    <0.001 |     1382 |     35200 |            3.93 |
+|   CARRY4                |    <0.001 |       14 |      4400 |            0.32 |
+|   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
+|   LUT as Shift Register |    <0.001 |       62 |      6000 |            1.03 |
+|   Others                |     0.000 |      223 |       --- |             --- |
+| Signals                 |     0.001 |     2606 |       --- |             --- |
+| Block RAM               |    <0.001 |      0.5 |        60 |            0.83 |
+| MMCM                    |     0.231 |        2 |         2 |          100.00 |
+| I/O                     |     0.014 |       44 |       100 |           44.00 |
+| PS7                     |     1.526 |        1 |       --- |             --- |
+| Static Power            |     0.131 |          |           |                 |
+| Total                   |     1.907 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.013 |       0.005 |      0.008 |
+| Vccaux    |       1.800 |     0.141 |       0.129 |      0.012 |
+| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.755 |       0.722 |      0.033 |
+| Vccpaux   |       1.800 |     0.061 |       0.050 |      0.010 |
+| Vccpll    |       1.800 |     0.018 |       0.015 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                             |
++-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                                    |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                          |                                                                                                                    |
+|                             |            |                                                       |                                                                                                                    |
+| Overall confidence level    | Medium     |                                                       |                                                                                                                    |
++-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                         | Domain                                                                                                                     | Constraint (ns) |
++-------------------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------+
+| clk_9Mhz_system_clk_wiz_0_0   | RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/clk_wiz_0/inst/clk_9Mhz_system_clk_wiz_0_0 |           111.1 |
+| clk_fpga_0                    | RCIMS_bd_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                                                                |            20.0 |
+| clk_out1_RCIMS_bd_clk_wiz_0_0 | RCIMS_bd_i/clk_wiz_0/inst/clk_out1_RCIMS_bd_clk_wiz_0_0                                                                    |           125.0 |
+| clkfbout_RCIMS_bd_clk_wiz_0_0 | RCIMS_bd_i/clk_wiz_0/inst/clkfbout_RCIMS_bd_clk_wiz_0_0                                                                    |            20.0 |
+| clkfbout_system_clk_wiz_0_0   | RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/clk_wiz_0/inst/clkfbout_system_clk_wiz_0_0 |            20.0 |
+| clock_rtl                     | clock_rtl                                                                                                                  |            20.0 |
++-------------------------------+----------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------------------------------+-----------+
+| Name                                                | Power (W) |
++-----------------------------------------------------+-----------+
+| RCIMS_bd_wrapper                                    |     1.776 |
+|   RCIMS_bd_i                                        |     1.762 |
+|     ADC_0                                           |    <0.001 |
+|       inst                                          |    <0.001 |
+|         ADC_v1_0_S00_AXI_inst                       |    <0.001 |
+|           adc_i                                     |    <0.001 |
+|             spi_master_i                            |    <0.001 |
+|     Clk_4_Div_0                                     |    <0.001 |
+|       inst                                          |    <0.001 |
+|     ComplementCalibration_0                         |    <0.001 |
+|     DDS_0                                           |    <0.001 |
+|       inst                                          |    <0.001 |
+|         DDS_v1_0_S00_AXI_inst                       |    <0.001 |
+|     Display_0                                       |     0.119 |
+|       inst                                          |     0.119 |
+|         Display_v1_0_S00_AXI_inst                   |     0.119 |
+|           lcd_display_i                             |     0.119 |
+|             inst                                    |     0.119 |
+|               system_i                              |     0.119 |
+|                 clk_wiz_0                           |     0.119 |
+|                   inst                              |     0.119 |
+|                 data_combine_module_1               |    <0.001 |
+|                   inst                              |    <0.001 |
+|                 lcd_control_module_1                |    <0.001 |
+|                   inst                              |    <0.001 |
+|                 rom_0                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_1                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_2                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_3                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_4                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_5                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_6                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_7                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_8                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_9                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_C                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_L                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_R                               |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_equal                           |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_mH                              |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_nF                              |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 rom_omega                           |    <0.001 |
+|                   U0                                |    <0.001 |
+|                     synth_options.dist_mem_inst     |    <0.001 |
+|                       gen_rom.rom_inst              |    <0.001 |
+|                 sync_module_1                       |    <0.001 |
+|                   inst                              |    <0.001 |
+|     clk_wiz_0                                       |     0.113 |
+|       inst                                          |     0.113 |
+|     dds_compiler_0                                  |    <0.001 |
+|       U0                                            |    <0.001 |
+|         i_synth                                     |    <0.001 |
+|           i_dds                                     |    <0.001 |
+|             I_PHASEGEN.i_conventional_accum.i_accum |    <0.001 |
+|               i_fabric.i_common.i_phase_acc         |    <0.001 |
+|               i_fabric.i_one_channel.i_accum        |    <0.001 |
+|             I_SINCOS.i_std_rom.i_rom                |    <0.001 |
+|           i_has_nd_rdy_pipe.valid_phase_read_del    |    <0.001 |
+|     processing_system7_0                            |     1.526 |
+|       inst                                          |     1.526 |
+|     ps7_0_axi_periph                                |     0.002 |
+|       s00_couplers                                  |     0.002 |
+|         auto_pc                                     |     0.002 |
+|           inst                                      |     0.002 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s    |     0.002 |
+|               RD.ar_channel_0                       |    <0.001 |
+|                 ar_cmd_fsm_0                        |    <0.001 |
+|                 cmd_translator_0                    |    <0.001 |
+|                   incr_cmd_0                        |    <0.001 |
+|                   wrap_cmd_0                        |    <0.001 |
+|               RD.r_channel_0                        |    <0.001 |
+|                 rd_data_fifo_0                      |    <0.001 |
+|                 transaction_fifo_0                  |    <0.001 |
+|               SI_REG                                |    <0.001 |
+|                 ar_pipe                             |    <0.001 |
+|                 aw_pipe                             |    <0.001 |
+|                 b_pipe                              |    <0.001 |
+|                 r_pipe                              |    <0.001 |
+|               WR.aw_channel_0                       |    <0.001 |
+|                 aw_cmd_fsm_0                        |    <0.001 |
+|                 cmd_translator_0                    |    <0.001 |
+|                   incr_cmd_0                        |    <0.001 |
+|                   wrap_cmd_0                        |    <0.001 |
+|               WR.b_channel_0                        |    <0.001 |
+|                 bid_fifo_0                          |    <0.001 |
+|                 bresp_fifo_0                        |    <0.001 |
+|       xbar                                          |    <0.001 |
+|         inst                                        |    <0.001 |
+|           gen_sasd.crossbar_sasd_0                  |    <0.001 |
+|             addr_arbiter_inst                       |    <0.001 |
+|             gen_decerr.decerr_slave_inst            |    <0.001 |
+|             reg_slice_r                             |    <0.001 |
+|             splitter_ar                             |    <0.001 |
+|             splitter_aw                             |    <0.001 |
+|     rst_ps7_0_50M                                   |    <0.001 |
+|       U0                                            |    <0.001 |
+|         EXT_LPF                                     |    <0.001 |
+|           ACTIVE_LOW_EXT.ACT_LO_EXT                 |    <0.001 |
+|         SEQ                                         |    <0.001 |
+|           SEQ_COUNTER                               |    <0.001 |
++-----------------------------------------------------+-----------+
+
+

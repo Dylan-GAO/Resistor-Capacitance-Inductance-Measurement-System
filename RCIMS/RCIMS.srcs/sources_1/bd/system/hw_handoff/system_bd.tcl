@@ -168,18 +168,25 @@ proc create_root_design { parentCell } {
   set ADC_MISO [ create_bd_port -dir I ADC_MISO ]
   set ADC_MOSI [ create_bd_port -dir O ADC_MOSI ]
   set ADC_SCK [ create_bd_port -dir O ADC_SCK ]
+  set blue_sig [ create_bd_port -dir O -from 7 -to 0 blue_sig ]
   set clk_out [ create_bd_port -dir O -type clk clk_out ]
   set clock_rtl [ create_bd_port -dir I -type clk clock_rtl ]
   set_property -dict [ list \
 CONFIG.FREQ_HZ {50000000} \
 CONFIG.PHASE {0.000} \
  ] $clock_rtl
+  set green_sig [ create_bd_port -dir O -from 7 -to 0 green_sig ]
+  set hsync_sig [ create_bd_port -dir O hsync_sig ]
+  set lcd_dclk [ create_bd_port -dir O lcd_dclk ]
+  set lcd_de [ create_bd_port -dir O lcd_de ]
   set m_axis_data_tdata [ create_bd_port -dir O -from 7 -to 0 m_axis_data_tdata ]
   set m_axis_data_tvalid [ create_bd_port -dir O m_axis_data_tvalid ]
+  set red_sig [ create_bd_port -dir O -from 7 -to 0 red_sig ]
   set reset_rtl [ create_bd_port -dir I -type rst reset_rtl ]
   set_property -dict [ list \
 CONFIG.POLARITY {ACTIVE_LOW} \
  ] $reset_rtl
+  set vsync_sig [ create_bd_port -dir O vsync_sig ]
 
   # Create instance: ADC_0, and set properties
   set ADC_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:ADC:1.0 ADC_0 ]
@@ -208,6 +215,9 @@ CONFIG.POLARITY {ACTIVE_LOW} \
   
   # Create instance: DDS_0, and set properties
   set DDS_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:DDS:1.0 DDS_0 ]
+
+  # Create instance: Display_0, and set properties
+  set Display_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Display:1.0 Display_0 ]
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0 ]
@@ -267,7 +277,7 @@ CONFIG.PCW_UIPARAM_DDR_PARTNO {MT41J128M16 HA-125} \
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-CONFIG.NUM_MI {2} \
+CONFIG.NUM_MI {3} \
  ] $ps7_0_axi_periph
 
   # Create instance: rst_ps7_0_50M, and set properties
@@ -279,6 +289,7 @@ CONFIG.NUM_MI {2} \
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins DDS_0/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins ADC_0/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins Display_0/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
 
   # Create port connections
   connect_bd_net -net ADC_0_ADC_ADC_reset [get_bd_ports ADC_ADC_reset] [get_bd_pins ADC_0/ADC_ADC_reset]
@@ -289,18 +300,26 @@ CONFIG.NUM_MI {2} \
   connect_bd_net -net ComplementCalibration_0_DDS_DATA_OUT [get_bd_ports m_axis_data_tdata] [get_bd_pins ComplementCalibration_0/DDS_DATA_OUT]
   connect_bd_net -net DDS_0_DDS_PHASE_DATA [get_bd_pins DDS_0/DDS_PHASE_DATA] [get_bd_pins dds_compiler_0/s_axis_config_tdata]
   connect_bd_net -net DDS_0_DDS_PHASE_READY [get_bd_pins DDS_0/DDS_PHASE_READY] [get_bd_pins dds_compiler_0/s_axis_config_tvalid]
+  connect_bd_net -net Display_0_blue_sig [get_bd_ports blue_sig] [get_bd_pins Display_0/blue_sig]
+  connect_bd_net -net Display_0_green_sig [get_bd_ports green_sig] [get_bd_pins Display_0/green_sig]
+  connect_bd_net -net Display_0_hsync_sig [get_bd_ports hsync_sig] [get_bd_pins Display_0/hsync_sig]
+  connect_bd_net -net Display_0_lcd_dclk [get_bd_ports lcd_dclk] [get_bd_pins Display_0/lcd_dclk]
+  connect_bd_net -net Display_0_lcd_de [get_bd_ports lcd_de] [get_bd_pins Display_0/lcd_de]
+  connect_bd_net -net Display_0_red_sig [get_bd_ports red_sig] [get_bd_pins Display_0/red_sig]
+  connect_bd_net -net Display_0_vsync_sig [get_bd_ports vsync_sig] [get_bd_pins Display_0/vsync_sig]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins Clk_4_Div_0/Clk_8Mhz] [get_bd_pins clk_wiz_0/clk_out1]
-  connect_bd_net -net clock_rtl_1 [get_bd_ports clock_rtl] [get_bd_pins clk_wiz_0/clk_in1]
+  connect_bd_net -net clock_rtl_1 [get_bd_ports clock_rtl] [get_bd_pins Display_0/clk] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_pins ComplementCalibration_0/DDS_DATA_IN] [get_bd_pins dds_compiler_0/m_axis_data_tdata]
   connect_bd_net -net dds_compiler_0_m_axis_data_tvalid [get_bd_ports m_axis_data_tvalid] [get_bd_pins dds_compiler_0/m_axis_data_tvalid]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins ADC_0/s00_axi_aclk] [get_bd_pins DDS_0/s00_axi_aclk] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins ADC_0/s00_axi_aclk] [get_bd_pins DDS_0/s00_axi_aclk] [get_bd_pins Display_0/s00_axi_aclk] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_50M_interconnect_aresetn [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins rst_ps7_0_50M/interconnect_aresetn]
-  connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins ADC_0/ADC_reset] [get_bd_pins ADC_0/s00_axi_aresetn] [get_bd_pins DDS_0/s00_axi_aresetn] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins ADC_0/ADC_reset] [get_bd_pins ADC_0/s00_axi_aresetn] [get_bd_pins DDS_0/s00_axi_aresetn] [get_bd_pins Display_0/s00_axi_aresetn] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x43C10000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs ADC_0/S00_AXI/S00_AXI_reg] SEG_ADC_0_S00_AXI_reg
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs DDS_0/S00_AXI/S00_AXI_reg] SEG_DDS_0_S00_AXI_reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x43C20000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs Display_0/S00_AXI/S00_AXI_reg] SEG_Display_0_S00_AXI_reg
 
 
   # Restore current instance

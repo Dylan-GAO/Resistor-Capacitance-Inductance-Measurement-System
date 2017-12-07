@@ -1,0 +1,151 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Dec  7 21:11:45 2017
+| Host         : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
+| Command      : report_drc -file RCIMS_bd_wrapper_drc_routed.rpt -pb RCIMS_bd_wrapper_drc_routed.pb -rpx RCIMS_bd_wrapper_drc_routed.rpx
+| Design       : RCIMS_bd_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 23
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 23         |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_0_addr_reg[5]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_0_addr_reg[5]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_0_addr_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_1_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_1_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_1_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_4_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_4_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_4_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_5_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_5_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_5_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_6_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_6_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_6_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_7_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_7_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_7_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_8_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_8_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_8_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_9_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_9_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_9_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_L_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_L_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_L_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_R_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_R_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_R_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_mH_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_mH_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_mH_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_omega_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_omega_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_omega_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

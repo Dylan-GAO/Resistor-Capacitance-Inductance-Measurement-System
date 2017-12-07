@@ -1,0 +1,568 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec  7 21:10:06 2017
+# Process ID: 4616
+# Current directory: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1
+# Command line: vivado.exe -log RCIMS_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RCIMS_bd_wrapper.tcl -notrace
+# Log file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/RCIMS_bd_wrapper.vdi
+# Journal file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source RCIMS_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 270.645 ; gain = 43.109
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0.xdc] for cell 'RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0.xdc] for cell 'RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/clk_wiz_0/inst'
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0_board.xdc] for cell 'RCIMS_bd_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0_board.xdc] for cell 'RCIMS_bd_i/clk_wiz_0/inst'
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0.xdc] for cell 'RCIMS_bd_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1046.758 ; gain = 499.031
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0.xdc] for cell 'RCIMS_bd_i/clk_wiz_0/inst'
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_processing_system7_0_0/RCIMS_bd_processing_system7_0_0.xdc] for cell 'RCIMS_bd_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_processing_system7_0_0/RCIMS_bd_processing_system7_0_0.xdc] for cell 'RCIMS_bd_i/processing_system7_0/inst'
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_rst_ps7_0_50M_0/RCIMS_bd_rst_ps7_0_50M_0_board.xdc] for cell 'RCIMS_bd_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_rst_ps7_0_50M_0/RCIMS_bd_rst_ps7_0_50M_0_board.xdc] for cell 'RCIMS_bd_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_rst_ps7_0_50M_0/RCIMS_bd_rst_ps7_0_50M_0.xdc] for cell 'RCIMS_bd_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_rst_ps7_0_50M_0/RCIMS_bd_rst_ps7_0_50M_0.xdc] for cell 'RCIMS_bd_i/rst_ps7_0_50M/U0'
+Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/constrs_1/new/system.xdc]
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_late.xdc] for cell 'RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_late.xdc] for cell 'RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/clk_wiz_0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1046.758 ; gain = 776.113
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1046.758 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 288d26cf1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.382 . Memory (MB): peak = 1053.781 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 63 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 24a45823b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.767 . Memory (MB): peak = 1053.781 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 56 cells and removed 108 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 26830a466
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1053.781 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 2 cells and removed 328 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG RCIMS_bd_i/Clk_4_Div_0/inst/Clk_2Mhz_BUFG_inst to drive 69 load(s) on clock net clk_out_OBUF
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 253987448
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1053.781 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 1 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 253987448
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1053.781 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1053.781 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 253987448
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1053.781 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
+Ending PowerOpt Patch Enables Task | Checksum: 19c45efa9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1083.461 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 19c45efa9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1083.461 ; gain = 29.680
+34 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1083.461 ; gain = 36.703
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.267 . Memory (MB): peak = 1083.461 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/RCIMS_bd_wrapper_opt.dcp' has been generated.
+Command: report_drc -file RCIMS_bd_wrapper_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/RCIMS_bd_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1083.461 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 17bf46203
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1083.461 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e3cf5950
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 19767ca2a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 19767ca2a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1083.461 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 19767ca2a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1c8f38900
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c8f38900
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2880dbd35
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1c6460ea0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1cfbf1b65
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 2196a24e3
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 268eb9904
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 2723c050a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 2723c050a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1083.461 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 2723c050a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1f5687e45
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1f5687e45
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1083.461 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=13.587. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1c698a76b
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1083.461 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1c698a76b
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1c698a76b
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1c698a76b
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1083.461 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 18b7297a4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1083.461 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 18b7297a4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1083.461 ; gain = 0.000
+Ending Placer Task | Checksum: 15c7752ae
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1083.461 ; gain = 0.000
+53 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1083.461 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.542 . Memory (MB): peak = 1083.461 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/RCIMS_bd_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 1083.461 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1083.461 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1083.461 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: cbd0fc90 ConstDB: 0 ShapeSum: 90a6561e RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 19e6390a6
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 19e6390a6
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 19e6390a6
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 19e6390a6
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1135.258 ; gain = 51.797
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 148d29698
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1135.258 ; gain = 51.797
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=13.601 | TNS=0.000  | WHS=-0.190 | THS=-20.152|
+
+Phase 2 Router Initialization | Checksum: 1a0809f70
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 14f8f6f0c
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 332
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=13.169 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 11d3d8bdf
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=13.169 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 110107bde
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+Phase 4 Rip-up And Reroute | Checksum: 110107bde
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 110107bde
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 110107bde
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+Phase 5 Delay and Skew Optimization | Checksum: 110107bde
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 17474141f
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=13.284 | TNS=0.000  | WHS=0.043  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 20472dbcd
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+Phase 6 Post Hold Fix | Checksum: 20472dbcd
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.960867 %
+  Global Horizontal Routing Utilization  = 1.33065 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 20472dbcd
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 20472dbcd
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1fe973aa8
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=13.284 | TNS=0.000  | WHS=0.043  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1fe973aa8
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.258 ; gain = 51.797
+
+Routing Is Done.
+66 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1135.258 ; gain = 51.797
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.548 . Memory (MB): peak = 1135.258 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/RCIMS_bd_wrapper_routed.dcp' has been generated.
+Command: report_drc -file RCIMS_bd_wrapper_drc_routed.rpt -pb RCIMS_bd_wrapper_drc_routed.pb -rpx RCIMS_bd_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/RCIMS_bd_wrapper_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file RCIMS_bd_wrapper_methodology_drc_routed.rpt -rpx RCIMS_bd_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/RCIMS_bd_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file RCIMS_bd_wrapper_power_routed.rpt -pb RCIMS_bd_wrapper_power_summary_routed.pb -rpx RCIMS_bd_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+73 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 21:11:51 2017...
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec  7 21:12:13 2017
+# Process ID: 1180
+# Current directory: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1
+# Command line: vivado.exe -log RCIMS_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RCIMS_bd_wrapper.tcl -notrace
+# Log file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/RCIMS_bd_wrapper.vdi
+# Journal file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source RCIMS_bd_wrapper.tcl -notrace
+Command: open_checkpoint RCIMS_bd_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 219.324 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/.Xil/Vivado-1180-DESKTOP-GLIA512/dcp3/RCIMS_bd_wrapper_board.xdc]
+Finished Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/.Xil/Vivado-1180-DESKTOP-GLIA512/dcp3/RCIMS_bd_wrapper_board.xdc]
+Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/.Xil/Vivado-1180-DESKTOP-GLIA512/dcp3/RCIMS_bd_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1001.895 ; gain = 499.031
+Finished Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/.Xil/Vivado-1180-DESKTOP-GLIA512/dcp3/RCIMS_bd_wrapper_early.xdc]
+Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/.Xil/Vivado-1180-DESKTOP-GLIA512/dcp3/RCIMS_bd_wrapper.xdc]
+Finished Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/.Xil/Vivado-1180-DESKTOP-GLIA512/dcp3/RCIMS_bd_wrapper.xdc]
+Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/.Xil/Vivado-1180-DESKTOP-GLIA512/dcp3/RCIMS_bd_wrapper_late.xdc]
+Finished Parsing XDC File [C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/.Xil/Vivado-1180-DESKTOP-GLIA512/dcp3/RCIMS_bd_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.558 . Memory (MB): peak = 1005.902 ; gain = 4.008
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.559 . Memory (MB): peak = 1005.902 ; gain = 4.008
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
+open_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1009.973 ; gain = 790.648
+Command: write_bitstream -force RCIMS_bd_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command write_bitstream
+Command: report_drc (run_mandatory_drcs) for: bitstream_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_0_addr_reg[5]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_0_addr_reg[5]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_0_addr_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_1_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_1_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_1_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_2_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_3_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_4_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_4_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_4_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_5_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_5_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_5_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_6_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_6_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_6_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_7_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_7_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_7_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_8_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_8_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_8_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_9_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_9_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_9_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_C_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_L_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_L_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_L_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_R_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_R_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_R_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_0_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_1_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_2_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_3_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_4_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[16]_i_2_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[16]_i_2/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_data_5_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_equal_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_mH_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_mH_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_mH_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_nF_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_omega_addr_reg[5]_i_1_n_1 is a gated clock net sourced by a combinational pin RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_omega_addr_reg[5]_i_1/O, cell RCIMS_bd_i/Display_0/inst/Display_v1_0_S00_AXI_inst/lcd_display_i/inst/system_i/data_combine_module_1/inst/rom_omega_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 23 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./RCIMS_bd_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+17 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1375.922 ; gain = 365.949
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 21:13:07 2017...

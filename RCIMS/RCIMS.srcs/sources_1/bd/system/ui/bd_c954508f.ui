@@ -1,52 +1,68 @@
 {
    guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port m_axis_data_tvalid -pg 1 -y 680 -defaultsOSRD
-preplace port DDR -pg 1 -y 380 -defaultsOSRD
-preplace port ADC_SCK -pg 1 -y 260 -defaultsOSRD
-preplace port reset_rtl -pg 1 -y 570 -defaultsOSRD
-preplace port ADC_MISO -pg 1 -y 250 -defaultsOSRD
-preplace port clk_out -pg 1 -y 70 -defaultsOSRD
-preplace port ADC_MOSI -pg 1 -y 220 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y 400 -defaultsOSRD
-preplace port clock_rtl -pg 1 -y 70 -defaultsOSRD
-preplace port ADC_ADC_reset -pg 1 -y 240 -defaultsOSRD
-preplace portBus m_axis_data_tdata -pg 1 -y 610 -defaultsOSRD
-preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -y 590 -defaultsOSRD
-preplace inst dds_compiler_0 -pg 1 -lvl 4 -y 660 -defaultsOSRD
-preplace inst ComplementCalibration_0 -pg 1 -lvl 5 -y 610 -defaultsOSRD
-preplace inst Clk_4_Div_0 -pg 1 -lvl 4 -y 70 -defaultsOSRD
-preplace inst ADC_0 -pg 1 -lvl 3 -y 240 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 650 -defaultsOSRD
-preplace inst DDS_0 -pg 1 -lvl 3 -y 660 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 70 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 3 -y 420 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 3 3 NJ 380 NJ 380 NJ
+preplace port m_axis_data_tvalid -pg 1 -y 560 -defaultsOSRD
+preplace port DDR -pg 1 -y 250 -defaultsOSRD
+preplace port ADC_SCK -pg 1 -y 120 -defaultsOSRD
+preplace port reset_rtl -pg 1 -y 610 -defaultsOSRD
+preplace port ADC_MISO -pg 1 -y 110 -defaultsOSRD
+preplace port clk_out -pg 1 -y 200 -defaultsOSRD
+preplace port ADC_MOSI -pg 1 -y 80 -defaultsOSRD
+preplace port hsync_sig -pg 1 -y 870 -defaultsOSRD
+preplace port lcd_de -pg 1 -y 910 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 270 -defaultsOSRD
+preplace port lcd_dclk -pg 1 -y 890 -defaultsOSRD
+preplace port clock_rtl -pg 1 -y 390 -defaultsOSRD
+preplace port vsync_sig -pg 1 -y 950 -defaultsOSRD
+preplace port ADC_ADC_reset -pg 1 -y 100 -defaultsOSRD
+preplace portBus red_sig -pg 1 -y 930 -defaultsOSRD
+preplace portBus m_axis_data_tdata -pg 1 -y 490 -defaultsOSRD
+preplace portBus green_sig -pg 1 -y 850 -defaultsOSRD
+preplace portBus blue_sig -pg 1 -y 830 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -y 630 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 4 -y 540 -defaultsOSRD
+preplace inst ComplementCalibration_0 -pg 1 -lvl 5 -y 490 -defaultsOSRD
+preplace inst Clk_4_Div_0 -pg 1 -lvl 4 -y 400 -defaultsOSRD
+preplace inst Display_0 -pg 1 -lvl 3 -y 890 -defaultsOSRD
+preplace inst ADC_0 -pg 1 -lvl 3 -y 100 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 550 -defaultsOSRD
+preplace inst DDS_0 -pg 1 -lvl 3 -y 540 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 430 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -y 290 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 3 3 NJ 250 NJ 250 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 770
 preplace netloc DDS_0_DDS_PHASE_DATA 1 3 1 N
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 380 510 NJ 510 1100
+preplace netloc Display_0_lcd_dclk 1 3 3 NJ 890 NJ 890 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 360 380 NJ 380 2220
 preplace netloc ComplementCalibration_0_DDS_DATA_OUT 1 5 1 NJ
-preplace netloc ADC_0_ADC_MOSI 1 3 3 NJ 220 NJ 220 NJ
-preplace netloc ADC_0_ADC_ADC_reset 1 3 3 NJ 240 NJ 240 NJ
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 680
-preplace netloc dds_compiler_0_m_axis_data_tdata 1 4 1 1510J
+preplace netloc ADC_0_ADC_MOSI 1 3 3 NJ 80 NJ 80 NJ
+preplace netloc ADC_0_ADC_ADC_reset 1 3 3 NJ 100 NJ 100 NJ
+preplace netloc Display_0_blue_sig 1 3 3 NJ 830 NJ 830 NJ
+preplace netloc Display_0_hsync_sig 1 3 3 NJ 870 NJ 870 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 770
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 4 1 2640J
 preplace netloc DDS_0_DDS_PHASE_READY 1 3 1 N
-preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 1 1 N
-preplace netloc Clk_4_Div_0_Clk_2Mhz 1 2 4 700 140 NJ 140 1510 70 NJ
-preplace netloc ADC_MISO_1 1 0 3 NJ 250 NJ 250 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 3 3 NJ 400 NJ 400 NJ
-preplace netloc clk_wiz_0_clk_out1 1 3 1 NJ
-preplace netloc ADC_0_ADC_SCK 1 3 3 NJ 260 NJ 260 NJ
-preplace netloc dds_compiler_0_m_axis_data_tvalid 1 4 2 NJ 680 NJ
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 360 800 690
-preplace netloc clock_rtl_1 1 0 3 NJ 70 NJ 70 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 500 370 790 700 730 1110
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N
+preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 1 1 360
+preplace netloc Display_0_lcd_de 1 3 3 NJ 910 NJ 910 NJ
+preplace netloc Clk_4_Div_0_Clk_2Mhz 1 2 4 820 200 NJ 200 2640 200 NJ
+preplace netloc ADC_MISO_1 1 0 3 NJ 110 NJ 110 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 3 3 NJ 270 NJ 270 NJ
+preplace netloc clk_wiz_0_clk_out1 1 3 1 2240J
+preplace netloc ADC_0_ADC_SCK 1 3 3 NJ 120 NJ 120 NJ
+preplace netloc dds_compiler_0_m_axis_data_tvalid 1 4 2 NJ 560 NJ
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 380 990 800
+preplace netloc Display_0_green_sig 1 3 3 NJ 850 NJ 850 NJ
+preplace netloc clock_rtl_1 1 0 3 NJ 390 NJ 390 780
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 540 370 980 810 610 2230
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 790
+preplace netloc Display_0_red_sig 1 3 3 NJ 930 NJ 930 NJ
+preplace netloc Display_0_vsync_sig 1 3 3 NJ 950 NJ 950 NJ
 preplace netloc reset_rtl_1 1 0 1 NJ
-levelinfo -pg 1 0 190 530 900 1310 1710 1930 -top 0 -bot 810
+levelinfo -pg 1 0 190 620 2020 2440 2840 3060 -top 0 -bot 1000
 ",
 }
 {
-   da_axi4_cnt: "6",
+   da_axi4_cnt: "7",
    da_board_cnt: "3",
    da_clkrst_cnt: "2",
    da_ps7_cnt: "1",

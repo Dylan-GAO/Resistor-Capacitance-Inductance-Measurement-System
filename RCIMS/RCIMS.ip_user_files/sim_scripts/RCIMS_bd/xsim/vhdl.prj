@@ -1,0 +1,3 @@
+vhdl xil_defaultlib "../../../bd/RCIMS_bd/ip/RCIMS_bd_dds_compiler_0_0/sim/RCIMS_bd_dds_compiler_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/RCIMS_bd/ip/RCIMS_bd_rst_ps7_0_50M_0/sim/RCIMS_bd_rst_ps7_0_50M_0.vhd" 
+nosort

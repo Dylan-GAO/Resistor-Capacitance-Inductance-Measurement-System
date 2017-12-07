@@ -3,65 +3,178 @@
 
 # XDC: new/system.xdc
 
-# Block Designs: bd/system/system.bd
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system || ORIG_REF_NAME==system}]
+# Block Designs: bd/RCIMS_bd/RCIMS_bd.bd
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd || ORIG_REF_NAME==RCIMS_bd}]
 
-# IP: bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_processing_system7_0_0 || ORIG_REF_NAME==system_processing_system7_0_0}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_ADC_0_0/RCIMS_bd_ADC_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_ADC_0_0 || ORIG_REF_NAME==RCIMS_bd_ADC_0_0}]
 
-# IP: bd/system/ip/system_dds_compiler_0_1/system_dds_compiler_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_dds_compiler_0_1 || ORIG_REF_NAME==system_dds_compiler_0_1}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Clk_4_Div_0_0/RCIMS_bd_Clk_4_Div_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_Clk_4_Div_0_0 || ORIG_REF_NAME==RCIMS_bd_Clk_4_Div_0_0}]
 
-# IP: bd/system/ip/system_ps7_0_axi_periph_0/system_ps7_0_axi_periph_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_ps7_0_axi_periph_0 || ORIG_REF_NAME==system_ps7_0_axi_periph_0}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_ComplementCalibration_0_0/RCIMS_bd_ComplementCalibration_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_ComplementCalibration_0_0 || ORIG_REF_NAME==RCIMS_bd_ComplementCalibration_0_0}]
 
-# IP: bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rst_ps7_0_50M_0 || ORIG_REF_NAME==system_rst_ps7_0_50M_0}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_DDS_0_0/RCIMS_bd_DDS_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_DDS_0_0 || ORIG_REF_NAME==RCIMS_bd_DDS_0_0}]
 
-# IP: bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/RCIMS_bd_Display_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_Display_0_0 || ORIG_REF_NAME==RCIMS_bd_Display_0_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/lcd_display.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==lcd_display || ORIG_REF_NAME==lcd_display}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0}]
 
-# IP: bd/system/ip/system_xbar_0/system_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_0 || ORIG_REF_NAME==system_xbar_0}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_dist_mem_gen_0_0_1/system_dist_mem_gen_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_dist_mem_gen_0_0 || ORIG_REF_NAME==system_dist_mem_gen_0_0}]
 
-# IP: bd/system/ip/system_ADC_0_0/system_ADC_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_ADC_0_0 || ORIG_REF_NAME==system_ADC_0_0}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_2_0/system_rom_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_2_0 || ORIG_REF_NAME==system_rom_2_0}]
 
-# IP: bd/system/ip/system_DDS_0_1/system_DDS_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_DDS_0_1 || ORIG_REF_NAME==system_DDS_0_1}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_0/system_rom_3_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_3_0 || ORIG_REF_NAME==system_rom_3_0}]
 
-# IP: bd/system/ip/system_ComplementCalibration_0_0/system_ComplementCalibration_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_ComplementCalibration_0_0 || ORIG_REF_NAME==system_ComplementCalibration_0_0}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_1/system_rom_3_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_3_1 || ORIG_REF_NAME==system_rom_3_1}]
 
-# IP: bd/system/ip/system_Clk_4_Div_0_0/system_Clk_4_Div_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_Clk_4_Div_0_0 || ORIG_REF_NAME==system_Clk_4_Div_0_0}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_2/system_rom_3_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_3_2 || ORIG_REF_NAME==system_rom_3_2}]
 
-# IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0}]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_3/system_rom_3_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_3_3 || ORIG_REF_NAME==system_rom_3_3}]
 
-# XDC: bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_processing_system7_0_0 || ORIG_REF_NAME==system_processing_system7_0_0}] {/inst }]/inst ]]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_4/system_rom_3_4.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_3_4 || ORIG_REF_NAME==system_rom_3_4}]
 
-# XDC: bd/system/ip/system_dds_compiler_0_1/system_dds_compiler_0_1_ooc.xdc
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_5/system_rom_3_5.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_3_5 || ORIG_REF_NAME==system_rom_3_5}]
 
-# XDC: bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_rst_ps7_0_50M_0 || ORIG_REF_NAME==system_rst_ps7_0_50M_0}] {/U0 }]/U0 ]]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_6/system_rom_3_6.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_3_6 || ORIG_REF_NAME==system_rom_3_6}]
 
-# XDC: bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_rst_ps7_0_50M_0 || ORIG_REF_NAME==system_rst_ps7_0_50M_0}] {/U0 }]/U0 ]]
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_7/system_rom_3_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_3_7 || ORIG_REF_NAME==system_rom_3_7}]
 
-# XDC: bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_ooc.xdc
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_0_0/system_rom_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_0_0 || ORIG_REF_NAME==system_rom_0_0}]
 
-# XDC: bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_R_0/system_rom_R_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_R_0 || ORIG_REF_NAME==system_rom_R_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_R_1/system_rom_R_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_R_1 || ORIG_REF_NAME==system_rom_R_1}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_R_2/system_rom_R_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_R_2 || ORIG_REF_NAME==system_rom_R_2}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_R_3/system_rom_R_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_R_3 || ORIG_REF_NAME==system_rom_R_3}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_omega_0/system_rom_omega_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_omega_0 || ORIG_REF_NAME==system_rom_omega_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_omega_1/system_rom_omega_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rom_omega_1 || ORIG_REF_NAME==system_rom_omega_1}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_lcd_control_module_1_0/system_lcd_control_module_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_lcd_control_module_1_0 || ORIG_REF_NAME==system_lcd_control_module_1_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_sync_module_1_0/system_sync_module_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_sync_module_1_0 || ORIG_REF_NAME==system_sync_module_1_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_data_combine_module_1_0/system_data_combine_module_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_data_combine_module_1_0 || ORIG_REF_NAME==system_data_combine_module_1_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_clk_wiz_0_0 || ORIG_REF_NAME==RCIMS_bd_clk_wiz_0_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_dds_compiler_0_0/RCIMS_bd_dds_compiler_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_dds_compiler_0_0 || ORIG_REF_NAME==RCIMS_bd_dds_compiler_0_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_processing_system7_0_0/RCIMS_bd_processing_system7_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_processing_system7_0_0 || ORIG_REF_NAME==RCIMS_bd_processing_system7_0_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_ps7_0_axi_periph_0/RCIMS_bd_ps7_0_axi_periph_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_ps7_0_axi_periph_0 || ORIG_REF_NAME==RCIMS_bd_ps7_0_axi_periph_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_rst_ps7_0_50M_0/RCIMS_bd_rst_ps7_0_50M_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_rst_ps7_0_50M_0 || ORIG_REF_NAME==RCIMS_bd_rst_ps7_0_50M_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_xbar_0/RCIMS_bd_xbar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_xbar_0 || ORIG_REF_NAME==RCIMS_bd_xbar_0}]
+
+# IP: bd/RCIMS_bd/ip/RCIMS_bd_auto_pc_0/RCIMS_bd_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RCIMS_bd_auto_pc_0 || ORIG_REF_NAME==RCIMS_bd_auto_pc_0}]
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0}] {/inst }]/inst ]]
 
-# XDC: bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_late.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0}] {/inst }]/inst ]]
 
-# XDC: bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_ooc.xdc
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_ooc.xdc
 
-# XDC: bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_dist_mem_gen_0_0_1/system_dist_mem_gen_0_0_ooc.xdc
 
-# XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_2_0/system_rom_2_0_ooc.xdc
 
-# XDC: bd/system/system_ooc.xdc
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_0/system_rom_3_0_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_1/system_rom_3_1_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_2/system_rom_3_2_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_3/system_rom_3_3_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_4/system_rom_3_4_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_5/system_rom_3_5_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_6/system_rom_3_6_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_3_7/system_rom_3_7_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_0_0/system_rom_0_0_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_R_0/system_rom_R_0_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_R_1/system_rom_R_1_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_R_2/system_rom_R_2_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_R_3/system_rom_R_3_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_omega_0/system_rom_omega_0_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/ip/system_rom_omega_1/system_rom_omega_1_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/bd/system/system_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==RCIMS_bd_clk_wiz_0_0 || ORIG_REF_NAME==RCIMS_bd_clk_wiz_0_0}] {/inst }]/inst ]]
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==RCIMS_bd_clk_wiz_0_0 || ORIG_REF_NAME==RCIMS_bd_clk_wiz_0_0}] {/inst }]/inst ]]
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_clk_wiz_0_0/RCIMS_bd_clk_wiz_0_0_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_dds_compiler_0_0/RCIMS_bd_dds_compiler_0_0_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_processing_system7_0_0/RCIMS_bd_processing_system7_0_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==RCIMS_bd_processing_system7_0_0 || ORIG_REF_NAME==RCIMS_bd_processing_system7_0_0}] {/inst }]/inst ]]
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_rst_ps7_0_50M_0/RCIMS_bd_rst_ps7_0_50M_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==RCIMS_bd_rst_ps7_0_50M_0 || ORIG_REF_NAME==RCIMS_bd_rst_ps7_0_50M_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_rst_ps7_0_50M_0/RCIMS_bd_rst_ps7_0_50M_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==RCIMS_bd_rst_ps7_0_50M_0 || ORIG_REF_NAME==RCIMS_bd_rst_ps7_0_50M_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_rst_ps7_0_50M_0/RCIMS_bd_rst_ps7_0_50M_0_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_xbar_0/RCIMS_bd_xbar_0_ooc.xdc
+
+# XDC: bd/RCIMS_bd/ip/RCIMS_bd_auto_pc_0/RCIMS_bd_auto_pc_0_ooc.xdc
+
+# XDC: bd/RCIMS_bd/RCIMS_bd_ooc.xdc

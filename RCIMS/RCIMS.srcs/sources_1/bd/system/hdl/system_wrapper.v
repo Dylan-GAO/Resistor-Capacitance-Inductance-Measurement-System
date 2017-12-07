@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-//Date        : Fri Dec  1 13:32:18 2017
+//Date        : Thu Dec  7 20:39:03 2017
 //Host        : DESKTOP-GLIA512 running 64-bit major release  (build 9200)
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-module system_wrapper
+module system_wrapper_top
    (ADC_ADC_reset,
     ADC_MISO,
     ADC_MOSI,
@@ -35,11 +35,18 @@ module system_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    blue_sig,
     clk_out,
     clock_rtl,
+    green_sig,
+    hsync_sig,
+    lcd_dclk,
+    lcd_de,
     m_axis_data_tdata,
     m_axis_data_tvalid,
-    reset_rtl);
+    red_sig,
+    reset_rtl,
+    vsync_sig);
   output ADC_ADC_reset;
   input ADC_MISO;
   output ADC_MOSI;
@@ -65,11 +72,18 @@ module system_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  output [7:0]blue_sig;
   output clk_out;
   input clock_rtl;
+  output [7:0]green_sig;
+  output hsync_sig;
+  output lcd_dclk;
+  output lcd_de;
   output [7:0]m_axis_data_tdata;
   output m_axis_data_tvalid;
+  output [7:0]red_sig;
   input reset_rtl;
+  output vsync_sig;
 
   wire ADC_ADC_reset;
   wire ADC_MISO;
@@ -96,11 +110,18 @@ module system_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire [7:0]blue_sig;
   wire clk_out;
   wire clock_rtl;
+  wire [7:0]green_sig;
+  wire hsync_sig;
+  wire lcd_dclk;
+  wire lcd_de;
   wire [7:0]m_axis_data_tdata;
   wire m_axis_data_tvalid;
+  wire [7:0]red_sig;
   wire reset_rtl;
+  wire vsync_sig;
 
   system system_i
        (.ADC_ADC_reset(ADC_ADC_reset),
@@ -128,9 +149,16 @@ module system_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .blue_sig(blue_sig),
         .clk_out(clk_out),
         .clock_rtl(clock_rtl),
+        .green_sig(green_sig),
+        .hsync_sig(hsync_sig),
+        .lcd_dclk(lcd_dclk),
+        .lcd_de(lcd_de),
         .m_axis_data_tdata(m_axis_data_tdata),
         .m_axis_data_tvalid(m_axis_data_tvalid),
-        .reset_rtl(reset_rtl));
+        .red_sig(red_sig),
+        .reset_rtl(reset_rtl),
+        .vsync_sig(vsync_sig));
 endmodule

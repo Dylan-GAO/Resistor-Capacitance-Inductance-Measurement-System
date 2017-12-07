@@ -1,0 +1,927 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Nov 30 14:21:22 2017
+# Process ID: 164
+# Current directory: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9648 C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.xpr
+# Log file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/vivado.log
+# Journal file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 757.598 ; gain = 87.441
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Nov 30 14:22:45 2017] Launched synth_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav'
+"xvlog -m64 --relax -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_14 -L xil_common_vip_v1_0_0 -L axi_vip_v1_0_2 -L axi_vip_v1_0_1 -prj system_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ipshared/2317/hdl/DDS_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ipshared/2317/hdl/DDS_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_DDS_0_0/sim/system_DDS_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_DDS_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/hdl/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1H7AUOX
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_4Y7TYO
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_11SE3QO
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module system_ps7_0_axi_periph_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_xbar_0/sim/system_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ipshared/c92a/hdl/ADC_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADC_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ipshared/c92a/src/adc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ipshared/c92a/src/spi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ipshared/c92a/hdl/ADC_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADC_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_ADC_0_0/sim/system_ADC_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_ADC_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/new/ComplementCalibration.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ComplementCalibration
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj system_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_dds_compiler_0_1/sim/system_dds_compiler_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_dds_compiler_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ip/system_rst_ps7_0_50M_0/sim/system_rst_ps7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_rst_ps7_0_50M_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 823.285 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto fa25b44e33254e27a6e7ff5bcfd2fd47 --debug typical --relax --mt 2 -L axi_infrastructure_v1_1_0 -L xil_common_vip_v1_0_0 -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_14 -L axi_vip_v1_0_2 -L axi_vip_v1_0_1 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L xbip_pipe_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_3 -L xbip_dsp48_multadd_v3_0_3 -L dds_compiler_v6_0_13 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_11 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_13 -L fifo_generator_v13_1_4 -L axi_data_fifo_v2_1_12 -L axi_crossbar_v2_1_14 -L axi_protocol_converter_v2_1_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot system_wrapper_behav xil_defaultlib.system_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 6 for port m_axi_bid [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4597]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 6 for port m_axi_rid [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4615]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 6 for port m_axi_bid [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6536]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 6 for port m_axi_rid [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6554]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 64 for port m_axi_rdata [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6555]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 64 for port m_axi_rdata [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4616]
+Completed static elaboration
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4620 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4623 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4629 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4632 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4638 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4641 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4647 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4650 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4656 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4659 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4665 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4668 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4674 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4677 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4683 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4686 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4692 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4695 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4701 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4706 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4712 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4715 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4721 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4724 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4732 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4737 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4743 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4748 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4754 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4759 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4765 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4770 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4776 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4781 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4788 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4793 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4799 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4804 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4810 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4815 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4821 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4826 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4832 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4837 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4843 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4848 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4854 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4859 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4865 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4870 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4876 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4881 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4887 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4892 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4898 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4903 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4909 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4914 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4920 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4925 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4931 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4936 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4942 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4947 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4953 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4958 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4964 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4969 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4975 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4980 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4986 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4991 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4997 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5002 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5008 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5013 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5019 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5024 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4620 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4623 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4629 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4632 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4638 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4641 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4647 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4650 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4656 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4659 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4665 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4668 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4674 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4677 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4683 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4686 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4692 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4695 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4701 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4706 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4712 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4715 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4721 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4724 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4732 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4737 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4743 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4748 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4754 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4759 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4765 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4770 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4776 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4781 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4788 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4793 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4799 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4804 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4810 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4815 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4821 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4826 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4832 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4837 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4843 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4848 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4854 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4859 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4865 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4870 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4876 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4881 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4887 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4892 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4898 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4903 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4909 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4914 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4920 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4925 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4931 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4936 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4942 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4947 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4953 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4958 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4964 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4969 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4975 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4980 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4986 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4991 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4997 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5002 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5008 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5013 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5019 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5024 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4620 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4623 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4629 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4632 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4638 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4641 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4647 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4650 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4656 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4659 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4665 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4668 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4674 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4677 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4683 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4686 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4692 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4695 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4701 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4706 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4712 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4715 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4721 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4724 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4732 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4737 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4743 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4748 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4754 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4759 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4765 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4770 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4776 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4781 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4788 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4793 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4799 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4804 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4810 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4815 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4821 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4826 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4832 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4837 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4843 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4848 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4854 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4859 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4865 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4870 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4876 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4881 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4887 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4892 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4898 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4903 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4909 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4914 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4920 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4925 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4931 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4936 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4942 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4947 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4953 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4958 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4964 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4969 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4975 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4980 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4986 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4991 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4997 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5002 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5008 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5013 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5019 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5024 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4620 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4623 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4629 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4632 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4638 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4641 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4647 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4650 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4656 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4659 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4665 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4668 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4674 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4677 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4683 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4686 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4692 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4695 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4701 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4706 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4712 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4715 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4721 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4724 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4732 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4737 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4743 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4748 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4754 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4759 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4765 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4770 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4776 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4781 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4788 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4793 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4799 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4804 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4810 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4815 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4821 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4826 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4832 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4837 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4843 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4848 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4854 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4859 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4865 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4870 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4876 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4881 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4887 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4892 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4898 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4903 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4909 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4914 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4920 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4925 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4931 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4936 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4942 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4947 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4953 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4958 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4964 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4969 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4975 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4980 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4986 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4991 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 4997 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5002 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5008 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5013 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5019 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v1_1/hdl/axi_protocol_checker_v1_1_vl_rfs.sv" Line 5024 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ipshared/c92a/src/adc.v" Line 1. Module adc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/bd/system/ipshared/c92a/src/spi_master.v" Line 17. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package xbip_utils_v3_0_7.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_13.dds_compiler_v6_0_13_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_13.pkg_dds_compiler_v6_0_13
+Compiling package dds_compiler_v6_0_13.dds_compiler_v6_0_13_hdl_comps
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_3.global_util_pkg
+Compiling package axi_utils_v2_0_3.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_13.pkg_betas
+Compiling package dds_compiler_v6_0_13.pkg_alphas
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.adc
+Compiling module xil_defaultlib.ADC_v1_0_S00_AXI(C_S_AXI_DATA_WI...
+Compiling module xil_defaultlib.ADC_v1_0
+Compiling module xil_defaultlib.system_ADC_0_0
+Compiling module xil_defaultlib.DDS_v1_0_S00_AXI(C_S_AXI_DATA_WI...
+Compiling module xil_defaultlib.DDS_v1_0
+Compiling module xil_defaultlib.system_DDS_0_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.87...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.system_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.system_clk_wiz_0_0
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_13.dds_compiler_v6_0_13_rdy [\dds_compiler_v6_0_13_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_13.pipe_add [\pipe_add(c_width=16,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_13.accum [\accum(c_xdevicefamily="zynq",c_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_13.sin_cos [\sin_cos(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_13.dds_compiler_v6_0_13_core [\dds_compiler_v6_0_13_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_13.dds_compiler_v6_0_13_viv [\dds_compiler_v6_0_13_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_13.dds_compiler_v6_0_13 [\dds_compiler_v6_0_13(c_xdevicef...]
+Compiling architecture system_dds_compiler_0_1_arch of entity xil_defaultlib.system_dds_compiler_0_1 [system_dds_compiler_0_1_default]
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ge...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ge...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_fm...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ss...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_in...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_sp...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_dd...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_oc...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_oc...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_re...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_re...
+Compiling module axi_vip_v1_0_2.axi_vip_v1_0_2_if(C_AXI_PROTOCOL...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_onehot_to_binary(...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_srl_rtl(C_A_WIDTH...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_axic_reg_srl_fifo...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_thr...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_syn...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_axi...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_syn...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_syn...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_cor...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_rep...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_top...
+Compiling module axi_vip_v1_0_2.axi_vip_v1_0_2_top(C_AXI_PROTOCO...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ax...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ax...
+Compiling module axi_vip_v1_0_2.axi_vip_v1_0_2_if(C_AXI_PROTOCOL...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_onehot_to_binary(...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_srl_rtl(C_A_WIDTH...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_axic_reg_srl_fifo...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_thr...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_axi...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_syn...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_cor...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_rep...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_top...
+Compiling module axi_vip_v1_0_2.axi_vip_v1_0_2_top(C_AXI_PROTOCO...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ax...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ax...
+Compiling module axi_vip_v1_0_2.axi_vip_v1_0_2_if(C_AXI_PROTOCOL...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_axi...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_syn...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_cor...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_rep...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_top...
+Compiling module axi_vip_v1_0_2.axi_vip_v1_0_2_top(C_AXI_PROTOCO...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_in...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_in...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_af...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_af...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_af...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_af...
+Compiling module axi_vip_v1_0_2.axi_vip_v1_0_2_if(C_AXI_PROTOCOL...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_onehot_to_binary(...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_srl_rtl(C_A_WIDTH...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_axic_reg_srl_fifo...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_thr...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_axi...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_cor...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_rep...
+Compiling module axi_protocol_checker_v1_1_14.axi_protocol_checker_v1_1_14_top...
+Compiling module axi_vip_v1_0_2.axi_vip_v1_0_2_top(C_AXI_PROTOCO...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1_ax...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_1(C_...
+Compiling module xil_defaultlib.system_processing_system7_0_0
+Compiling module xil_defaultlib.m00_couplers_imp_1H7AUOX
+Compiling module xil_defaultlib.m01_couplers_imp_4Y7TYO
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axic_...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axic_...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axic_...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axic_...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axi_r...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axic_...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axic_...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axic_...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axic_...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axi_r...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_b...
+Compiling module axi_protocol_converter_v2_1_13.axi_protocol_converter_v2_1_13_a...
+Compiling module xil_defaultlib.system_auto_pc_0
+Compiling module xil_defaultlib.s00_couplers_imp_11SE3QO
+Compiling module axi_crossbar_v2_1_14.axi_crossbar_v2_1_14_addr_arbite...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_14.axi_crossbar_v2_1_14_addr_decode...
+Compiling module axi_crossbar_v2_1_14.axi_crossbar_v2_1_14_splitter(C_...
+Compiling module axi_crossbar_v2_1_14.axi_crossbar_v2_1_14_splitter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_register_slice_v2_1_13.axi_register_slice_v2_1_13_axic_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_14.axi_crossbar_v2_1_14_decerr_slav...
+Compiling module axi_crossbar_v2_1_14.axi_crossbar_v2_1_14_crossbar_sa...
+Compiling module axi_crossbar_v2_1_14.axi_crossbar_v2_1_14_axi_crossba...
+Compiling module xil_defaultlib.system_xbar_0
+Compiling module xil_defaultlib.system_ps7_0_axi_periph_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture system_rst_ps7_0_50m_0_arch of entity xil_defaultlib.system_rst_ps7_0_50M_0 [system_rst_ps7_0_50m_0_default]
+Compiling module xil_defaultlib.system
+Compiling module xil_defaultlib.ComplementCalibration
+Compiling module xil_defaultlib.system_wrapper
+Compiling module xil_defaultlib.glbl
+Compiling package axi_vip_v1_0_2.axi_vip_v1_0_2_pkg
+Compiling package xil_common_vip_v1_0_0.xil_common_vip_v1_0_0_pkg
+Compiling package std.std
+Compiling package smartconnect_v1_0.sc_util_v1_0_2_pkg
+Built simulation snapshot system_wrapper_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav/xsim.dir/system_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav/xsim.dir/system_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Nov 30 14:27:18 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 30 14:27:18 2017...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:01:28 . Memory (MB): peak = 823.285 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '87' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_wrapper_behav -key {Behavioral:sim_1:Functional:system_wrapper} -tclbatch {system_wrapper.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source system_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+XilinxAXIVIP: Found at Path: system_wrapper.system_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_BFM_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: system_wrapper.system_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_BFM_INFO : M_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: system_wrapper.system_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: system_wrapper.system_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: system_wrapper.system_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: system_wrapper.system_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: system_wrapper.system_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP2 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: system_wrapper.system_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP3 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: system_wrapper.system_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_ACP : Port is DISABLED.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:01:43 . Memory (MB): peak = 855.793 ; gain = 32.508
+run all
+run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:57 . Memory (MB): peak = 858.336 ; gain = 0.000
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0
+Adding cell -- xilinx.com:user:DDS:1.0 - DDS_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:user:ADC:1.0 - ADC_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /ADC_0/ADC_Clk_2Mhz(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 924.176 ; gain = 49.789
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins DDS_0/s00_axi_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins ps7_0_axi_periph/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins ps7_0_axi_periph/M01_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins ps7_0_axi_periph/M01_ACLK]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins ps7_0_axi_periph/ACLK]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins DDS_0/s00_axi_aclk]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]'
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /ADC_0/ADC_Clk_2Mhz(undef)
+close_bd_design [get_bd_designs system]
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0
+Adding cell -- xilinx.com:user:DDS:1.0 - DDS_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:user:ADC:1.0 - ADC_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /ADC_0/ADC_Clk_2Mhz(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd>
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins ADC_0/ADC_Clk_2Mhz]
+save_bd_design
+Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_1
+create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1046.051 ; gain = 79.941
+endgroup
+delete_bd_objs [get_bd_cells clk_wiz_1]
+set_property location {2 516 46} [get_bd_cells clk_wiz_0]
+set_property location {1 285 60} [get_bd_cells clk_wiz_0]
+set_property location {1 191 53} [get_bd_cells clk_wiz_0]
+connect_bd_net [get_bd_pins ADC_0/ADC_Clk_2Mhz] [get_bd_pins clk_wiz_0/clk_out1]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ADC_0/ADC_Clk_2Mhz(undef)
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {2 516 49} [get_bd_cells clk_wiz_0]
+save_bd_design
+Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+set_property location {1 203 55} [get_bd_cells clk_wiz_0]
+save_bd_design
+Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+ipx::edit_ip_in_project -upgrade true -name ADC_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/ADC_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/adc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1132.125 ; gain = 0.922
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1137.523 ; gain = 6.320
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+ERROR: [BD 41-1179] The following IPs in this design are locked. This command cannot be run until these IPs are unlocked. Please run report_ip_status for more details and a recommendation on how to fix this issue. 
+/ADC_0
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:ADC:1.0 [get_ips  system_ADC_0_0] -log ip_upgrade.log
+Upgrading 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-3420] Updated system_ADC_0_0 to use current project options
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ADC_0_upgraded_ipi/ADC_Clk_2Mhz(undef)
+Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_ADC_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd]
+Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd> 
+Verilog Output written to : C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system.v
+Verilog Output written to : C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DDS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ADC_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system.hwdef
+generate_target: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1204.535 ; gain = 9.996
+export_ip_user_files -of_objects [get_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd] -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/sim_scripts -ip_user_files_dir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files -ipstatic_source_dir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/compile_simlib/modelsim} {questa=C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/compile_simlib/questa} {riviera=C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/compile_simlib/riviera} {activehdl=C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+close_bd_design [get_bd_designs system]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0
+Adding cell -- xilinx.com:user:DDS:1.0 - DDS_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:user:ADC:1.0 - ADC_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ADC_0/ADC_Clk_2Mhz(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd>
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Nov 30 15:17:11 2017] Launched synth_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/runme.log
+[Thu Nov 30 15:17:11 2017] Launched impl_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/runme.log
+file copy -force C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.sysdef C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+file mkdir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk
+file copy -force C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.sysdef C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1528.496 ; gain = 143.199
+set_property PROGRAM.FILE {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.Phase_Width {31} CONFIG.PINC1 {0001000011000111} CONFIG.Output_Width {8}] [get_bd_cells dds_compiler_0]
+endgroup
+ipx::edit_ip_in_project -upgrade true -name DDS_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/DDS_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/dds_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1600.016 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1600.016 ; gain = 0.000
+current_project RCIMS
+current_project DDS_v1_0_project
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete

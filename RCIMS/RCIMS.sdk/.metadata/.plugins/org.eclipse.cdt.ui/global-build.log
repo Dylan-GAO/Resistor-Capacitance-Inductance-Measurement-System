@@ -1,4 +1,4 @@
-23:15:14 **** Build of project test_bsp ****
+21:17:27 **** Build of project demo_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/ADC_v1_0/src"
 make -C ps7_cortexa9_0/libsrc/ADC_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
@@ -12,6 +12,8 @@ make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=a
 make -C ps7_cortexa9_0/libsrc/DDS_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
 make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/Display_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/Display_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
@@ -59,6 +61,16 @@ DDS_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
 "Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
 make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/Display_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/Display_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling Display..."
+Display_selftest.c: In function 'DISPLAY_Reg_SelfTest':
+Display_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( DISPLAY_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+Display_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
 "Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Compiling dmaps"
@@ -88,644 +100,924 @@ make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Compiling xadcps"
 'Finished building libraries'
-23:15:55 **** Build of configuration Debug for project test ****
+21:17:57 **** Build of configuration Debug for project demo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 'Finished building: ../src/helloworld.c'
 ' '
 'Building file: ../src/platform.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 'Finished building: ../src/platform.c'
 ' '
-'Building target: test.elf'
+'Building target: demo.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19384	   1148	  22568	  43100	   a85c	test.elf
-'Finished building: test.elf.size'
+  19384	   1148	  22568	  43100	   a85c	demo.elf
+'Finished building: demo.elf.size'
 ' '
-23:15:59 **** Auto Build of configuration Debug for project test ****
+21:18:00 **** Auto Build of configuration Debug for project demo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-23:16:10 **** Auto Build of configuration Debug for project test ****
+21:18:28 **** Auto Build of configuration Debug for project demo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22640	   1148	  22568	  46356	   b514	test.elf
-'Finished building: test.elf.size'
-' '
-23:16:18 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-23:17:09 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-23:30:13 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-23:35:35 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-23:35:57 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-23:39:31 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-23:42:24 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-23:50:05 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22640	   1148	  22568	  46356	   b514	test.elf
-'Finished building: test.elf.size'
-' '
-23:50:18 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-23:53:38 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22640	   1148	  22568	  46356	   b514	test.elf
-'Finished building: test.elf.size'
-' '
-23:53:45 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-23:54:36 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-12:00:04 **** Auto Build of project test_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/ADC_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ADC_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/DDS_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/DDS_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make libs in ps7_cortexa9_0/libsrc/ADC_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ADC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ADC..."
-ADC_selftest.c: In function 'ADC_Reg_SelfTest':
-ADC_selftest.c:52:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( ADC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                    ^~
-ADC_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling coresightps_dcc"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in ps7_cortexa9_0/libsrc/DDS_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/DDS_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling DDS..."
-DDS_selftest.c: In function 'DDS_Reg_SelfTest':
-DDS_selftest.c:52:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( DDS_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                    ^~
-DDS_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scugic"
-xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
-  }
-  ^
-In file included from xscugic_g.c:41:0:
-xscugic.h:218:27: note: 'HandlerTable' declared here
-  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
-                           ^~~~~~~~~~~~
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling xadcps"
-'Finished building libraries'
-12:00:33 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: test.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22576	   1148	  22568	  46292	   b4d4	test.elf
-'Finished building: test.elf.size'
-' '
-12:02:03 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-12:06:34 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22576	   1148	  22568	  46292	   b4d4	test.elf
-'Finished building: test.elf.size'
-' '
-12:07:06 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-12:07:31 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-12:13:43 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:94:67: error: macro "ADC_mReadReg" passed 3 arguments, but takes just 2
-      ADC_mReadReg(ADC_BASEADDR, ADC_S00_AXI_SLV_REG1_OFFSET, count);
-                                                                   ^
-../src/helloworld.c:94:6: error: 'ADC_mReadReg' undeclared (first use in this function)
-      ADC_mReadReg(ADC_BASEADDR, ADC_S00_AXI_SLV_REG1_OFFSET, count);
-      ^~~~~~~~~~~~
-../src/helloworld.c:94:6: note: each undeclared identifier is reported only once for each function it appears in
-../src/helloworld.c:72:6: warning: unused variable 'count' [-Wunused-variable]
+../src/helloworld.c:72:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22640	   1148	  22568	  46356	   b514	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:19:04 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22640	   1148	  22568	  46356	   b514	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:20:23 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:71:1: error: parameter name omitted
+ void Display(u32 ){
+ ^~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:79:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:22:26 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:82:6: warning: unused variable 'count' [-Wunused-variable]
   int count = 0;
       ^~~~~
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
-  u16 ADC_data;
-      ^~~~~~~~
-make: *** [src/helloworld.o] ´íÎó 1
-12:13:51 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:94:67: error: macro "ADC_mReadReg" passed 3 arguments, but takes just 2
-      ADC_mReadReg(ADC_BASEADDR, ADC_S00_AXI_SLV_REG1_OFFSET, count);
-                                                                   ^
-../src/helloworld.c:94:6: error: 'ADC_mReadReg' undeclared (first use in this function)
-      ADC_mReadReg(ADC_BASEADDR, ADC_S00_AXI_SLV_REG1_OFFSET, count);
-      ^~~~~~~~~~~~
-../src/helloworld.c:94:6: note: each undeclared identifier is reported only once for each function it appears in
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
-  u16 ADC_data;
-      ^~~~~~~~
-make: *** [src/helloworld.o] ´íÎó 1
-12:14:10 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:94:67: error: macro "ADC_mReadReg" passed 3 arguments, but takes just 2
-      ADC_mReadReg(ADC_BASEADDR, ADC_S00_AXI_SLV_REG1_OFFSET, count);
-                                                                   ^
-../src/helloworld.c:94:6: error: 'ADC_mReadReg' undeclared (first use in this function)
-      ADC_mReadReg(ADC_BASEADDR, ADC_S00_AXI_SLV_REG1_OFFSET, count);
-      ^~~~~~~~~~~~
-../src/helloworld.c:94:6: note: each undeclared identifier is reported only once for each function it appears in
-In file included from ../src/helloworld.c:51:0:
-../src/helloworld.c:96:67: error: 'ADC_S01_AXI_SLV_REG0_OFFSET' undeclared (first use in this function)
-      xil_printf("%d\t%x\n\r", ++count, ADC_mReadReg(ADC_BASEADDR, ADC_S01_AXI_SLV_REG0_OFFSET));
-                                                                   ^
-../../test_bsp/ps7_cortexa9_0/include/ADC.h:55:31: note: in definition of macro 'ADC_mReadReg'
-     Xil_In32((BaseAddress) + (RegOffset))
-                               ^~~~~~~~~
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
-  u16 ADC_data;
-      ^~~~~~~~
-make: *** [src/helloworld.o] ´íÎó 1
-12:14:50 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-In file included from ../src/helloworld.c:51:0:
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:96:67: error: 'ADC_S01_AXI_SLV_REG0_OFFSET' undeclared (first use in this function)
-      xil_printf("%d\t%x\n\r", ++count, ADC_mReadReg(ADC_BASEADDR, ADC_S01_AXI_SLV_REG0_OFFSET));
-                                                                   ^
-../../test_bsp/ps7_cortexa9_0/include/ADC.h:55:31: note: in definition of macro 'ADC_mReadReg'
-     Xil_In32((BaseAddress) + (RegOffset))
-                               ^~~~~~~~~
-../src/helloworld.c:96:67: note: each undeclared identifier is reported only once for each function it appears in
-      xil_printf("%d\t%x\n\r", ++count, ADC_mReadReg(ADC_BASEADDR, ADC_S01_AXI_SLV_REG0_OFFSET));
-                                                                   ^
-../../test_bsp/ps7_cortexa9_0/include/ADC.h:55:31: note: in definition of macro 'ADC_mReadReg'
-     Xil_In32((BaseAddress) + (RegOffset))
-                               ^~~~~~~~~
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
-  u16 ADC_data;
-      ^~~~~~~~
-make: *** [src/helloworld.o] ´íÎó 1
-12:15:14 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-In file included from ../src/helloworld.c:51:0:
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:96:65: error: 'ADC_S01_AXI_SLV_REG0_OFFSET' undeclared (first use in this function)
-      xil_printf("%d\t%x\n\r", count, ADC_mReadReg(ADC_BASEADDR, ADC_S01_AXI_SLV_REG0_OFFSET));
-                                                                 ^
-../../test_bsp/ps7_cortexa9_0/include/ADC.h:55:31: note: in definition of macro 'ADC_mReadReg'
-     Xil_In32((BaseAddress) + (RegOffset))
-                               ^~~~~~~~~
-../src/helloworld.c:96:65: note: each undeclared identifier is reported only once for each function it appears in
-      xil_printf("%d\t%x\n\r", count, ADC_mReadReg(ADC_BASEADDR, ADC_S01_AXI_SLV_REG0_OFFSET));
-                                                                 ^
-../../test_bsp/ps7_cortexa9_0/include/ADC.h:55:31: note: in definition of macro 'ADC_mReadReg'
-     Xil_In32((BaseAddress) + (RegOffset))
-                               ^~~~~~~~~
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
-  u16 ADC_data;
-      ^~~~~~~~
-make: *** [src/helloworld.o] ´íÎó 1
-12:15:32 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+../src/helloworld.c:81:6: warning: unused variable 'ADC_data' [-Wunused-variable]
   u16 ADC_data;
       ^~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
-'Building target: test.elf'
+'Building target: demo.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  22576	   1148	  22568	  46292	   b4d4	test.elf
-'Finished building: test.elf.size'
+  22568	   1148	  22568	  46284	   b4cc	demo.elf
+'Finished building: demo.elf.size'
 ' '
-12:15:45 **** Incremental Build of configuration Debug for project test ****
+21:29:19 **** Incremental Build of configuration Debug for project demo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-12:16:14 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
-  u16 ADC_data;
-      ^~~~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22640	   1148	  22568	  46356	   b514	test.elf
-'Finished building: test.elf.size'
-' '
-12:16:18 **** Auto Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
-  u16 ADC_data;
-      ^~~~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22640	   1148	  22568	  46356	   b514	test.elf
-'Finished building: test.elf.size'
-' '
-12:16:22 **** Incremental Build of configuration Debug for project test ****
+21:29:41 **** Incremental Build of configuration Debug for project demo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-12:17:37 **** Auto Build of configuration Debug for project test ****
+21:30:45 **** Auto Build of configuration Debug for project demo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
-  u16 ADC_data;
-      ^~~~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22576	   1148	  22568	  46292	   b4d4	test.elf
-'Finished building: test.elf.size'
-' '
-12:17:45 **** Incremental Build of configuration Debug for project test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-12:48:55 **** Auto Build of project test_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/ADC_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ADC_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/DDS_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/DDS_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make libs in ps7_cortexa9_0/libsrc/ADC_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ADC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ADC..."
-ADC_selftest.c: In function 'ADC_Reg_SelfTest':
-ADC_selftest.c:52:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( ADC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                    ^~
-ADC_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
+../src/helloworld.c:82:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
       ^~~~~
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling coresightps_dcc"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in ps7_cortexa9_0/libsrc/DDS_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/DDS_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling DDS..."
-DDS_selftest.c: In function 'DDS_Reg_SelfTest':
-DDS_selftest.c:52:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( DDS_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                    ^~
-DDS_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scugic"
-xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
-  }
-  ^
-In file included from xscugic_g.c:41:0:
-xscugic.h:218:27: note: 'HandlerTable' declared here
-  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
-                           ^~~~~~~~~~~~
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling xadcps"
-'Finished building libraries'
-12:49:22 **** Auto Build of configuration Debug for project test ****
+../src/helloworld.c:81:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1148	  22568	  46284	   b4cc	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:30:55 **** Auto Build of configuration Debug for project demo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:71:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+../src/helloworld.c:82:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:81:6: warning: unused variable 'ADC_data' [-Wunused-variable]
   u16 ADC_data;
       ^~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: test.elf'
+'Building target: demo.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  22576	   1148	  22568	  46292	   b4d4	test.elf
-'Finished building: test.elf.size'
+  22568	   1148	  22568	  46284	   b4cc	demo.elf
+'Finished building: demo.elf.size'
 ' '
-12:50:07 **** Incremental Build of configuration Debug for project test ****
+21:31:58 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:82:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:81:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1148	  22568	  46284	   b4cc	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:32:04 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:32:41 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:82:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:81:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1148	  22568	  46284	   b4cc	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:32:48 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:33:19 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:82:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:81:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1148	  22568	  46284	   b4cc	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:33:24 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:34:09 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:72:6: error: 'data' redeclared as different kind of symbol
+  u32 data;
+      ^~~~
+../src/helloworld.c:71:29: note: previous definition of 'data' was here
+ void Display(char type, u16 data){
+                             ^~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:80:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:37:33 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:74:8: error: label at end of compound statement
+   case 'L':
+        ^~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:83:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:82:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:40:11 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:75:32: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = (Num2Dis / 1000) << 12 + (Num2Dis)
+                             ~~~^~~~~~~~~~~
+../src/helloworld.c:76:2: error: expected ';' before 'switch'
+  switch (type) {
+  ^~~~~~
+../src/helloworld.c:73:5: warning: unused variable 'tmp' [-Wunused-variable]
+  u8 tmp;
+     ^~~
+../src/helloworld.c:72:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  u32 data;
+      ^~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:86:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:85:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:40:16 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:73:2: error: unknown type name 'u4'
+  u4 tmp;
+  ^~
+../src/helloworld.c:75:32: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = (Num2Dis / 1000) << 12 + (Num2Dis)
+                             ~~~^~~~~~~~~~~
+../src/helloworld.c:76:2: error: expected ';' before 'switch'
+  switch (type) {
+  ^~~~~~
+../src/helloworld.c:73:5: warning: unused variable 'tmp' [-Wunused-variable]
+  u4 tmp;
+     ^~~
+../src/helloworld.c:72:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  u32 data;
+      ^~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:86:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:85:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:40:21 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:75:32: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = (Num2Dis / 1000) << 12 + (Num2Dis)
+                             ~~~^~~~~~~~~~~
+../src/helloworld.c:76:2: error: expected ';' before 'switch'
+  switch (type) {
+  ^~~~~~
+../src/helloworld.c:73:5: warning: unused variable 'tmp' [-Wunused-variable]
+  u8 tmp;
+     ^~~
+../src/helloworld.c:72:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  u32 data;
+      ^~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:86:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:85:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:40:38 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:76:19: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = tmp << 12 + (Num2Dis)
+                ~~~^~~~~~~~~~~
+../src/helloworld.c:77:2: error: expected ';' before 'switch'
+  switch (type) {
+  ^~~~~~
+../src/helloworld.c:72:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  u32 data;
+      ^~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:87:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:86:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:41:16 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:75:2: error: 'tmp' undeclared (first use in this function)
+  tmp = Num2Dis / 1000;
+  ^~~
+../src/helloworld.c:75:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:78:8: error: label at end of compound statement
+   case 'L':
+        ^~~
+../src/helloworld.c:73:26: warning: unused variable 'tmp_p' [-Wunused-variable]
+  u8 tmp_0, tmp_1, tmp_2, tmp_p;
+                          ^~~~~
+../src/helloworld.c:73:19: warning: unused variable 'tmp_2' [-Wunused-variable]
+  u8 tmp_0, tmp_1, tmp_2, tmp_p;
+                   ^~~~~
+../src/helloworld.c:73:12: warning: unused variable 'tmp_1' [-Wunused-variable]
+  u8 tmp_0, tmp_1, tmp_2, tmp_p;
+            ^~~~~
+../src/helloworld.c:73:5: warning: unused variable 'tmp_0' [-Wunused-variable]
+  u8 tmp_0, tmp_1, tmp_2, tmp_p;
+     ^~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:87:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:86:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:41:59 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:78:9: error: 'tmp' undeclared (first use in this function)
+  data = tmp << 12;
+         ^~~
+../src/helloworld.c:78:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:80:8: error: label at end of compound statement
+   case 'L':
+        ^~~
+../src/helloworld.c:73:26: warning: unused variable 'tmp_p' [-Wunused-variable]
+  u8 tmp_0, tmp_1, tmp_2, tmp_p;
+                          ^~~~~
+../src/helloworld.c:73:19: warning: unused variable 'tmp_2' [-Wunused-variable]
+  u8 tmp_0, tmp_1, tmp_2, tmp_p;
+                   ^~~~~
+../src/helloworld.c:73:12: warning: variable 'tmp_1' set but not used [-Wunused-but-set-variable]
+  u8 tmp_0, tmp_1, tmp_2, tmp_p;
+            ^~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:89:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:88:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:42:43 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:81:9: error: 'tmp' undeclared (first use in this function)
+  data = tmp << 12;
+         ^~~
+../src/helloworld.c:81:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:83:8: error: label at end of compound statement
+   case 'L':
+        ^~~
+../src/helloworld.c:73:26: warning: variable 'tmp_p' set but not used [-Wunused-but-set-variable]
+  u8 tmp_0, tmp_1, tmp_2, tmp_p;
+                          ^~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:92:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:91:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:43:46 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:81:21: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = tmp_0 << 12 + tmp_1 << 8 + tmp_2 << 4 + tmp_p;
+                  ~~~^~~~~~~
+../src/helloworld.c:81:34: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = tmp_0 << 12 + tmp_1 << 8 + tmp_2 << 4 + tmp_p;
+                                ~~^~~~~~~
+../src/helloworld.c:81:47: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = tmp_0 << 12 + tmp_1 << 8 + tmp_2 << 4 + tmp_p;
+                                             ~~^~~~~~~
+../src/helloworld.c:83:8: error: label at end of compound statement
+   case 'L':
+        ^~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:92:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:91:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:45:27 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Display':
+../src/helloworld.c:81:21: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = tmp_0 << 12 + tmp_1 << 8 + tmp_2 << 4 + tmp_p;
+                  ~~~^~~~~~~
+../src/helloworld.c:81:34: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = tmp_0 << 12 + tmp_1 << 8 + tmp_2 << 4 + tmp_p;
+                                ~~^~~~~~~
+../src/helloworld.c:81:47: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  data = tmp_0 << 12 + tmp_1 << 8 + tmp_2 << 4 + tmp_p;
+                                             ~~^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22952	   1148	  22568	  46668	   b64c	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:45:50 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22952	   1148	  22568	  46668	   b64c	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:46:20 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22888	   1148	  22568	  46604	   b60c	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:46:37 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22952	   1148	  22568	  46668	   b64c	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:47:10 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22952	   1148	  22568	  46668	   b64c	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:47:17 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23080	   1148	  22568	  46796	   b6cc	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:47:23 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:48:02 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23080	   1148	  22568	  46796	   b6cc	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:49:13 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23080	   1148	  22568	  46796	   b6cc	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:49:20 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:50:25 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23080	   1148	  22568	  46796	   b6cc	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:50:29 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:52:53 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:94:6: warning: unused variable 'ADC_data' [-Wunused-variable]
+  u16 ADC_data;
+      ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23216	   1148	  22568	  46932	   b754	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:53:10 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:55:01 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:56:05 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23216	   1148	  22568	  46932	   b754	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:56:19 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:57:13 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:59:46 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23152	   1148	  22568	  46868	   b714	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:00:01 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:00:30 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:01:10 **** Incremental Build of configuration Debug for project demo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

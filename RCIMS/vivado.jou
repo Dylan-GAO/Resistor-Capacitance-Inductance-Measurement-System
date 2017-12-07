@@ -2,57 +2,186 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Thu Nov 30 14:21:22 2017
-# Process ID: 164
+# Start of session at: Thu Dec  7 19:18:22 2017
+# Process ID: 5424
 # Current directory: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9648 C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4696 C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.xpr
 # Log file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/vivado.log
 # Journal file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr
 update_compile_order -fileset sources_1
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+create_peripheral xilinx.com user Display 1.0 -dir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:Display:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:Display:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:Display:1.0]
+set_property  ip_repo_paths  {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/../ip_repo/Display_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+create_ip -name lcd_display -vendor fudan_university -library peter -version 1.0 -module_name lcd_display_0 -dir c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src
+generate_target {instantiation_template} [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci]
+generate_target all [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci]
+export_ip_user_files -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci] -directory c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files -ipstatic_source_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/questa} {riviera=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog -rebuild
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::merge_project_changes ports [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
-launch_simulation
-source system_wrapper.tcl
-run all
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
 open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
-delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
 startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins DDS_0/s00_axi_aclk]
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins ps7_0_axi_periph/ACLK]
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins ps7_0_axi_periph/M01_ACLK]
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
+create_bd_cell -type ip -vlnv xilinx.com:user:Display:1.0 Display_0
 endgroup
-undo
-undo
-close_bd_design [get_bd_designs system]
+set_property location {5 1678 -117} [get_bd_cells Display_0]
+startgroup
+make_bd_pins_external  [get_bd_pins Display_0/hsync_sig] [get_bd_pins Display_0/blue_sig] [get_bd_pins Display_0/green_sig] [get_bd_pins Display_0/lcd_de] [get_bd_pins Display_0/lcd_dclk] [get_bd_pins Display_0/vsync_sig] [get_bd_pins Display_0/red_sig]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins Display_0/S00_AXI]
+connect_bd_net [get_bd_ports clock_rtl] [get_bd_pins Display_0/clk]
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog -rebuild
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
 open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
-disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins ADC_0/ADC_Clk_2Mhz]
-save_bd_design
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_1
-endgroup
-delete_bd_objs [get_bd_cells clk_wiz_1]
-set_property location {2 516 46} [get_bd_cells clk_wiz_0]
-set_property location {1 285 60} [get_bd_cells clk_wiz_0]
-set_property location {1 191 53} [get_bd_cells clk_wiz_0]
-connect_bd_net [get_bd_pins ADC_0/ADC_Clk_2Mhz] [get_bd_pins clk_wiz_0/clk_out1]
-regenerate_bd_layout
-regenerate_bd_layout
-regenerate_bd_layout
-set_property location {2 516 49} [get_bd_cells clk_wiz_0]
-save_bd_design
-set_property location {1 203 55} [get_bd_cells clk_wiz_0]
-save_bd_design
-ipx::edit_ip_in_project -upgrade true -name ADC_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/ADC_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
 update_compile_order -fileset sources_1
+current_project RCIMS
+current_project Display_v1_0_project
+update_ip_catalog -rebuild
+create_ip -name lcd_display -vendor fudan_university -library peter -version 1.0 -module_name lcd_display_0 -dir c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src
+generate_target {instantiation_template} [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+generate_target all [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+export_ip_user_files -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci] -directory c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.ip_user_files -ipstatic_source_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.cache/compile_simlib/questa} {riviera=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
 ipx::merge_project_changes files [ipx::current_core]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+current_project RCIMS
+ipx::unload_core c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+current_project Display_v1_0_v1_0_project
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+report_ip_status -name ip_status 
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+set_property generate_synth_checkpoint true [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+report_ip_status -name ip_status 
+generate_target all [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+export_ip_user_files -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+launch_runs -jobs 2 lcd_display_0_synth_1
+wait_on_run lcd_display_0_synth_1
+export_simulation -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci] -directory c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files -ipstatic_source_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/questa} {riviera=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
 set_property core_revision 5 [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+update_compile_order -fileset sources_1
+remove_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+create_ip -name lcd_display -vendor fudan_university -library peter -version 1.0 -module_name lcd_display -dir c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src
+generate_target {instantiation_template} [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci]
+generate_target all [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci]
+export_ip_user_files -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci] -directory c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files -ipstatic_source_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/questa} {riviera=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
 ipx::save_core [ipx::current_core]
 set_property core_revision 6 [ipx::current_core]
@@ -60,58 +189,5 @@ ipx::create_xgui_files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
 ipx::save_core [ipx::current_core]
 close_project -delete
-update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
 report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:user:ADC:1.0 [get_ips  system_ADC_0_0] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips system_ADC_0_0] -no_script -sync -force -quiet
-generate_target all [get_files  C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd]
-export_ip_user_files -of_objects [get_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd] -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/sim_scripts -ip_user_files_dir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files -ipstatic_source_dir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/compile_simlib/modelsim} {questa=C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/compile_simlib/questa} {riviera=C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/compile_simlib/riviera} {activehdl=C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-report_ip_status -name ip_status 
-close_bd_design [get_bd_designs system]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-file copy -force C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.sysdef C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
-
-launch_sdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
-open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
-file mkdir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk
-file copy -force C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.sysdef C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
-
-launch_sdk -workspace C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk -hwspec C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.sdk/system_wrapper.hdf
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
-current_hw_device [get_hw_devices xc7z010_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
-set_property PROGRAM.FILE {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
-program_hw_devices [get_hw_devices xc7z010_1]
-refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
-set_property PROGRAM.FILE {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
-program_hw_devices [get_hw_devices xc7z010_1]
-refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
-refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
-open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
-startgroup
-set_property -dict [list CONFIG.Phase_Width {31} CONFIG.PINC1 {0001000011000111} CONFIG.Output_Width {8}] [get_bd_cells dds_compiler_0]
-endgroup
-ipx::edit_ip_in_project -upgrade true -name DDS_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/DDS_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0/component.xml
-current_project RCIMS
-current_project DDS_v1_0_project
-update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-set_property core_revision 3 [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::save_core [ipx::current_core]
-close_project -delete
