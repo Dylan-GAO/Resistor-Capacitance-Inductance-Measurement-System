@@ -88,29 +88,43 @@ void Display(char type, u32 Num2Dis){
 	DISPLAY_mWriteReg(Display_BASEADDR, DISPLAY_S00_AXI_SLV_REG3_OFFSET, data);
 }
 
+u32 findMax(){
+	int i;
+	u32 res = 0;
+	u32 tmp;
+	for(i = 0; i < 15000000; i++){
+		tmp = ADC_ReadData();
+		//xil_printf("%d\n\r", tmp);
+		if (res < tmp){
+			res = tmp;
+		}
+	}
+	return res;
+}
 
 int main()
 {
-	int count = 0;
-	int Delay;
+	//int Delay;
+	float result_tmp;
+	float tmp;
+	u32 result;
     init_platform();
 
     xil_printf("*********RCIMS  Start*********\n\r\n\r");
     xil_printf("Author: Jingbo GAO, Jiyuan BAI\n\r\n\r");
     xil_printf("******************************\n\r\n\r");
 
+    //DAC_ChangeFreq(0x10C7);
+    DAC_ChangeFreq(0x10);
+    //Display('R', 620);
+
     while (1){
-    	DAC_ChangeFreq(0x10C7);
-    	Display('R', 620);
-    	xil_printf("%d\t%d\n\r", count++, ADC_ReadData());
-    	for (Delay = 0; Delay < 100000000; Delay++);
-    	DAC_ChangeFreq(0x218E);
-    	Display('L', 2048);
-    	xil_printf("%d\t%d\n\r", count++, ADC_ReadData());
-    	for (Delay = 0; Delay < 100000000; Delay++);
-    	Display('C', 4096);
-    	xil_printf("%d\t%d\n\r", count++, ADC_ReadData());
-    	for (Delay = 0; Delay < 100000000; Delay++);
+    //	xil_printf("%d\n\r", ADC_ReadData());
+    	tmp = findMax() * 3.3 / 65535;
+    //	xil_printf("Find MAX: %d\n\r", tmp);
+    	result_tmp = (9.9 * tmp) / (3.2 - tmp);
+    	result = result_tmp * 10;
+    	Display('R', result);
     }
 
     cleanup_platform();
