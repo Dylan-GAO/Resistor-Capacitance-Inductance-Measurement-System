@@ -2723,3 +2723,1168 @@ arm-none-eabi-size demo.elf  |tee "demo.elf.size"
   22980	   1148	  22568	  46696	   b668	demo.elf
 'Finished building: demo.elf.size'
 ' '
+20:48:20 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:19: error: 'result' undeclared (first use in this function)
+      display('R', result);
+                   ^~~~~~
+../src/helloworld.c:72:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:58:6: warning: variable 'imp' set but not used [-Wunused-but-set-variable]
+  u32 imp;
+      ^~~
+make: *** [src/helloworld.o] ´íÎó 1
+20:48:32 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:6: warning: variable 'imp' set but not used [-Wunused-but-set-variable]
+  u32 imp;
+      ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22980	   1148	  22568	  46696	   b668	demo.elf
+'Finished building: demo.elf.size'
+' '
+20:53:15 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:6: warning: variable 'imp' set but not used [-Wunused-but-set-variable]
+  u32 imp;
+      ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22980	   1148	  22568	  46696	   b668	demo.elf
+'Finished building: demo.elf.size'
+' '
+20:53:22 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:54:04 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:54:40 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:55:42 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22980	   1148	  22568	  46696	   b668	demo.elf
+'Finished building: demo.elf.size'
+' '
+20:55:48 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:57:59 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22980	   1148	  22568	  46696	   b668	demo.elf
+'Finished building: demo.elf.size'
+' '
+20:58:04 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:59:15 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22980	   1148	  22568	  46696	   b668	demo.elf
+'Finished building: demo.elf.size'
+' '
+20:59:20 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:01:04 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22980	   1148	  22568	  46696	   b668	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:01:10 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:08:27 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23204	   1148	  22568	  46920	   b748	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:08:32 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:10:46 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:15: warning: unused variable 'imp_u_2' [-Wunused-variable]
+  u32 imp_u_1, imp_u_2;
+               ^~~~~~~
+../src/helloworld.c:57:6: warning: variable 'imp_u_1' set but not used [-Wunused-but-set-variable]
+  u32 imp_u_1, imp_u_2;
+      ^~~~~~~
+../src/helloworld.c:56:29: warning: unused variable 'imp_2' [-Wunused-variable]
+  float amp_1, amp_2, imp_1, imp_2;
+                             ^~~~~
+../src/helloworld.c:56:15: warning: unused variable 'amp_2' [-Wunused-variable]
+  float amp_1, amp_2, imp_1, imp_2;
+               ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23060	   1148	  22568	  46776	   b6b8	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:10:50 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:11:32 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:15: warning: unused variable 'imp_u_2' [-Wunused-variable]
+  u32 imp_u_1, imp_u_2;
+               ^~~~~~~
+../src/helloworld.c:57:6: warning: variable 'imp_u_1' set but not used [-Wunused-but-set-variable]
+  u32 imp_u_1, imp_u_2;
+      ^~~~~~~
+../src/helloworld.c:56:29: warning: unused variable 'imp_2' [-Wunused-variable]
+  float amp_1, amp_2, imp_1, imp_2;
+                             ^~~~~
+../src/helloworld.c:56:15: warning: unused variable 'amp_2' [-Wunused-variable]
+  float amp_1, amp_2, imp_1, imp_2;
+               ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23060	   1148	  22568	  46776	   b6b8	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:11:37 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:12:26 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:15: warning: unused variable 'imp_u_2' [-Wunused-variable]
+  u32 imp_u_1, imp_u_2;
+               ^~~~~~~
+../src/helloworld.c:56:29: warning: unused variable 'imp_2' [-Wunused-variable]
+  float amp_1, amp_2, imp_1, imp_2;
+                             ^~~~~
+../src/helloworld.c:56:15: warning: unused variable 'amp_2' [-Wunused-variable]
+  float amp_1, amp_2, imp_1, imp_2;
+               ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23060	   1148	  22568	  46776	   b6b8	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:12:38 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:13:13 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:15: warning: unused variable 'imp_u_2' [-Wunused-variable]
+  u32 imp_u_1, imp_u_2;
+               ^~~~~~~
+../src/helloworld.c:56:29: warning: unused variable 'imp_2' [-Wunused-variable]
+  float amp_1, amp_2, imp_1, imp_2;
+                             ^~~~~
+../src/helloworld.c:56:15: warning: unused variable 'amp_2' [-Wunused-variable]
+  float amp_1, amp_2, imp_1, imp_2;
+               ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23060	   1148	  22568	  46776	   b6b8	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:13:16 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:13:50 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:14:24 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:15:04 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23204	   1148	  22568	  46920	   b748	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:15:10 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:17:39 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:19:30 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23204	   1148	  22568	  46920	   b748	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:23:42 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+../src/helloworld.c:82:7: error: 'imp' undeclared (first use in this function)
+       imp = (imp_1 + imp_2) / 2 * 10;
+       ^~~
+../src/helloworld.c:82:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:85:20: error: expected expression before ')' token
+       display('C', );
+                    ^
+../src/helloworld.c:87:20: error: expected expression before ')' token
+       display('L', );
+                    ^
+../src/helloworld.c:57:6: warning: unused variable 'imp_u' [-Wunused-variable]
+  u32 imp_u;
+      ^~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:28:12 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:82:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+../src/helloworld.c:86:22: error: 'PI' undeclared (first use in this function)
+       C_1 = 1 / (2 * PI * 10 * imp_1) * 1000000000;
+                      ^~
+../src/helloworld.c:86:22: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] ´íÎó 1
+21:28:35 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:82:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23428	   1148	  22568	  47144	   b828	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:28:59 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:29:22 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:31:21 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23364	   1148	  22568	  47080	   b7e8	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:32:38 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:34:06 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:36:18 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:74:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23364	   1148	  22568	  47080	   b7e8	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:36:21 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:37:00 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:74:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23364	   1148	  22568	  47080	   b7e8	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:39:15 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23460	   1148	  22568	  47176	   b848	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:39:19 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:40:44 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:40:59 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:42:45 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:74:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23388	   1148	  22568	  47104	   b800	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:42:51 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:44:12 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:77:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23484	   1148	  22568	  47200	   b860	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:44:16 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:45:22 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:10: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      if (abs(imp_1 - imp_2) < 3){
+          ^~~
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23484	   1148	  22568	  47200	   b860	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:45:26 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:47:00 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:50:08 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:50:13 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:54:17 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:54:32 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:57:17 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:57:26 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:58:03 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+21:58:07 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:01:05 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:02:59 **** Incremental Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:05:27 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:57:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:06:14 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:60:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:08:01 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:62:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:08:55 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:62:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:09:51 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:62:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:10:21 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:24: warning: unused variable 'L_2' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                        ^~~
+../src/helloworld.c:62:19: warning: unused variable 'L_1' [-Wunused-variable]
+  double C_1, C_2, L_1, L_2;
+                   ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1148	  22568	  47264	   b8a0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:11:44 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23612	   1148	  22568	  47328	   b8e0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:13:28 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23612	   1148	  22568	  47328	   b8e0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:14:06 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23612	   1148	  22568	  47328	   b8e0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:14:37 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23612	   1148	  22568	  47328	   b8e0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:15:00 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23612	   1148	  22568	  47328	   b8e0	demo.elf
+'Finished building: demo.elf.size'
+' '
+22:15:11 **** Auto Build of configuration Debug for project demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: demo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../demo_bsp/ps7_cortexa9_0/lib -o "demo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: demo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size demo.elf  |tee "demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23612	   1148	  22568	  47328	   b8e0	demo.elf
+'Finished building: demo.elf.size'
+' '

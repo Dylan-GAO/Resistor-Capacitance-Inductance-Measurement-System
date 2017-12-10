@@ -7,10 +7,13 @@
 #include "ADC.h"
 #include "Display.h"
 #include "xil_io.h"
+#include "math.h"
 
-#define DDS_BASEADDR 	 0x43c00000
-#define ADC_BASEADDR 	 0x43c10000
+#define DDS_BASEADDR     0x43c00000
+#define ADC_BASEADDR     0x43c10000
 #define Display_BASEADDR 0x43c20000
+
+#define PI               3.14159
 
 void DAC_ChangeFreq(u32 Freq){
 	int Delay;

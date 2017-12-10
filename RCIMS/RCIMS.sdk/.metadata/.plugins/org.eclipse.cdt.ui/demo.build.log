@@ -1,4 +1,4 @@
-20:33:55 **** Auto Build of configuration Debug for project demo ****
+22:15:11 **** Auto Build of configuration Debug for project demo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -15,9 +15,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size demo.elf  |tee "demo.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  22980	   1148	  22568	  46696	   b668	demo.elf
+  23612	   1148	  22568	  47328	   b8e0	demo.elf
 'Finished building: demo.elf.size'
 ' '
 
-20:33:56 Build Finished (took 1s.203ms)
+22:15:13 Build Finished (took 1s.714ms)
 

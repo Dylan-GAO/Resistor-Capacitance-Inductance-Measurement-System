@@ -47,32 +47,63 @@
 
 #include "helloworld.h"
 
+#define FREQ_1          10
+#define FREQ_1_HEX_CODE 0x1AD
+#define FREQ_2          20
+#define FREQ_2_HEX_CODE 0x35B
+
 void DAC_ChangeFreq(u32 Freq);
 u32 ADC_ReadData();
 void display(char type, u32 Num2Dis);
 u32 findMax();
 
 int main(){
-	float result_tmp;
-	float tmp;
-	u32 result;
-    init_platform();
+	float amp_1, amp_2, imp_1, imp_2;
+	double L_1, L_2;
+	long double C_1, C_2;
+	u32 imp_u;
+	u32 tmp;
 
+    init_platform();
     xil_printf("*********RCIMS  Start*********\n\r\n\r");
     xil_printf("Author: Jingbo GAO, Jiyuan BAI\n\r\n\r");
     xil_printf("******************************\n\r\n\r");
 
-    //DAC_ChangeFreq(0x10C7);
-    DAC_ChangeFreq(0x10);
-
     while (1){
-    	tmp = findMax() * 3.3 / 65535;
-    	result_tmp = (9.9 * tmp) / (3.2 - tmp);
-    	result = result_tmp * 10;
-    	display('R', result);
+    	DAC_ChangeFreq(FREQ_1_HEX_CODE);
+    	amp_1 = findMax() * 3.3 / 65535;
+    	imp_1 = (9.9 * amp_1) / (3.2 - amp_1);
+
+    	// debug
+    	tmp = imp_1 * 10;
+    	xil_printf("imp_1 = %d\n\r", tmp);
+
+    	DAC_ChangeFreq(FREQ_2_HEX_CODE);
+    	amp_2 = findMax() * 3.3 / 65535;
+    	imp_2 = (9.9 * amp_2) / (3.2 - amp_2);
+
+    	// debug
+    	tmp = imp_2 * 10;
+    	xil_printf("imp_2 = %d\n\r", tmp);
+
+    	if ((imp_1 - imp_2 < 4 && imp_1 - imp_2 > -4)){
+    		imp_u = (imp_1 + imp_2) / 2 * 10;
+        	xil_printf("R = %d\n\r", imp_u);
+    		display('R', imp_u);
+    	} else if (imp_1 > imp_2){
+    		C_1 = 1 / (2 * PI * FREQ_1 * imp_1) * 1000000000;
+    		C_2 = 1 / (2 * PI * FREQ_2 * imp_2) * 1000000000;
+    		imp_u = (C_1 + C_2) / 2 * 10;
+    		xil_printf("C = %d\n\r", imp_u);
+    		display('C', imp_u);
+    	} else {
+    		L_1 = imp_1 / (2 * PI * FREQ_1) * 1000;
+    		L_2 = imp_2 / (2 * PI * FREQ_2) * 1000;
+    		imp_u = (L_1 + L_2) / 2 * 10;
+    		display('L', imp_u);
+    	}
     }
 
     cleanup_platform();
     return 0;
 }
-
