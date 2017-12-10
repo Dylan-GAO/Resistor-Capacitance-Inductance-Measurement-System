@@ -23,40 +23,23 @@ set_property ip_repo_paths {
 } [current_project]
 set_property ip_output_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/2.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/3.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/4.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/5.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/6.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/7.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/8.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/9.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/1.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/0.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/R.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/C.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/L.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/equal.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/omega.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/nF.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_Display_0_0/src/lcd_display/sources_1/new/mH.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/2.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/3.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/4.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/5.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/6.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/7.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/8.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/9.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/1.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/0.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/R.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/C.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/L.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/equal.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/omega.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/nF.coe
-add_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/mH.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/2.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/3.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/4.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/5.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/6.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/7.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/8.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/9.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/1.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/0.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/R.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/C.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/L.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/equal.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/omega.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/nF.coe
+add_files C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/RCIMS_bd/ip/RCIMS_bd_Display_0_0/src/lcd_display/sources_1/new/mH.coe
 read_verilog -library xil_defaultlib {
   C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/new/Clk_4_Div.v
   C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/new/ComplementCalibration.v

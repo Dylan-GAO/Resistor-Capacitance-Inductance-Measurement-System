@@ -1,0 +1,1813 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec  7 19:18:22 2017
+# Process ID: 5424
+# Current directory: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4696 C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.xpr
+# Log file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/vivado.log
+# Journal file: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 715.660 ; gain = 61.676
+update_compile_order -fileset sources_1
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:user:DDS:1.0 - DDS_0
+Adding cell -- xilinx.com:module_ref:ComplementCalibration:1.0 - ComplementCalibration_0
+Adding cell -- xilinx.com:module_ref:Clk_4_Div:1.0 - Clk_4_Div_0
+Adding cell -- xilinx.com:user:ADC:1.0 - ADC_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /Clk_4_Div_0/Clk_8Mhz(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_out(clk) and /Clk_4_Div_0/Clk_2Mhz(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /Clk_4_Div_0/Clk_2Mhz(undef) and /ADC_0/ADC_Clk_2Mhz(clk)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 822.863 ; gain = 94.270
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+create_peripheral xilinx.com user Display 1.0 -dir C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:Display:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:Display:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:Display:1.0]
+set_property  ip_repo_paths  {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/../ip_repo/Display_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 850.586 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 850.586 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+create_ip -name lcd_display -vendor fudan_university -library peter -version 1.0 -module_name lcd_display_0 -dir c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src
+generate_target {instantiation_template} [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'lcd_display_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci]
+generate_target all [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'lcd_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lcd_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'lcd_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'lcd_display_0'...
+generate_target: Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1119.895 ; gain = 168.102
+export_ip_user_files -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0/lcd_display_0.xci] -directory c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files -ipstatic_source_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/questa} {riviera=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 's00_axi_aresetn' as interface 's00_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 's00_axi_aclk' as interface 's00_axi_aclk'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+launch_runs synth_1 -jobs 2
+[Thu Dec  7 19:38:28 2017] Launched synth_1...
+Run output will be captured here: c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.runs/synth_1/runme.log
+ipx::merge_project_changes ports [ipx::current_core]
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Dec  7 19:39:39 2017] Launched synth_1...
+Run output will be captured here: c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.runs/synth_1/runme.log
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:Display:1.0 Display_0
+WARNING: [IP_Flow 19-3571] IP 'system_Display_0_0' is restricted:
+* IP definition 'Display_v1.0 (1.0)' relies on the following subcore(s) that were not found in the IP Catalog: fudan_university:peter:lcd_display:1.0
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+endgroup
+set_property location {5 1678 -117} [get_bd_cells Display_0]
+startgroup
+make_bd_pins_external  [get_bd_pins Display_0/hsync_sig] [get_bd_pins Display_0/blue_sig] [get_bd_pins Display_0/green_sig] [get_bd_pins Display_0/lcd_de] [get_bd_pins Display_0/lcd_dclk] [get_bd_pins Display_0/vsync_sig] [get_bd_pins Display_0/red_sig]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins Display_0/S00_AXI]
+</Display_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C20000 [ 64K ]>
+connect_bd_net [get_bd_ports clock_rtl] [get_bd_pins Display_0/clk]
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+Wrote  : <C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd> 
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dds_compiler_0/s_axis_config_tdata'(32) to net 'DDS_0_DDS_PHASE_DATA'(31) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system.v
+Verilog Output written to : C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ADC_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DDS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ComplementCalibration_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Clk_4_Div_0 .
+CRITICAL WARNING: [IP_Flow 19-4065] The definition for subcore dependency 'fudan_university:peter:lcd_display:1.0' is not available in the repository.
+CRITICAL WARNING: [IP_Flow 19-4065] The definition for subcore dependency 'fudan_university:peter:lcd_display:1.0' is not available in the repository.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Display_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/hdl/system.hwdef
+[Thu Dec  7 19:44:18 2017] Launched synth_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/runme.log
+[Thu Dec  7 19:44:18 2017] Launched impl_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1314.117 ; gain = 56.449
+reset_run synth_1
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  7 19:45:10 2017] Launched synth_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/runme.log
+[Thu Dec  7 19:45:10 2017] Launched impl_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/impl_1/runme.log
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1400.289 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1400.289 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_project RCIMS
+current_project Display_v1_0_project
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+create_ip -name lcd_display -vendor fudan_university -library peter -version 1.0 -module_name lcd_display_0 -dir c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src
+generate_target {instantiation_template} [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'lcd_display_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+generate_target all [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'lcd_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lcd_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'lcd_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'lcd_display_0'...
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1400.289 ; gain = 0.000
+export_ip_user_files -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci] -directory c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.ip_user_files -ipstatic_source_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.cache/compile_simlib/questa} {riviera=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 2
+[Thu Dec  7 19:51:05 2017] Launched synth_1...
+Run output will be captured here: c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.runs/synth_1/runme.log
+ipx::merge_project_changes files [ipx::current_core]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Dec  7 19:51:19 2017] Launched synth_1...
+Run output will be captured here: c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_project/Display_v1_0_project.runs/synth_1/runme.log
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. ''c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0' is not valid: Path is contained within another repository.'
+0
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Dec  7 19:53:01 2017] Launched synth_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/runme.log
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1480.254 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1480.254 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+current_project RCIMS
+ipx::unload_core c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+current_project Display_v1_0_v1_0_project
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+report_ip_status -name ip_status 
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+set_property generate_synth_checkpoint true [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+report_ip_status -name ip_status 
+generate_target all [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'lcd_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lcd_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'lcd_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'lcd_display_0'...
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1538.082 ; gain = 0.000
+export_ip_user_files -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci]
+launch_runs -jobs 2 lcd_display_0_synth_1
+[Thu Dec  7 20:06:02 2017] Launched lcd_display_0_synth_1...
+Run output will be captured here: c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.runs/lcd_display_0_synth_1/runme.log
+INFO: [Vivado 12-4357] Exporting simulation files for 'lcd_display_0'... please wait for 'lcd_display_0_synth_1' run to finish...
+wait_on_run lcd_display_0_synth_1
+[Thu Dec  7 20:06:02 2017] Waiting for lcd_display_0_synth_1 to finish...
+[Thu Dec  7 20:06:07 2017] Waiting for lcd_display_0_synth_1 to finish...
+[Thu Dec  7 20:06:12 2017] Waiting for lcd_display_0_synth_1 to finish...
+[Thu Dec  7 20:06:17 2017] Waiting for lcd_display_0_synth_1 to finish...
+[Thu Dec  7 20:06:27 2017] Waiting for lcd_display_0_synth_1 to finish...
+[Thu Dec  7 20:06:37 2017] Waiting for lcd_display_0_synth_1 to finish...
+[Thu Dec  7 20:06:47 2017] Waiting for lcd_display_0_synth_1 to finish...
+[Thu Dec  7 20:06:57 2017] Waiting for lcd_display_0_synth_1 to finish...
+[Thu Dec  7 20:07:17 2017] Waiting for lcd_display_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log lcd_display_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lcd_display_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source lcd_display_0.tcl -notrace
+Command: synth_design -top lcd_display_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4600 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 318.844 ; gain = 77.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lcd_display_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/synth/lcd_display_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'system_wrapper' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'system' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/hdl/system.v:13]
+INFO: [Synth 8-638] synthesizing module 'system_clk_wiz_0_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'system_clk_wiz_0_0_clk_wiz' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_clk_wiz.v:118]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_clk_wiz.v:118]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20759]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 19.125000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 106.250000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (1#1) [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20759]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:617]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (3#1) [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (4#1) [C:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'system_clk_wiz_0_0_clk_wiz' (5#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-256] done synthesizing module 'system_clk_wiz_0_0' (6#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'system_data_combine_module_1_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_data_combine_module_1_0/synth/system_data_combine_module_1_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'data_combine_module' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:5]
+INFO: [Synth 8-256] done synthesizing module 'data_combine_module' (7#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:5]
+INFO: [Synth 8-256] done synthesizing module 'system_data_combine_module_1_0' (8#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_data_combine_module_1_0/synth/system_data_combine_module_1_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'system_lcd_control_module_1_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_lcd_control_module_1_0/synth/system_lcd_control_module_1_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'lcd_control_module' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/7ffb/lcd_control_module.v:5]
+	Parameter desktop bound to: 24'b011010110110100111010110 
+	Parameter bar_data bound to: 24'b001100000100001010001110 
+	Parameter char_row_0 bound to: 120 - type: integer 
+	Parameter char_column_0 bound to: 208 - type: integer 
+	Parameter char_row_1 bound to: 120 - type: integer 
+	Parameter char_column_1 bound to: 224 - type: integer 
+	Parameter char_row_2 bound to: 120 - type: integer 
+	Parameter char_column_2 bound to: 240 - type: integer 
+	Parameter char_row_3 bound to: 120 - type: integer 
+	Parameter char_column_3 bound to: 256 - type: integer 
+	Parameter char_row_4 bound to: 120 - type: integer 
+	Parameter char_column_4 bound to: 176 - type: integer 
+	Parameter char_row_5 bound to: 120 - type: integer 
+	Parameter char_column_5 bound to: 192 - type: integer 
+	Parameter char_row_6 bound to: 120 - type: integer 
+	Parameter char_column_6 bound to: 272 - type: integer 
+	Parameter red_RGB bound to: 24'b110001100010111100101111 
+	Parameter white_RGB bound to: 24'b111111111111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'lcd_control_module' (9#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/7ffb/lcd_control_module.v:5]
+INFO: [Synth 8-256] done synthesizing module 'system_lcd_control_module_1_0' (10#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_lcd_control_module_1_0/synth/system_lcd_control_module_1_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'system_rom_3_7' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_7/synth/system_rom_3_7.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_3_7.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_7/synth/system_rom_3_7.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_3_7' (14#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_7/synth/system_rom_3_7.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_3_6' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_6/synth/system_rom_3_6.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_3_6.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_6/synth/system_rom_3_6.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_3_6' (15#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_6/synth/system_rom_3_6.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_dist_mem_gen_0_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_dist_mem_gen_0_0_1/synth/system_dist_mem_gen_0_0.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_dist_mem_gen_0_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_dist_mem_gen_0_0_1/synth/system_dist_mem_gen_0_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_dist_mem_gen_0_0' (16#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_dist_mem_gen_0_0_1/synth/system_dist_mem_gen_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_2_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_2_0/synth/system_rom_2_0.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_2_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_2_0/synth/system_rom_2_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_2_0' (17#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_2_0/synth/system_rom_2_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_3_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_0/synth/system_rom_3_0.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_3_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_0/synth/system_rom_3_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_3_0' (18#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_0/synth/system_rom_3_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_3_1' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_1/synth/system_rom_3_1.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_3_1.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_1/synth/system_rom_3_1.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_3_1' (19#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_1/synth/system_rom_3_1.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_3_2' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_2/synth/system_rom_3_2.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_3_2.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_2/synth/system_rom_3_2.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_3_2' (20#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_2/synth/system_rom_3_2.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_3_3' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_3/synth/system_rom_3_3.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_3_3.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_3/synth/system_rom_3_3.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_3_3' (21#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_3/synth/system_rom_3_3.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_3_4' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_4/synth/system_rom_3_4.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_3_4.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_4/synth/system_rom_3_4.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_3_4' (22#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_4/synth/system_rom_3_4.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_3_5' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_5/synth/system_rom_3_5.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_3_5.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_5/synth/system_rom_3_5.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_3_5' (23#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_3_5/synth/system_rom_3_5.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_R_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_0/synth/system_rom_R_0.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_R_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_0/synth/system_rom_R_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_R_0' (24#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_0/synth/system_rom_R_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_R_1' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_1/synth/system_rom_R_1.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_R_1.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_1/synth/system_rom_R_1.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_R_1' (25#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_1/synth/system_rom_R_1.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_0_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_0_0/synth/system_rom_0_0.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_0_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_0_0/synth/system_rom_0_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_0_0' (26#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_0_0/synth/system_rom_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_R_2' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_2/synth/system_rom_R_2.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_R_2.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_2/synth/system_rom_R_2.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_R_2' (27#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_2/synth/system_rom_R_2.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_omega_1' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_omega_1/synth/system_rom_omega_1.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_omega_1.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_omega_1/synth/system_rom_omega_1.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_omega_1' (28#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_omega_1/synth/system_rom_omega_1.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_omega_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_omega_0/synth/system_rom_omega_0.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_omega_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_omega_0/synth/system_rom_omega_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_omega_0' (29#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_omega_0/synth/system_rom_omega_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_rom_R_3' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_3/synth/system_rom_R_3.vhd:66]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: system_rom_R_3.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_11' declared at 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/ec0d/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_11' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_3/synth/system_rom_R_3.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'system_rom_R_3' (30#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_rom_R_3/synth/system_rom_R_3.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'system_sync_module_1_0' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_sync_module_1_0/synth/system_sync_module_1_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'sync_module' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/0c9a/sync_module.v:1]
+	Parameter LinePeriod bound to: 525 - type: integer 
+	Parameter H_SyncPulse bound to: 41 - type: integer 
+	Parameter H_BackPorch bound to: 2 - type: integer 
+	Parameter H_ActivePix bound to: 480 - type: integer 
+	Parameter H_FrontPorch bound to: 2 - type: integer 
+	Parameter Hde_start bound to: 43 - type: integer 
+	Parameter Hde_end bound to: 523 - type: integer 
+	Parameter FramePeriod bound to: 286 - type: integer 
+	Parameter V_SyncPulse bound to: 10 - type: integer 
+	Parameter V_BackPorch bound to: 2 - type: integer 
+	Parameter V_ActivePix bound to: 272 - type: integer 
+	Parameter V_FrontPorch bound to: 2 - type: integer 
+	Parameter Vde_start bound to: 12 - type: integer 
+	Parameter Vde_end bound to: 284 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sync_module' (31#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/0c9a/sync_module.v:1]
+INFO: [Synth 8-256] done synthesizing module 'system_sync_module_1_0' (32#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_sync_module_1_0/synth/system_sync_module_1_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'system' (33#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/hdl/system.v:13]
+INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (34#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-256] done synthesizing module 'lcd_display_0' (35#1) [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/synth/lcd_display_0.v:56]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[31]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[30]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[29]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[28]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[27]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[26]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[25]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[24]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[23]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[22]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[21]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[20]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[19]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[18]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[17]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[16]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[8]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[7]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[6]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[5]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[4]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[3]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[2]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[1]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo[0]
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port clk
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design rom__parameterized31 has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port dpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[31]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[30]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[29]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[28]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[27]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[26]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[25]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[24]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[23]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[22]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[21]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[20]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[19]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[18]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[17]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[16]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_11_synth__parameterized15 has unconnected port qdpo[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 377.945 ; gain = 136.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 377.945 ; gain = 136.906
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/system_ooc.xdc] for cell 'inst/system_i'
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/system_ooc.xdc] for cell 'inst/system_i'
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0.xdc] for cell 'inst/system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0.xdc] for cell 'inst/system_i/clk_wiz_0/inst'
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.runs/lcd_display_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.runs/lcd_display_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.runs/lcd_display_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lcd_display_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lcd_display_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_late.xdc] for cell 'inst/system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ip/system_clk_wiz_0_0_1/system_clk_wiz_0_0_late.xdc] for cell 'inst/system_i/clk_wiz_0/inst'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 673.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 673.141 ; gain = 432.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 673.141 ; gain = 432.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/system_i/clk_wiz_0/inst. (constraint file  c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.runs/lcd_display_0_synth_1/dont_touch.xdc, line 71).
+Applied set_property DONT_TOUCH = true for inst/system_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/data_combine_module_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/lcd_control_module_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_9. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_C. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_L. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_R. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_equal. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_mH. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_nF. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/rom_omega. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/system_i/sync_module_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 673.141 ; gain = 432.102
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'char_m_6_reg' and it is trimmed from '8' to '5' bits. [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/7ffb/lcd_control_module.v:226]
+INFO: [Synth 8-5546] ROM "count_v" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_0_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:188]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_1_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:189]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_2_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:190]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_3_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:191]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_4_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:192]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_5_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:193]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_6_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:194]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_0_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:199]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_1_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:200]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_2_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:201]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_3_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:202]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_4_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:203]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_5_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:204]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_6_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:205]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_7_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:206]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_8_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:207]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_9_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:208]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_R_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:263]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_C_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:264]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_L_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:265]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_equal_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:271]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_omega_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:275]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_nF_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:276]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_mH_addr_reg' [c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/sources_1/bd/system/ipshared/2ac1/data_combine_module.v:277]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 673.141 ; gain = 432.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 15    
+	   7 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 10    
+	  12 Input      1 Bit        Muxes := 30    
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module system_clk_wiz_0_0_clk_wiz 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module data_combine_module 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+	  11 Input      1 Bit        Muxes := 10    
+	  12 Input      1 Bit        Muxes := 30    
+	   4 Input      1 Bit        Muxes := 3     
+Module lcd_control_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 15    
+	   7 Input      8 Bit        Muxes := 3     
+Module sync_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "inst/count_v" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 673.141 ; gain = 432.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------+------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                           | Depth x Width | Implemented As | 
++---------------------+------------------------------------------------------+---------------+----------------+
+|rom                  | rom[31]                                              | 32x15         | LUT            | 
+|rom                  | rom[31]                                              | 32x13         | LUT            | 
+|rom                  | rom[31]                                              | 32x15         | LUT            | 
+|rom                  | rom[31]                                              | 32x15         | LUT            | 
+|rom                  | rom[31]                                              | 32x16         | LUT            | 
+|rom                  | rom[31]                                              | 32x15         | LUT            | 
+|rom                  | rom[31]                                              | 32x15         | LUT            | 
+|rom                  | rom[31]                                              | 32x15         | LUT            | 
+|rom                  | rom[31]                                              | 32x15         | LUT            | 
+|rom                  | rom[31]                                              | 32x15         | LUT            | 
+|rom                  | rom[31]                                              | 32x16         | LUT            | 
+|rom                  | rom[31]                                              | 32x16         | LUT            | 
+|rom                  | rom[31]                                              | 32x16         | LUT            | 
+|rom                  | rom[31]                                              | 32x16         | LUT            | 
+|rom                  | rom[31]                                              | 32x32         | LUT            | 
+|rom                  | rom[31]                                              | 32x32         | LUT            | 
+|rom                  | rom[31]                                              | 32x26         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x15         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x13         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x15         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x15         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x16         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x15         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x15         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x15         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x15         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x15         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x16         | LUT            | 
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[31] | 32x16         | LUT            | 
++---------------------+------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 673.141 ; gain = 432.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 679.809 ; gain = 438.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 681.699 ; gain = 440.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 681.699 ; gain = 440.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 681.699 ; gain = 440.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 681.699 ; gain = 440.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 681.699 ; gain = 440.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 681.699 ; gain = 440.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 681.699 ; gain = 440.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |BUFGCE     |     1|
+|3     |BUFH       |     1|
+|4     |LUT1       |     5|
+|5     |LUT2       |    34|
+|6     |LUT3       |    28|
+|7     |LUT4       |    37|
+|8     |LUT5       |   226|
+|9     |LUT6       |   441|
+|10    |MMCME2_ADV |     1|
+|11    |FDRE       |    95|
+|12    |LD         |    85|
+|13    |LDC        |   128|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------------------------------+--------------------------------------------+------+
+|      |Instance                                |Module                                      |Cells |
++------+----------------------------------------+--------------------------------------------+------+
+|1     |top                                     |                                            |  1083|
+|2     |  inst                                  |system_wrapper                              |  1083|
+|3     |    system_i                            |system                                      |  1083|
+|4     |      clk_wiz_0                         |system_clk_wiz_0_0                          |    12|
+|5     |        inst                            |system_clk_wiz_0_0_clk_wiz                  |    12|
+|6     |      data_combine_module_1             |system_data_combine_module_1_0              |   609|
+|7     |        inst                            |data_combine_module                         |   609|
+|8     |      lcd_control_module_1              |system_lcd_control_module_1_0               |   181|
+|9     |        inst                            |lcd_control_module                          |   145|
+|10    |      rom_0                             |system_rom_3_7                              |     8|
+|11    |        U0                              |dist_mem_gen_v8_0_11                        |     8|
+|12    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth                  |     8|
+|13    |            \gen_rom.rom_inst           |rom                                         |     8|
+|14    |      rom_1                             |system_rom_3_6                              |     6|
+|15    |        U0                              |dist_mem_gen_v8_0_11__parameterized1        |     6|
+|16    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized0  |     6|
+|17    |            \gen_rom.rom_inst           |rom__parameterized1                         |     6|
+|18    |      rom_2                             |system_dist_mem_gen_0_0                     |    13|
+|19    |        U0                              |dist_mem_gen_v8_0_11__parameterized3        |    13|
+|20    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized1  |    13|
+|21    |            \gen_rom.rom_inst           |rom__parameterized3                         |    13|
+|22    |      rom_3                             |system_rom_2_0                              |    13|
+|23    |        U0                              |dist_mem_gen_v8_0_11__parameterized5        |    13|
+|24    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized2  |    13|
+|25    |            \gen_rom.rom_inst           |rom__parameterized5                         |    13|
+|26    |      rom_4                             |system_rom_3_0                              |    11|
+|27    |        U0                              |dist_mem_gen_v8_0_11__parameterized7        |    11|
+|28    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized3  |    11|
+|29    |            \gen_rom.rom_inst           |rom__parameterized7                         |    11|
+|30    |      rom_5                             |system_rom_3_1                              |    11|
+|31    |        U0                              |dist_mem_gen_v8_0_11__parameterized9        |    11|
+|32    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized4  |    11|
+|33    |            \gen_rom.rom_inst           |rom__parameterized9                         |    11|
+|34    |      rom_6                             |system_rom_3_2                              |    13|
+|35    |        U0                              |dist_mem_gen_v8_0_11__parameterized11       |    13|
+|36    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized5  |    13|
+|37    |            \gen_rom.rom_inst           |rom__parameterized11                        |    13|
+|38    |      rom_7                             |system_rom_3_3                              |    11|
+|39    |        U0                              |dist_mem_gen_v8_0_11__parameterized13       |    11|
+|40    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized6  |    11|
+|41    |            \gen_rom.rom_inst           |rom__parameterized13                        |    11|
+|42    |      rom_8                             |system_rom_3_4                              |    13|
+|43    |        U0                              |dist_mem_gen_v8_0_11__parameterized15       |    13|
+|44    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized7  |    13|
+|45    |            \gen_rom.rom_inst           |rom__parameterized15                        |    13|
+|46    |      rom_9                             |system_rom_3_5                              |    13|
+|47    |        U0                              |dist_mem_gen_v8_0_11__parameterized17       |    13|
+|48    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized8  |    13|
+|49    |            \gen_rom.rom_inst           |rom__parameterized17                        |    13|
+|50    |      rom_C                             |system_rom_R_0                              |    13|
+|51    |        U0                              |dist_mem_gen_v8_0_11__parameterized19       |    13|
+|52    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized9  |    13|
+|53    |            \gen_rom.rom_inst           |rom__parameterized19                        |    13|
+|54    |      rom_L                             |system_rom_R_1                              |     9|
+|55    |        U0                              |dist_mem_gen_v8_0_11__parameterized21       |     9|
+|56    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized10 |     9|
+|57    |            \gen_rom.rom_inst           |rom__parameterized21                        |     9|
+|58    |      rom_R                             |system_rom_0_0                              |    11|
+|59    |        U0                              |dist_mem_gen_v8_0_11__parameterized23       |    11|
+|60    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized11 |    11|
+|61    |            \gen_rom.rom_inst           |rom__parameterized23                        |    11|
+|62    |      rom_equal                         |system_rom_R_2                              |     1|
+|63    |        U0                              |dist_mem_gen_v8_0_11__parameterized25       |     1|
+|64    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized12 |     1|
+|65    |            \gen_rom.rom_inst           |rom__parameterized25                        |     1|
+|66    |      rom_mH                            |system_rom_omega_1                          |    11|
+|67    |        U0                              |dist_mem_gen_v8_0_11__parameterized27       |    11|
+|68    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized13 |    11|
+|69    |            \gen_rom.rom_inst           |rom__parameterized27                        |    11|
+|70    |      rom_nF                            |system_rom_omega_0                          |    18|
+|71    |        U0                              |dist_mem_gen_v8_0_11__parameterized29       |    18|
+|72    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized14 |    18|
+|73    |            \gen_rom.rom_inst           |rom__parameterized29                        |    18|
+|74    |      rom_omega                         |system_rom_R_3                              |    12|
+|75    |        U0                              |dist_mem_gen_v8_0_11__parameterized31       |    12|
+|76    |          \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_11_synth__parameterized15 |    12|
+|77    |            \gen_rom.rom_inst           |rom__parameterized31                        |    12|
+|78    |      sync_module_1                     |system_sync_module_1_0                      |    94|
+|79    |        inst                            |sync_module                                 |    93|
++------+----------------------------------------+--------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 681.699 ; gain = 440.660
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1575 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 681.699 ; gain = 145.465
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 681.699 ; gain = 440.660
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 215 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 214 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instances
+  LD => LDCE: 85 instances
+  LDC => LDCE: 128 instances
+
+100 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 681.699 ; gain = 446.297
+INFO: [Common 17-1381] The checkpoint 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.runs/lcd_display_0_synth_1/lcd_display_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci
+INFO: [Coretcl 2-1174] Renamed 78 cell refs.
+INFO: [Common 17-1381] The checkpoint 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.runs/lcd_display_0_synth_1/lcd_display_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 681.699 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 20:07:16 2017...
+[Thu Dec  7 20:07:17 2017] lcd_display_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:01:15 . Memory (MB): peak = 1538.082 ; gain = 0.000
+export_simulation -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci] -directory c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files -ipstatic_source_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/questa} {riviera=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. ''c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0' is not valid: Path is contained within another repository.'
+0
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Dec  7 20:08:45 2017] Launched synth_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/runme.log
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1538.082 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1538.082 ; gain = 0.000
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. ''c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0' is not valid: Path is contained within another repository.'
+0
+open_bd_design {C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.srcs/sources_1/bd/system/system.bd}
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+set_property  ip_repo_paths  {c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0 C:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0 c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Dec  7 20:14:29 2017] Launched synth_1...
+Run output will be captured here: C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.runs/synth_1/runme.log
+ipx::edit_ip_in_project -upgrade true -name Display_v1_0_v1_0_project -directory C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.tmp/Display_v1_0_v1_0_project c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1538.082 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/ADC_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/DDS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1538.082 ; gain = 0.000
+update_compile_order -fileset sources_1
+remove_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display_0_1/lcd_display_0.xci
+current_project RCIMS
+current_project Display_v1_0_v1_0_project
+create_ip -name lcd_display -vendor fudan_university -library peter -version 1.0 -module_name lcd_display -dir c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src
+generate_target {instantiation_template} [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'lcd_display'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci]
+generate_target all [get_files  c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'lcd_display'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'lcd_display'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'lcd_display'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'lcd_display'...
+generate_target: Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 1618.836 ; gain = 0.000
+export_ip_user_files -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0/src/lcd_display/lcd_display.xci] -directory c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files -ipstatic_source_dir c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/questa} {riviera=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/work/resistor-capacitance-inductance-measurement-system/rcims/rcims.tmp/display_v1_0_v1_0_project/Display_v1_0_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5110] 'File Group 'xilinx_verilogsynthesis (Verilog Synthesis)'': File 'src/lcd_display_0_1/lcd_display_0.xci' is not found in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5110] 'File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)'': File 'src/lcd_display_0_1/lcd_display_0.xci' is not found in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0'. ''c:/work/Resistor-Capacitance-Inductance-Measurement-System/ip_repo/Display_1.0' is not valid: Path is contained within another repository.'
+0
+report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 20:22:41 2017...

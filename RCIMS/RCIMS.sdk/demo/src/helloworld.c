@@ -45,66 +45,14 @@
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
 
-#include "platform.h"
-#include "xil_printf.h"
-#include "DDS.h"
-#include "ADC.h"
-#include "Display.h"
-#include "xil_io.h"
+#include "helloworld.h"
 
-#define DDS_BASEADDR 0x43c00000
-#define ADC_BASEADDR 0x43c10000
-#define Display_BASEADDR 0x43c20000
+void DAC_ChangeFreq(u32 Freq);
+u32 ADC_ReadData();
+void display(char type, u32 Num2Dis);
+u32 findMax();
 
-void DAC_ChangeFreq(u32 Freq){
-	int Delay;
-	DDS_mWriteReg(DDS_BASEADDR, DDS_S00_AXI_SLV_REG3_OFFSET, 0x80000000 + Freq);
-	for (Delay = 0; Delay < 10000000; Delay++);
-	DDS_mWriteReg(DDS_BASEADDR, DDS_S00_AXI_SLV_REG3_OFFSET, Freq);
-	xil_printf("Frequency has been changed to %x.\n\r", Freq);
-}
-
-u32 ADC_ReadData(){
-	return ADC_mReadReg(ADC_BASEADDR, ADC_S00_AXI_SLV_REG0_OFFSET);
-}
-
-void Display(char type, u32 Num2Dis){
-	u32 data;
-	u32 tmp_0, tmp_1, tmp_2, tmp_p;
-
-	// BCD change
-	tmp_0 = Num2Dis / 1000;
-	tmp_1 = (Num2Dis - tmp_0 * 1000) / 100;
-	tmp_2 = (Num2Dis - tmp_0 * 1000 - tmp_1 * 100) / 10;
-	tmp_p = Num2Dis - tmp_0 * 1000 - tmp_1 * 100 - tmp_2 * 10;
-
-	data = (tmp_0 << 12) + (tmp_1 << 8) + (tmp_2 << 4) + tmp_p;
-	switch (type) {
-		case 'R': break;
-		case 'C': data = data + 0x40000000; break;
-		case 'L': data = data + 0x80000000; break;
-		default: data = 0;
-	}
-	DISPLAY_mWriteReg(Display_BASEADDR, DISPLAY_S00_AXI_SLV_REG3_OFFSET, data);
-}
-
-u32 findMax(){
-	int i;
-	u32 res = 0;
-	u32 tmp;
-	for(i = 0; i < 15000000; i++){
-		tmp = ADC_ReadData();
-		//xil_printf("%d\n\r", tmp);
-		if (res < tmp){
-			res = tmp;
-		}
-	}
-	return res;
-}
-
-int main()
-{
-	//int Delay;
+int main(){
 	float result_tmp;
 	float tmp;
 	u32 result;
@@ -116,15 +64,12 @@ int main()
 
     //DAC_ChangeFreq(0x10C7);
     DAC_ChangeFreq(0x10);
-    //Display('R', 620);
 
     while (1){
-    //	xil_printf("%d\n\r", ADC_ReadData());
     	tmp = findMax() * 3.3 / 65535;
-    //	xil_printf("Find MAX: %d\n\r", tmp);
     	result_tmp = (9.9 * tmp) / (3.2 - tmp);
     	result = result_tmp * 10;
-    	Display('R', result);
+    	display('R', result);
     }
 
     cleanup_platform();
