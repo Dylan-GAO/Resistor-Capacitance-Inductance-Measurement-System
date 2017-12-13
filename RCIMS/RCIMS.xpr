@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/work/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr">
+<Project Version="7" Minor="20" Path="C:/Users/Administrator/Resistor-Capacitance-Inductance-Measurement-System/RCIMS/RCIMS.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="fa25b44e33254e27a6e7ff5bcfd2fd47"/>
