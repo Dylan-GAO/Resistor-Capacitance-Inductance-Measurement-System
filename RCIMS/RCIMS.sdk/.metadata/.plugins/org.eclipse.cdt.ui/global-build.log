@@ -1347,3 +1347,1927 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
+18:31:31 **** Auto Build of project helloworld_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/ADC_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ADC_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/DDS_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/DDS_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/Display_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/Display_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/ADC_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ADC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ADC..."
+ADC_selftest.c: In function 'ADC_Reg_SelfTest':
+ADC_selftest.c:52:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( ADC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                    ^~
+ADC_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/DDS_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/DDS_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling DDS..."
+DDS_selftest.c: In function 'DDS_Reg_SelfTest':
+DDS_selftest.c:52:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( DDS_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                    ^~
+DDS_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/Display_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/Display_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling Display..."
+Display_selftest.c: In function 'DISPLAY_Reg_SelfTest':
+Display_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( DISPLAY_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+Display_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+18:32:03 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23868	   1148	  22568	  47584	   b9e0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+18:32:51 **** Auto Build of project helloworld_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/ADC_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ADC_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/DDS_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/DDS_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/Display_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/Display_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/ADC_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ADC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ADC..."
+ADC_selftest.c: In function 'ADC_Reg_SelfTest':
+ADC_selftest.c:52:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( ADC_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                    ^~
+ADC_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/DDS_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/DDS_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling DDS..."
+DDS_selftest.c: In function 'DDS_Reg_SelfTest':
+DDS_selftest.c:52:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( DDS_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                    ^~
+DDS_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/Display_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/Display_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling Display..."
+Display_selftest.c: In function 'DISPLAY_Reg_SelfTest':
+Display_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( DISPLAY_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+Display_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+18:33:20 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23868	   1148	  22568	  47584	   b9e0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+18:34:04 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23868	   1148	  22568	  47584	   b9e0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+18:34:54 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:39:47 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23868	   1148	  22568	  47584	   b9e0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+18:39:57 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:40:51 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:47:23 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:47:55 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:57:32 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23868	   1148	  22568	  47584	   b9e0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+18:57:40 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:59:04 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:01:39 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23868	   1148	  22568	  47584	   b9e0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:03:50 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23884	   1148	  22568	  47600	   b9f0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:04:12 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:04:19 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:07:14 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:07:24 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:08:22 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:08:29 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:10:36 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:13:17 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:13:26 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:15:03 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:15:09 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:16:29 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:17:12 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:17:19 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:17:52 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:19:05 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:21:21 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:21:57 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:25:13 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:27:26 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:36:47 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:36:59 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:39:53 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:43:52 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:8: warning: unused variable 'tmp_f' [-Wunused-variable]
+  float tmp_f;
+        ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:45:53 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23964	   1148	  22568	  47680	   ba40	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:46:18 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24052	   1148	  22568	  47768	   ba98	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:46:33 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24052	   1148	  22568	  47768	   ba98	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:46:36 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:48:52 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24052	   1148	  22568	  47768	   ba98	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:49:01 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24052	   1148	  22568	  47768	   ba98	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:49:06 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:52:28 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24140	   1148	  22568	  47856	   baf0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:52:35 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:52:59 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24140	   1148	  22568	  47856	   baf0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:54:30 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24140	   1148	  22568	  47856	   baf0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+19:54:35 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:57:15 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:59:28 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:04:03 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h: In function 'findMax_Min':
+../src/helloworld.h:54:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  res_MIN = 65535;
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:77: undefined reference to `findMin'
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:80: undefined reference to `findMax'
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:93: undefined reference to `findMin'
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:99: undefined reference to `findMax'
+collect2.exe: error: ld returned 1 exit status
+make: *** [helloworld.elf] ´íÎó 1
+20:04:29 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:77: undefined reference to `findMin'
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:80: undefined reference to `findMax'
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:93: undefined reference to `findMin'
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:99: undefined reference to `findMax'
+collect2.exe: error: ld returned 1 exit status
+make: *** [helloworld.elf] ´íÎó 1
+20:05:05 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:14: warning: implicit declaration of function 'findMin' [-Wimplicit-function-declaration]
+      tmp_f = findMin();
+              ^~~~~~~
+../src/helloworld.c:77:6: error: 'tmp' undeclared (first use in this function)
+      tmp = tmp_f;
+      ^~~
+../src/helloworld.c:77:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:79:15: warning: implicit declaration of function 'findMax' [-Wimplicit-function-declaration]
+      amp_1 = (findMax() - tmp_f) * 3.3 / 65535 + BIAS;
+               ^~~~~~~
+../src/helloworld.c:66:11: warning: unused variable 'max' [-Wunused-variable]
+  u32 min, max;
+           ^~~
+../src/helloworld.c:66:6: warning: unused variable 'min' [-Wunused-variable]
+  u32 min, max;
+      ^~~
+make: *** [src/helloworld.o] ´íÎó 1
+20:05:28 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:18: warning: passing argument 1 of 'findMax_Min' makes pointer from integer without a cast [-Wint-conversion]
+      findMax_Min(max, min);
+                  ^~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:50:6: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 'u32 {aka long unsigned int}'
+ void findMax_Min(u32 *res_MAX, u32* res_MIN){
+      ^~~~~~~~~~~
+../src/helloworld.c:76:23: warning: passing argument 2 of 'findMax_Min' makes pointer from integer without a cast [-Wint-conversion]
+      findMax_Min(max, min);
+                       ^~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:50:6: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 'u32 {aka long unsigned int}'
+ void findMax_Min(u32 *res_MAX, u32* res_MIN){
+      ^~~~~~~~~~~
+../src/helloworld.c:77:6: error: 'tmp' undeclared (first use in this function)
+      tmp = tmp_f;
+      ^~~
+../src/helloworld.c:77:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:79:15: warning: implicit declaration of function 'findMax' [-Wimplicit-function-declaration]
+      amp_1 = (findMax() - tmp_f) * 3.3 / 65535 + BIAS;
+               ^~~~~~~
+../src/helloworld.c:92:14: warning: implicit declaration of function 'findMin' [-Wimplicit-function-declaration]
+      tmp_f = findMin();
+              ^~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+20:05:41 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:18: warning: passing argument 1 of 'findMax_Min' makes pointer from integer without a cast [-Wint-conversion]
+      findMax_Min(max, min);
+                  ^~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:50:6: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 'u32 {aka long unsigned int}'
+ void findMax_Min(u32 *res_MAX, u32* res_MIN){
+      ^~~~~~~~~~~
+../src/helloworld.c:76:23: warning: passing argument 2 of 'findMax_Min' makes pointer from integer without a cast [-Wint-conversion]
+      findMax_Min(max, min);
+                       ^~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:50:6: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 'u32 {aka long unsigned int}'
+ void findMax_Min(u32 *res_MAX, u32* res_MIN){
+      ^~~~~~~~~~~
+../src/helloworld.c:77:6: error: 'tmp' undeclared (first use in this function)
+      tmp = max;
+      ^~~
+../src/helloworld.c:77:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:79:15: warning: implicit declaration of function 'findMax' [-Wimplicit-function-declaration]
+      amp_1 = (findMax() - tmp_f) * 3.3 / 65535 + BIAS;
+               ^~~~~~~
+../src/helloworld.c:92:14: warning: implicit declaration of function 'findMin' [-Wimplicit-function-declaration]
+      tmp_f = findMin();
+              ^~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+20:06:12 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:18: warning: passing argument 1 of 'findMax_Min' makes pointer from integer without a cast [-Wint-conversion]
+      findMax_Min(max, min);
+                  ^~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:50:6: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 'u32 {aka long unsigned int}'
+ void findMax_Min(u32 *res_MAX, u32* res_MIN){
+      ^~~~~~~~~~~
+../src/helloworld.c:76:23: warning: passing argument 2 of 'findMax_Min' makes pointer from integer without a cast [-Wint-conversion]
+      findMax_Min(max, min);
+                       ^~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:50:6: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 'u32 {aka long unsigned int}'
+ void findMax_Min(u32 *res_MAX, u32* res_MIN){
+      ^~~~~~~~~~~
+../src/helloworld.c:92:14: warning: implicit declaration of function 'findMin' [-Wimplicit-function-declaration]
+      tmp_f = findMin();
+              ^~~~~~~
+../src/helloworld.c:98:15: warning: implicit declaration of function 'findMax' [-Wimplicit-function-declaration]
+      amp_2 = (findMax() - tmp_f)  * 3.3 / 65535 + BIAS;
+               ^~~~~~~
+../src/helloworld.c:76:6: warning: 'max' is used uninitialized in this function [-Wuninitialized]
+      findMax_Min(max, min);
+      ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:76:6: warning: 'min' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:92: undefined reference to `findMin'
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:98: undefined reference to `findMax'
+collect2.exe: error: ld returned 1 exit status
+make: *** [helloworld.elf] ´íÎó 1
+20:06:25 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:92:14: warning: implicit declaration of function 'findMin' [-Wimplicit-function-declaration]
+      tmp_f = findMin();
+              ^~~~~~~
+../src/helloworld.c:98:15: warning: implicit declaration of function 'findMax' [-Wimplicit-function-declaration]
+      amp_2 = (findMax() - tmp_f)  * 3.3 / 65535 + BIAS;
+               ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:92: undefined reference to `findMin'
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:98: undefined reference to `findMax'
+collect2.exe: error: ld returned 1 exit status
+make: *** [helloworld.elf] ´íÎó 1
+20:06:32 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:77:12: error: 'mix' undeclared (first use in this function)
+      tmp = mix;
+            ^~~
+../src/helloworld.c:77:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:92:14: warning: implicit declaration of function 'findMin' [-Wimplicit-function-declaration]
+      tmp_f = findMin();
+              ^~~~~~~
+../src/helloworld.c:98:15: warning: implicit declaration of function 'findMax' [-Wimplicit-function-declaration]
+      amp_2 = (findMax() - tmp_f)  * 3.3 / 65535 + BIAS;
+               ^~~~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+20:06:35 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:92:14: warning: implicit declaration of function 'findMin' [-Wimplicit-function-declaration]
+      tmp_f = findMin();
+              ^~~~~~~
+../src/helloworld.c:98:15: warning: implicit declaration of function 'findMax' [-Wimplicit-function-declaration]
+      amp_2 = (findMax() - tmp_f)  * 3.3 / 65535 + BIAS;
+               ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:92: undefined reference to `findMin'
+C:\work\Resistor-Capacitance-Inductance-Measurement-System\RCIMS\RCIMS.sdk\helloworld\Debug/../src/helloworld.c:98: undefined reference to `findMax'
+collect2.exe: error: ld returned 1 exit status
+make: *** [helloworld.elf] ´íÎó 1
+20:07:52 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:8: warning: unused variable 'tmp_f' [-Wunused-variable]
+  float tmp_f;
+        ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24012	   1148	  22568	  47728	   ba70	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:08:13 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:11:14 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:15:04 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:8: warning: unused variable 'tmp_f' [-Wunused-variable]
+  float tmp_f;
+        ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24012	   1148	  22568	  47728	   ba70	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:15:13 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:18:15 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:8: warning: unused variable 'tmp_f' [-Wunused-variable]
+  float tmp_f;
+        ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24076	   1148	  22568	  47792	   bab0	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:21:13 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:87:6: error: too few arguments to function 'debug'
+      debug('M', max);
+      ^~~~~
+../src/helloworld.c:61:6: note: declared here
+ void debug(char type, u32 freq, float num){
+      ^~~~~
+../src/helloworld.c:88:6: error: too few arguments to function 'debug'
+      debug('m', min);
+      ^~~~~
+../src/helloworld.c:61:6: note: declared here
+ void debug(char type, u32 freq, float num){
+      ^~~~~
+../src/helloworld.c:105:6: error: too few arguments to function 'debug'
+      debug('M', max);
+      ^~~~~
+../src/helloworld.c:61:6: note: declared here
+ void debug(char type, u32 freq, float num){
+      ^~~~~
+../src/helloworld.c:106:6: error: too few arguments to function 'debug'
+      debug('m', min);
+      ^~~~~
+../src/helloworld.c:61:6: note: declared here
+ void debug(char type, u32 freq, float num){
+      ^~~~~
+../src/helloworld.c:76:8: warning: unused variable 'tmp_f' [-Wunused-variable]
+  float tmp_f;
+        ^~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+20:21:27 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:6: error: too few arguments to function 'debug'
+      debug('M', max);
+      ^~~~~
+../src/helloworld.c:61:6: note: declared here
+ void debug(char type, u32 freq, float num){
+      ^~~~~
+../src/helloworld.c:106:6: error: too few arguments to function 'debug'
+      debug('m', min);
+      ^~~~~
+../src/helloworld.c:61:6: note: declared here
+ void debug(char type, u32 freq, float num){
+      ^~~~~
+../src/helloworld.c:76:8: warning: unused variable 'tmp_f' [-Wunused-variable]
+  float tmp_f;
+        ^~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+20:21:41 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:8: warning: unused variable 'tmp_f' [-Wunused-variable]
+  float tmp_f;
+        ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24180	   1148	  22568	  47896	   bb18	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:21:46 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24180	   1148	  22568	  47896	   bb18	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:21:50 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:22:00 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24180	   1148	  22568	  47896	   bb18	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:22:04 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:22:48 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24180	   1148	  22568	  47896	   bb18	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:23:18 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:25:03 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:63:8: error: expected expression before 'double'
+  tmp = double(num) / 65535 * 10;
+        ^~~~~~
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+make: *** [src/helloworld.o] ´íÎó 1
+20:25:09 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:63:8: error: expected expression before 'double'
+  tmp = double(num) / 65535 * 10;
+        ^~~~~~
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+make: *** [src/helloworld.o] ´íÎó 1
+20:25:23 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:63:8: error: expected expression before 'double'
+  tmp = double(num) / 65536 * 10;
+        ^~~~~~
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+make: *** [src/helloworld.o] ´íÎó 1
+20:25:38 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:63:8: error: expected expression before 'float'
+  tmp = float(num) / 65536 * 10;
+        ^~~~~
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+make: *** [src/helloworld.o] ´íÎó 1
+20:25:52 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24180	   1148	  22568	  47896	   bb18	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:25:58 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:27:05 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'debug':
+../src/helloworld.c:64:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (type = 'M')
+  ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24180	   1148	  22568	  47896	   bb18	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:27:11 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24204	   1148	  22568	  47920	   bb30	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:27:17 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:28:15 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24204	   1148	  22568	  47920	   bb30	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:28:18 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:29:24 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:33:51 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:34:23 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:36:20 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24204	   1148	  22568	  47920	   bb30	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:36:23 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:39:17 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24268	   1148	  22568	  47984	   bb70	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:39:27 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:46:23 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:48:52 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:50:15 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24280	   1148	  22568	  47996	   bb7c	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+20:52:45 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:53:10 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:58:48 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:59:19 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:01:19 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:04:39 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:05:08 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:14:25 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24280	   1148	  22568	  47996	   bb7c	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+21:14:41 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:15:23 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:16:38 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:19:02 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:21:08 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:26:24 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:28:05 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:34:01 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h: In function 'progressBar':
+../src/helloworld.h:88:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("=  %d",n);
+         ^~~~~~
+../src/helloworld.h:88:9: warning: incompatible implicit declaration of built-in function 'printf'
+../src/helloworld.h:88:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/helloworld.h:89:9: warning: implicit declaration of function 'fflush' [-Wimplicit-function-declaration]
+         fflush(stdout);
+         ^~~~~~
+../src/helloworld.h:89:16: error: 'stdout' undeclared (first use in this function)
+         fflush(stdout);
+                ^~~~~~
+../src/helloworld.h:89:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.h:93:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("/b/b/b");
+         ^~~~~~
+../src/helloworld.h:93:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/helloworld.h:95:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("/b/b/b/b");
+         ^~~~~~
+../src/helloworld.h:95:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/helloworld.h:96:5: warning: incompatible implicit declaration of built-in function 'printf'
+     printf("=  ");
+     ^~~~~~
+../src/helloworld.h:96:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/helloworld.h: In function 'main':
+../src/helloworld.h:108:5: warning: incompatible implicit declaration of built-in function 'printf'
+     printf("/n");
+     ^~~~~~
+../src/helloworld.h:108:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/helloworld.c: At top level:
+../src/helloworld.c:61:6: error: redefinition of 'debug'
+ void debug(char type, u32 freq, u32 num){
+      ^~~~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:70:6: note: previous definition of 'debug' was here
+ void debug(char type, u32 freq, u32 num){
+      ^~~~~
+../src/helloworld.c:70:5: error: redefinition of 'main'
+ int main(){
+     ^~~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:100:5: note: previous definition of 'main' was here
+ int main()
+     ^~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:34:17 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h: In function 'progressBar':
+../src/helloworld.h:89:9: warning: implicit declaration of function 'fflush' [-Wimplicit-function-declaration]
+         fflush(stdout);
+         ^~~~~~
+../src/helloworld.h:89:16: error: 'stdout' undeclared (first use in this function)
+         fflush(stdout);
+                ^~~~~~
+../src/helloworld.h:89:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.h:97:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("%d", n);
+     ^~~~~~
+../src/helloworld.h:97:5: warning: incompatible implicit declaration of built-in function 'printf'
+../src/helloworld.h:97:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/helloworld.c: At top level:
+../src/helloworld.c:61:6: error: redefinition of 'debug'
+ void debug(char type, u32 freq, u32 num){
+      ^~~~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:70:6: note: previous definition of 'debug' was here
+ void debug(char type, u32 freq, u32 num){
+      ^~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:34:46 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:61:6: error: redefinition of 'debug'
+ void debug(char type, u32 freq, u32 num){
+      ^~~~~
+In file included from ../src/helloworld.c:48:0:
+../src/helloworld.h:66:6: note: previous definition of 'debug' was here
+ void debug(char type, u32 freq, u32 num){
+      ^~~~~
+make: *** [src/helloworld.o] ´íÎó 1
+21:34:49 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24280	   1148	  22568	  47996	   bb7c	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+21:35:50 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24280	   1148	  22568	  47996	   bb7c	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+21:35:53 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24280	   1148	  22568	  47996	   bb7c	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+21:36:18 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:5: warning: implicit declaration of function 'fflush' [-Wimplicit-function-declaration]
+     fflush(stdout);
+     ^~~~~~
+../src/helloworld.c:131:12: error: 'stdout' undeclared (first use in this function)
+     fflush(stdout);
+            ^~~~~~
+../src/helloworld.c:131:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] ´íÎó 1
+21:36:33 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:5: warning: implicit declaration of function 'fflush' [-Wimplicit-function-declaration]
+     fflush(stdout);
+     ^~~~~~
+../src/helloworld.c:131:12: error: 'stdout' undeclared (first use in this function)
+     fflush(stdout);
+            ^~~~~~
+../src/helloworld.c:131:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] ´íÎó 1
+21:37:30 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24280	   1148	  22568	  47996	   bb7c	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
